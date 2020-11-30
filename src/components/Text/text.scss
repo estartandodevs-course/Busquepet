@@ -1,0 +1,47 @@
+$header-color: #FFFFFF;
+$title-color: #008080;
+$text-form-color: #4F4F4F;
+
+@mixin config-header {
+    color: $header-color;
+    font-family: Poppins;
+    letter-spacing: 0.02em;
+}
+
+.title-header {
+    @include config-header;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.subtitle-header {
+    @include config-header;
+    font-weight: 400;
+    font-size: 13px;    
+}
+
+.title-form {
+    color: $title-color;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+
+.label-form {
+    color: $title-color;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+}
+
+.text-form {
+    color: $text-form-color;
+    font-family: Jost;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+}

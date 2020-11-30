@@ -1,3 +1,5 @@
+import Text from './components/Text/Text'
+
 function App() {
   return (
     <>
