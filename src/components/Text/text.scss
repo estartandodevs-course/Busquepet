@@ -1,12 +1,34 @@
 $header-color: #FFFFFF;
 $title-color: #008080;
 $text-form-color: #4F4F4F;
+$text-buttonnext-color: #FBFBFB;
+$text-buttonskip-color: #800080;
+$final-form-color: #121212;
+
+@mixin config-button{
+    color: $text-buttonnext-color;
+    font-family: Jost;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
 
 @mixin config-header {
     color: $header-color;
     font-family: Poppins;
     letter-spacing: 0.02em;
 }
+
+@mixin finalform-config {
+    color: $final-form-color;
+    font-family: Jost;
+    font-style: normal;
+    font-size: 26px;
+    letter-spacing: 0.02em;
+}
+
+
+
 
 .title-header {
     @include config-header;
@@ -45,3 +67,34 @@ $text-form-color: #4F4F4F;
     font-weight: normal;
     letter-spacing: 0.02em;
 }
+
+.text-button{
+    color: $text-buttonnext-color;
+    font-family: Jost;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+.text-buttonskip {
+    @include config-button;
+    color: $text-buttonskip-color;
+}
+
+.finaltext-form{
+    color: $final-form-color;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.02em;
+}
+
+.finaltextform2 {
+    @include finalform-config;
+    font-weight: bold;
+}
+
+
+
+

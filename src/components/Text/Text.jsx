@@ -26,6 +26,27 @@ function TextForm (props) {
     return <p className="text-form">{label}</p>
 }
 
+function TextButton (props) {
+    const label = props.children;
+    return <p className="text-button">{label}</p>
+}
+
+function TextButtonSkip (props) {
+    const label = props.children;
+    return <p className="text-buttonskip">{label}</p>
+}
+
+function TextFinal (props) {
+    const label = props.children;
+    return <p className="finaltext-form">{label}</p>
+}
+
+function TextFinal2 (props) {
+    const label = props.children;
+    return <p className="finaltextform2">{label}</p>
+}
+
+
 
 
 
@@ -37,7 +58,11 @@ function Text(props) {
         subtitleheader: <SubtitleHeader>{children}</SubtitleHeader>,
         titleform: <TitleForm>{children}</TitleForm>,
         labelform: <LabelForm>{children}</LabelForm>,
-        textform: <TextForm>{children}</TextForm>
+        textform: <TextForm>{children}</TextForm>,
+        textbutton: <TextButton>{children}</TextButton>,
+        textbuttonskip: <TextButtonSkip>{children}</TextButtonSkip>,
+        textfinal: <TextFinal>{children}</TextFinal>,
+        textfinal2: <TextFinal2>{children}</TextFinal2>
     }
 
     console.log(type)
