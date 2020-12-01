@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Button} from './components/button/Button';
+import {Select} from './components/select/Select';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Button></Button>
+    <Select value={option}></Select>
   </React.StrictMode>,
   document.getElementById('root')
 );
