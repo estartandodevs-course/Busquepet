@@ -1,8 +1,9 @@
-import Text from './components/Text/Text'
+import { Header } from "./components";
 
 function App() {
   return (
     <>
+      <Header title="BUSQUEPET"></Header>
     </>
   );
 }
