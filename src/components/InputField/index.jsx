@@ -1,6 +1,5 @@
 import "./style.scss";
 
-
 export function InputField(props) {
   const { placeholder, label, type} = props;
 
