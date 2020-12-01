@@ -8,7 +8,7 @@ import {Select} from './components/select/Select';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Select value={option}></Select>
+    <Select type="estado"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
