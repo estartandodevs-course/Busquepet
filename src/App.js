@@ -1,5 +1,4 @@
-import Text from './components/Text/Text'
-import {InputField} from './components/InputField'
+import React from "react";
 
 function App() {
   return (
