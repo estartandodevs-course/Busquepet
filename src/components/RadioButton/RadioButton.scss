@@ -1,0 +1,34 @@
+.radioContainer {
+    display: inline-block;
+    position: relative;
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 14px;
+    user-select: none;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    color: #4F4F4F;
+}
+
+.radioContainer input {
+    display: none;
+}
+
+.radioContainer .circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2.5px solid #4F4F4F;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.radioContainer input:checked + .circle{
+    background-color: #2196fc;
+}
+
+
+  
