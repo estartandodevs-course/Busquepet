@@ -6,7 +6,7 @@
     font-size: 14px;
     user-select: none;
     padding-left: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 23px;
     cursor: pointer;
     color: #4F4F4F;
 }
@@ -27,8 +27,22 @@
 }
 
 .radioContainer input:checked + .circle{
-    background-color: #2196fc;
+    border: 2.5px solid #CB6FCB;
 }
+
+.radioContainer input:checked + .circle:after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #CB6FCB;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 
   
