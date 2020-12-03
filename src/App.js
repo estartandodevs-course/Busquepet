@@ -1,10 +1,13 @@
-import React from "react";
+// import Text from './components/Text/Text';
+import Icone from './assets/images/Coracao.svg';
+const { Button } = require('./components/button/Index');
 
 function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+	return (
+		<>
+			<Button name="Vamos" icon={Icone} class="purple"></Button>
+		</>
+	);
 }
 
 export default App;
