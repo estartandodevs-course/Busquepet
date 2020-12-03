@@ -7,8 +7,8 @@ function App() {
 
   return (
     <>
-    <RadioButton text="Pessoa Física" name="typePerson" id="juridico" onChange={setPerson}/>
-    <RadioButton text="Pessoa Jurídica (ONG)" name="typePerson" id="fisico" onChange={setPerson} />
+    <RadioButton text="Pessoa Física" name="typePerson" id="Pessoa Física" onChange={setPerson}/>
+    <RadioButton text="Pessoa Jurídica (ONG)" name="typePerson" id="Pessoa Jurídica (ONG)" onChange={setPerson} />
     <button onClick={() => console.log(person)}>Proximo</button>
     </>
   );
