@@ -1,14 +1,14 @@
 .radioContainer {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
     position: relative;
-    font-family: Jost;
-    font-weight: 400;
     font-size: 14px;
     user-select: none;
-    padding-left: 30px;
     padding-bottom: 23px;
     cursor: pointer;
     color: #4F4F4F;
+
 }
 
 .radioContainer input {
@@ -16,14 +16,13 @@
 }
 
 .radioContainer .circle {
-    display: inline-block;
+    display: flex;
     width: 15px;
     height: 15px;
     border: 2.5px solid #4F4F4F;
     border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: relative;
+    margin-right: 10px;
 }
 
 .radioContainer input:checked + .circle{
@@ -40,8 +39,15 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    animation: buttonAnnimation 0.3s ease-in;
 }
 
+
+@keyframes buttonAnnimation {
+    0% {opacity: 0%;}
+    50% {opacity: 30%;}
+    100% {opacity: 100%;}
+}
 
 
 

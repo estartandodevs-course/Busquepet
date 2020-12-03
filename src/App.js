@@ -1,4 +1,4 @@
-import RadioButton from './components/RadioButton/RadioButton'
+import RadioButton from './components/RadioButton'
 import { useState } from 'react';
 
 function App() {
