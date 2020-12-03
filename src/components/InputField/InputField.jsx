@@ -1,4 +1,4 @@
-import "./style.scss";
+import "./InputField.scss";
 
 export function InputField(props) {
   const { placeholder, label, type} = props;
