@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
 
-button{
+%buttonStyle{
     width: 140px;
     height: 40px;
     border: 0;
     border-radius: 10px;
-    background:#008080;
     color: #FBFBFB;
     font-family: 'Jost', sans-serif;
     font-style: normal;
@@ -22,24 +21,59 @@ button{
         }
     }
 
+    &:focus{
+        outline: none;
+    } 
+
+    .button-Dad{
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+    }
+}
+
+.green{
+    @extend %buttonStyle;
+
     &:enabled{
         background:#008080;
 
         &:hover{
-            //Mudar depois TEMP.
-            background:#006b6b; 
+            background:#00CCCC; 
         }
     }
-    
-    &:focus{
-        outline: none;
-    }
-    
-    img{
-        width: 12.99px;
-        height: 12.65px;
-        position: relative;
-        top: 1px;
-        right: -23px;
+}
+
+.white{
+    @extend %buttonStyle;
+
+    &:enabled{
+        background:#FBFBFB;
+        border: 1.5px solid #800080;
+        color: #800080;
+
+        img{
+            display: none;
+        }
+
+        &:hover{
+            border: 1.5px solid #CB6FCB;
+            background:#FBFBFB; 
+            color: #9B3A9B;
+        }
     }
 }
+
+.purple{
+    @extend %buttonStyle;
+
+    &:enabled{
+        background: #800080;    
+
+        &:hover{
+            background: #CB6FCB;
+        }
+    }
+}
+
+
