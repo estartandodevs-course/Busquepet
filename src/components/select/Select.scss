@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+%font{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+}
+
 select {
+    @extend %font;
     width: 300px;
     height: 48px;
+    padding-left:8px ;
     border-radius: 10px;
     border: 1px solid #008080;
     outline: none;
-    background: url('./Vector.svg') no-repeat right #FBFBFB;
+    background: url('../assets/images/arrowDown.svg') no-repeat right #FBFBFB;
     -webkit-appearance: none;
     -moz-appearance:    none;
     appearance:         none;
@@ -17,21 +28,21 @@ select {
         border-bottom-left-radius: 0;
     }
 
+    
+
     option{
-        
+        @extend %font;
         width: 300px;
         height: 48px;
-        font-family: 'Poppins', sans-serif;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 21px;
-        letter-spacing: 0.02em;
-
+      
+        
         &:hover{
-            background: #B8F1F1 !important;
-        }   
+            background: red;
+        }  
+        
+        &[value='']{
+            display: none;
+        }
     }
 }
 

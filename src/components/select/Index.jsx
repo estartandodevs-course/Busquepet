@@ -3,13 +3,6 @@ import './Select.scss';
 
 export const Select = props => {
     
-    // const options = [
-    //     {value: '', text: 'Select your country'},
-    //     {value: 'brasil', text: 'Brasil'},
-    //     {value: 'chile', text: 'Chile'},
-    //     {value: 'japão', text: 'Japão'}
-    // ]
-
     const typeMap = {
         idade : [
             {value: '', text: ''},
@@ -57,9 +50,9 @@ export const Select = props => {
 
     return (
         <div>
-            <select name="Select" id="">
+            <select name="Select" id="" placeholder="Selecione um estado">
             {typeMap[props.type].map((element, index)=>{
-                return <option key={index} value={element.value}>{element.text}</option>
+                return <option key={index} value={element.value} >{element.text}</option>
             })}
             </select>
         </div>
