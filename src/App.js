@@ -1,4 +1,5 @@
 import React from 'react';
+import Header  from "./components/Header";
 import RadioButton from './components/RadioButton'
 import { useState } from 'react';
 import {Select} from './components/select/Index';
@@ -11,7 +12,7 @@ function App() {
   
 	return (
 		<div className="App">
-    
+    <Header title="Você quer doar!" subTitle="Vamos lá!"></Header>
 			<Routes />
 			<Button name="Vamos" icon={Icone} class="purple"></Button>
       <Select type="estado"/>
