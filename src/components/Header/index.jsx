@@ -3,7 +3,7 @@ import Seta from "../../assets/images/seta.svg";
 import Text from "../Text/Text";
 import "./Header.scss";
 
-function Header(props) {
+export default function Header(props) {
   const { title, subTitle } = props;
 
   return (
@@ -19,13 +19,3 @@ function Header(props) {
   );
 }
 
-function Arrow(props) {
-  const {} = props;
-  if ((props.arrow = true)) {
-    return <img src={Seta} alt="seta"></img>;
-  }
-
-  return null;
-}
-
-export default Header;
