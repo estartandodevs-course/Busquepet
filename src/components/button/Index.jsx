@@ -1,13 +1,15 @@
 import React from 'react';
+import Text from '../Text'
 import './Button.scss';
 
-export const Button =  props => {
+export default function Button (props) {
+    const {identifier, icon, name, onClick} = props;
     return(
         <div>
-            <button className={props.class} disabled>
+            <button className={identifier} onClick={onClick}>
                 <div className="button-Dad">
-                    <span>{props.name}</span>
-                    <img className="Icons" src={props.icon} alt="Icon"/>
+                        <Text type="textbutton">{name}</Text>
+                    <img className="Icons" src={icon} alt="Icon"/>
                 </div>
             </button>
         </div>
