@@ -31,14 +31,14 @@
 
 .radioContainer input:checked + .circle:after{
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background-color: #CB6FCB;
     position: absolute;
     border-radius: 50%;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-49%, -47%);
     animation: buttonAnnimation 0.3s ease-in;
 }
 
