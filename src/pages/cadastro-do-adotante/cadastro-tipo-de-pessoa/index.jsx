@@ -12,7 +12,7 @@ export default function RegisterAdopter() {
     const [person, setPerson] = useState("")
     return (
         <>
-            <Header title="Você quer doar!" subTitle="Vamos lá!"></Header>
+            <Header title="Você quer doar!" subTitle="Vamos lá!" />
             <Text type="titleform">Vamos começar!</Text>
             <section className="contentform">
                 <div className="form">
