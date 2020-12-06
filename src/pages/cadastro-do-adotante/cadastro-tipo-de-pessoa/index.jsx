@@ -12,7 +12,7 @@ export default function RegisterAdopter() {
     const [person, setPerson] = useState("")
     return (
         <>
-            <Header title="Você quer doar!" subTitle="Vamos lá!"></Header>
+            <Header title="Você quer doar!" subTitle="Vamos lá!" />
             <Text type="titleform">Vamos começar!</Text>
             <section className="contentform">
                 <div className="form">
@@ -26,7 +26,7 @@ export default function RegisterAdopter() {
                 </div>
             </section>
                 <div className="button-skip" >
-                    <Button name="Próximo" identifier="green" icon={Icon} onClick={() => console.log(person)} />
+                    <Button name="Próximo" identifier="green desabled" icon={Icon}  onClick={() => console.log(person)} />
                 </div>
         </>
     )
