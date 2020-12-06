@@ -1,5 +1,6 @@
 import React from 'react';
 import RegisterAdopter from './pages/cadastro-do-adotante/cadastro-tipo-de-pessoa';
+import './app.scss'
 // import { useState } from 'react';
 // import { Select } from './components/select/Index';
 // import Icone from './assets/images/Coracao.svg';
