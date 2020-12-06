@@ -26,7 +26,7 @@ export default function RegisterAdopter() {
                 </div>
             </section>
                 <div className="button-skip" >
-                    <Button name="Próximo" identifier="green" icon={Icon} onClick={() => console.log(person)} />
+                    <Button disabled={!person} name="Próximo" identifier="green" icon={Icon} onClick={() => console.log(person)} />
                 </div>
         </>
     )
