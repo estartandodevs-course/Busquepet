@@ -1,5 +1,5 @@
 import React from 'react';
-import RegisterAdopter from './pages/cadastro-do-adotante/cadastro-tipo-de-pessoa';
+import DonorRegister from './pages/cadastro-do-doador/cadastro-tipo-de-pessoa';
 import './app.scss'
 // import { useState } from 'react';
 // import { Select } from './components/select/Index';
@@ -13,7 +13,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<RegisterAdopter />
+			<DonorRegister />
 			{/* <Routes />
 			<Button name="Vamos" icon={Icone} class="purple"></Button>
 			<Select type="estado" />
