@@ -1,10 +1,11 @@
 import './styles.scss'
 import Text from '../../../components/Text'
 import RadioButton from '../../../components/RadioButton'
-import Button from '../../../components/Button/'
+import Button from '../../../components/Button/index.jsx'
 import Icon from '../../../assets/images/SetaProx.svg'
 import Header from '../../../components/Header'
 import { useState } from 'react'
+
 
 
 export default function RegisterAdopter() {
@@ -26,7 +27,7 @@ export default function RegisterAdopter() {
                 </div>
             </section>
                 <div className="button-skip" >
-                    <Button disabled={!person} name="Próximo" identifier="green"  icon={Icon}  onClick={() => console.log(person)} />
+                    <Button disabled={!person} name="Próximo" identifier="green" icon={Icon} onClick={() => console.log(person)} />
                 </div>
         </>
     )
