@@ -1,6 +1,6 @@
 import React from "react";
 import Seta from "../../assets/images/seta.svg";
-import Text from "../Text/Text";
+import Text from "../Text/";
 import "./Header.scss";
 
 export default function Header(props) {

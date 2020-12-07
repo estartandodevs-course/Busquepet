@@ -64,8 +64,6 @@ function Text(props) {
         textfinal: <TextFinal>{children}</TextFinal>,
         textfinal2: <TextFinal2>{children}</TextFinal2>
     }
-
-    console.log(type)
     return types[type]
 }
 
