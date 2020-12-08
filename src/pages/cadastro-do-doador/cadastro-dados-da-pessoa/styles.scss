@@ -1,0 +1,34 @@
+.contentform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-form {
+  margin-bottom: 35px;
+  margin-top: 23px;
+}
+
+.redText {
+  color: #cb6fcb;
+  width: 185px;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  align-self: flex-end;
+  margin-right: 35px;
+}
+
+.input-field .input {
+  background-color: rgba(251, 251, 251, 1);
+}
+
+.button-skip {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: auto;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
