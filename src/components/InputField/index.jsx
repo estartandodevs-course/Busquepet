@@ -6,7 +6,7 @@ export function InputField(props) {
   return (
     <div className="input-field">
       <label className="label">
-        {label} <span>*</span>
+        {label} <span className="asterisk">*</span>
       </label>
       <input
         className="input"
