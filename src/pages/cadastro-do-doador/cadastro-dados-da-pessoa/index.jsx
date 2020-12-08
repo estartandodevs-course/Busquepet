@@ -1,17 +1,28 @@
 import "./styles.scss";
 import Text from "../../../components/Text";
-import { InputField } from "../../../components/InputField/InputField";
+import { InputField } from "../../../components/InputField";
 import Header from "../../../components/Header";
-import Button from "../../../components/button/Index";
+import Button from "../../../components/Button";
 import Icon from "../../../assets/images/SetaProx.svg";
 // import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 export default function DonorRegister() {
-  // const [input, setInput] = (useState = "");
+  const history = useHistory();
+
+  function handleClick() {
+    history.push("/");
+  }
+
+  function goBack() {
+    history.push("/");
+  }
+
   return (
     <>
       <div className="header">
         <Header
+          goBack={goBack}
           title="Você quer doar!"
           subTitle="Vai ser bem rapidinho!"
         ></Header>
@@ -31,19 +42,16 @@ export default function DonorRegister() {
           placeholder="00/00/0000"
           id="date"
           type="date"
-          InputLabelProps={{
-            shrink: true,
-          }}
+
           // onChange={setInput}
         ></InputField>
       </section>
       <div className="button-skip">
         <Button
-          // disable={!input}
           name="Próximo"
           identifier="green"
           icon={Icon}
-          // onClick={() => console.log(input)}
+          onClick={handleClick}
         ></Button>
       </div>
     </>

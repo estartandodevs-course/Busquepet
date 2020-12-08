@@ -5,8 +5,6 @@ import "./app.scss";
 // import { Select } from './components/select/Index';
 // import Icone from './assets/images/Coracao.svg';
 import Routes from "./components/Routes";
-// const { Button } = require('./components/button/Index');
-import PersonData from "./pages/cadastro-do-doador/cadastro-dados-da-pessoa";
 
 function App() {
   // const [person, setPerson] = useState("")
@@ -15,7 +13,7 @@ function App() {
     <div className="App">
       {/* <DonorRegister /> */}
       <Routes />
-      <PersonData />
+
       {/* <Button name="Vamos" icon={Icone} class="purple"></Button>
 			<Select type="estado" /> */}
     </div>
