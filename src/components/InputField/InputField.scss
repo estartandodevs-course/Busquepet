@@ -7,10 +7,10 @@
     font-size: 12px;
     margin-left: 10px;
 
-    span {
+    .asterisk {
       color: #cb6fcb;
-      position: absolute;
-      left: 305px;
+      display: inline;
+      float: right;
     }
   }
   .input {
