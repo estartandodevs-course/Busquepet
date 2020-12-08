@@ -4,8 +4,10 @@ import { InputField } from "../../../components/InputField/InputField";
 import Header from "../../../components/Header";
 import Button from "../../../components/button/Index";
 import Icon from "../../../assets/images/SetaProx.svg";
+// import { useState } from "react";
 
 export default function DonorRegister() {
+  // const [input, setInput] = (useState = "");
   return (
     <>
       <div className="header">
@@ -21,13 +23,28 @@ export default function DonorRegister() {
         <InputField
           label="Seu Nome Completo"
           placeholder="Ex.: Maria José"
+          // onChange={setInput}
         ></InputField>
 
-        <InputField label="Sua idade" placeholder="00/00/0000"></InputField>
-        <text className="redText">É necessário ter mais de 16 anos.</text>
+        <InputField
+          label="Sua idade"
+          placeholder="00/00/0000"
+          id="date"
+          type="date"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          // onChange={setInput}
+        ></InputField>
       </section>
       <div className="button-skip">
-        <Button name="Próximo" identifier="green" icon={Icon}></Button>
+        <Button
+          // disable={!input}
+          name="Próximo"
+          identifier="green"
+          icon={Icon}
+          // onClick={() => console.log(input)}
+        ></Button>
       </div>
     </>
   );
