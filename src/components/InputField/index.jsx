@@ -1,6 +1,6 @@
-import './InputField.scss';
+import "./InputField.scss";
 
-export function InputField(props) {
+export default function InputField(props) {
 	const { placeholder, label, type, onChange, value } = props;
 
 	return (
@@ -18,3 +18,4 @@ export function InputField(props) {
 		</div>
 	);
 }
+

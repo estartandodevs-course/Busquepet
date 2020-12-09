@@ -34,26 +34,25 @@
 }
 
 .form-box {
-  margin-top: 8px;
-  border: 1px solid #008080;
-  border-radius: 10px;
-  width: 300px;
-  height: 103px;
-  display: flex;
-  flex-direction: column;
-  padding: 16px 18px;
+    margin-top: 8px;
+    border: 1px solid #008080;
+    border-radius: 10px;
+    width: 300px;
+    height: 103px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 18px;
 }
 
-.contentform {
-  display: flex;
-  justify-content: center;
+.contentform{
+    display: flex;
+    justify-content: center;
 }
 
-.button-skip {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-top: auto;
-  margin-right: 30px;
-  margin-bottom: 30px;
+.button-skip{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
