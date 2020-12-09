@@ -25,20 +25,20 @@
     margin-right: 10px;
 }
 
-.radioContainer input:checked + .circle{
+.radioContainer input:checked + .circle-area > .circle{
     border: 2.5px solid #CB6FCB;
 }
 
-.radioContainer input:checked + .circle:after{
+.radioContainer input:checked + .circle-area > .circle:after{
     content: "";
-    width: 7px;
-    height: 7px;
+    width: 9px;
+    height: 9px;
     background-color: #CB6FCB;
     position: absolute;
     border-radius: 50%;
     left: 50%;
     top: 50%;
-    transform: translate(-49%, -47%);
+    transform: translate(-50%, -50%);
     animation: buttonAnnimation 0.3s ease-in;
 }
 

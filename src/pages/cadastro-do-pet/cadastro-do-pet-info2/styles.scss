@@ -1,3 +1,4 @@
+
 .contentform{
     display: flex;
     justify-content: center;
@@ -9,11 +10,12 @@
     flex-direction: column;
 }
 
-.textform{
+.text-form{
     margin-left: 8px;
+    width: 222px;
 }
 
-.form-box {
+.form-box-info {
     margin-top: 8px;
     border: 1px solid #008080;
     border-radius: 10px;
@@ -22,6 +24,7 @@
     display: flex;
     flex-direction: column;
     padding: 18px 18px;
+
 }
 
 .textheader {
@@ -46,22 +49,41 @@
 }
 
 .pet-name {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 29px;
+
+    input{
+        margin-bottom: 3px !important;
+    }
 }
 
 .pet-history {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 32px; 
+    margin-top: 32px;
+
+    TextArea{
+        font-family: Jost;
+        font-size: 14px;
+        font-weight: 400;
+        color: #4F4F4F;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+
+    TextArea::placeholder {
+        font-family: Jost;
+        font-size: 14px;
+        font-weight: 400;
+        color: #E0E0E0;
+    }
 }
 
-.button-skip{
+.form-button-skip{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;

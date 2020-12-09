@@ -49,18 +49,12 @@ export const Select = props => {
     }
 
     return (
-<<<<<<< HEAD
-        <div>
-            <select name="Select" id="" placeholder="Selecione um estado">
-            {typeMap[props.type].map((element, index)=>{
-=======
         <div className="select-container">
             <label className="label">
                 {props.label} <span className="asterisk">*</span>
             </label>
             <select name="Select" id="" placeholder="Selecione um estado">
             {typeMap[props.typeMap].map((element, index)=>{
->>>>>>> e81a1bfc59d410026e11930ea06579990dd0e3b3
                 return <option key={index} value={element.value} >{element.text}</option>
             })}
             </select>

@@ -21,6 +21,7 @@
       display: block;
       height: 200px;
       width: 300px;
+      resize: none;
   
       &::placeholder {
         color: #e0e0e0;
