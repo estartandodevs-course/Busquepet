@@ -5,9 +5,10 @@ import Logo from '../../assets/images/Group-107.svg';
 import { InputField } from '../../components/InputField';
 import Icon from '../../assets/images/SetaProx.svg';
 import './styles.scss';
-export default function Login() {
+export default function Login(props) {
 	const [user, setUser] = useState('');
 	const [password, setPassword] = useState('');
+	const { href } = props;
 
 	function handleLogin() {
 		// Implementar funcionalidade do login
@@ -38,7 +39,7 @@ export default function Login() {
 				<div id="content-text">
 					<Text type="textform">
 						Ainda não possui conta? <br />
-						<a className="text-link" href="#">
+						<a className="text-link" href={href}>
 							Cadastre-se
 						</a>
 					</Text>
