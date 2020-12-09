@@ -12,7 +12,6 @@ import RegisterLegalPerson from "../../pages/cadastro-do-doador/cadastro-pessoa-
 import ProfilePet from "../../pages/perfil-pet";
 import Login from "../../pages/login";
 import PersonData from "../../pages/cadastro-do-doador/cadastro-dados-da-pessoa";
-import RegisterPet1 from "../../pages/cadastro-do-pet/cadastro-do-pet-info1";
 
 export default function Routes() {
   return (
@@ -38,7 +37,6 @@ export default function Routes() {
           component={RegisterLegalPerson}
         />
         <Route exact path="/dados-da-pessoa" component={PersonData} />
-        <Route exact path="/cadastro-pet-info1" component={RegisterPet1} />
       </Switch>
     </BrowserRouter>
   );
