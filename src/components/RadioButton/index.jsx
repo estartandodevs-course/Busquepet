@@ -4,7 +4,7 @@ import Text from "../Text";
 export default function RadioButton(props) {
   const { text, name, id, onChange } = props;
   return (
-    
+
     <label
       className="radioContainer"
       htmlFor={id}

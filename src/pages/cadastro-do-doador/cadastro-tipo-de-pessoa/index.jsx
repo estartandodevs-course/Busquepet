@@ -7,8 +7,6 @@ import Header from '../../../components/Header'
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
-
-
 export default function RegisterAdopter() {
 
     const [person, setPerson] = useState("")
@@ -47,4 +45,3 @@ export default function RegisterAdopter() {
         </>
     )
 }
-
