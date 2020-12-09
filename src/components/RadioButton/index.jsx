@@ -18,6 +18,4 @@ function RadioButton(props) {
       </div>
     </label>
   );
-}
-
 export default RadioButton;
