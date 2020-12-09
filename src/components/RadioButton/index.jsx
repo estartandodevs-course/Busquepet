@@ -1,16 +1,21 @@
-import './RadioButton.scss';
-import Text from '../Text'
+import "./RadioButton.scss";
+import Text from "../Text";
 
-function RadioButton(props) {
-    const { text, name, id, onChange } = props;
-    return (
+export default function RadioButton(props) {
+  const { text, name, id, onChange } = props;
+  return (
 
-            <label className="radioContainer" htmlFor={id}>
-                <input type="radio" name={name} id={id} onChange={(event) => onChange(event.target.id)} />
-                <span className="circle" />
-                <Text type="textform">{text}</Text>
-            </label>
-    )
+    <label
+      className="radioContainer"
+      htmlFor={id}
+      onChange={(event) => onChange(event.target.id)}>
+      <input type="radio" name={name} id={id} />
+      <div className="circle-area">
+        <span className="circle" />
+      </div>
+      <div>
+        <Text type="textform">{text}</Text>
+      </div>
+    </label>
+  );
 }
-
-export default RadioButton

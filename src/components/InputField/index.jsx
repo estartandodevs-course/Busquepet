@@ -1,20 +1,22 @@
-import './InputField.scss';
+import "./InputField.scss";
 
 export function InputField(props) {
-	const { placeholder, label, type, onChange } = props;
+  const { placeholder, label, type} = props;
 
-	return (
-		<div className="input-field">
-			<label className="label">
-				{label} <span className="asterisk">*</span>
-			</label>
-			<input
-				className="input"
-				type={type}
-				placeholder={placeholder}
-				onChange={event => onChange(event.target.value)}
-				required
-			/>
-		</div>
-	);
+  return (
+    <div className="input-field">
+      <label className="label">
+        {label} <span className="asterisk">*</span>
+      </label>
+      <input
+        className="input"
+        type={type}
+        placeholder={placeholder}
+        required
+      />
+    </div>
+  );
 }
+
+export default InputField
+
