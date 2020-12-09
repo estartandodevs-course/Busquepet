@@ -6,5 +6,12 @@
 	.image-load {
 		width: 260px;
 		height: 200px;
+		animation: gira 1.5s ease-in-out infinite;
+	}
+}
+
+@keyframes gira {
+	to {
+		transform: rotate(360deg);
 	}
 }
