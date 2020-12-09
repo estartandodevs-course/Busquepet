@@ -1,23 +1,13 @@
-import React from "react";
-// import DonorRegister from './pages/cadastro-do-doador/cadastro-tipo-de-pessoa';
-import "./app.scss";
-// import { useState } from 'react';
-// import { Select } from './components/select/Index';
-// import Icone from './assets/images/Coracao.svg';
-import Routes from "./components/Routes";
+
+import './app.scss';
+import Routes from './components/Routes';
 
 function App() {
-  // const [person, setPerson] = useState("")
-
-  return (
-    <div className="App">
-      {/* <DonorRegister /> */}
-      <Routes />
-
-      {/* <Button name="Vamos" icon={Icone} class="purple"></Button>
-			<Select type="estado" /> */}
-    </div>
-  );
+	return (
+		<div className="App">
+			<Routes />
+		</div>
+	);
 }
 
 export default App;

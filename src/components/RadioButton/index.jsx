@@ -7,7 +7,7 @@ function RadioButton(props) {
 
             <label className="radioContainer" htmlFor={id}>
                 <input type="radio" name={name} id={id} onChange={(event) => onChange(event.target.id)} />
-                <span className="circle"></span>
+                <span className="circle" />
                 <Text type="textform">{text}</Text>
             </label>
     )
