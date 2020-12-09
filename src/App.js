@@ -1,10 +1,12 @@
 import './app.scss';
-import Routes from './components/Routes';
+import CardComponent from './components/CardComponent';
+// import Routes from './components/Routes';
 
 function App() {
 	return (
 		<div className="App">
-			<Routes />
+			{/* <Routes /> */}
+			<CardComponent />
 		</div>
 	);
 }

@@ -1,0 +1,11 @@
+.container-card {
+	display: flex;
+	width: 360px;
+	height: 136px;
+	border-radius: 15px;
+	border: 1px solid;
+	.container-img img {
+		width: 180px;
+		height: 137px;
+	}
+}
