@@ -17,7 +17,11 @@ select {
     border-radius: 10px;
     border: 1px solid #008080;
     outline: none;
+<<<<<<< HEAD
     background: url('../assets/images/arrowDown.svg') no-repeat right #FBFBFB;
+=======
+    background: url('../../assets/images/arrowDown.svg') no-repeat right #FBFBFB;
+>>>>>>> e81a1bfc59d410026e11930ea06579990dd0e3b3
     -webkit-appearance: none;
     -moz-appearance:    none;
     appearance:         none;
@@ -46,3 +50,27 @@ select {
     }
 }
 
+<<<<<<< HEAD
+=======
+.select-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-family: Jost;
+    color: #008080;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-size: 12px;
+    margin-left: 10px;
+
+    .asterisk{
+      color: #cb6fcb;
+      display: inline;
+      float: right;
+    }
+  }
+
+>>>>>>> e81a1bfc59d410026e11930ea06579990dd0e3b3
