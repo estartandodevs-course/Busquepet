@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 44px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    img{
+        margin: 0 auto;
+    }
+}
+
+.dogData{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: #1673AD;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    &::before{
+        content: url('../../../assets/images/locationData.svg');
+        width: 14px;
+        height: 14px;
+        margin: 5;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 6.92px;
+    }
+}

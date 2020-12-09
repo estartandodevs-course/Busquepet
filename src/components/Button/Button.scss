@@ -76,3 +76,26 @@
         }
     }
 }
+
+.gradient{
+    @extend %buttonStyle;
+
+    &:enabled{
+        background: linear-gradient(90deg, #800080 0%, #008080 98.75%);
+        border-radius: 20px;
+        color: white;
+        
+
+        img{
+            display: none;
+        }
+
+        &:hover{
+            background: #EFBCEF;
+
+            .text-button{
+                color: #800080;
+            }
+        }
+    }
+}
