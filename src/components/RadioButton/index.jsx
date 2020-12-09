@@ -1,14 +1,14 @@
 import "./RadioButton.scss";
 import Text from "../Text";
 
-function RadioButton(props) {
+export default function RadioButton(props) {
   const { text, name, id, onChange } = props;
   return (
+    
     <label
       className="radioContainer"
       htmlFor={id}
-      onChange={(event) => onChange(event.target.id)}
-    >
+      onChange={(event) => onChange(event.target.id)}>
       <input type="radio" name={name} id={id} />
       <div className="circle-area">
         <span className="circle" />
@@ -19,5 +19,3 @@ function RadioButton(props) {
     </label>
   );
 }
-
-export default RadioButton;
