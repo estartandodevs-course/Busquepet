@@ -67,6 +67,7 @@ function Text(props) {
     return types[type]
 }
 
+<Text type="textfinal">fhiusdhfiudshiuhfui</Text>
 
 
 export default Text;

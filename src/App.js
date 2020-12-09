@@ -1,4 +1,5 @@
 import React from 'react';
+import './global.scss'
 // import DonorRegister from './pages/cadastro-do-doador/cadastro-tipo-de-pessoa';
 import './app.scss'
 // import { useState } from 'react';
