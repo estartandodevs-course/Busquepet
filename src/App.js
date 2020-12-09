@@ -1,27 +1,25 @@
-import React from 'react';
+import React from "react";
 // import DonorRegister from './pages/cadastro-do-doador/cadastro-tipo-de-pessoa';
-import './app.scss'
+import "./app.scss";
 // import { useState } from 'react';
 // import { Select } from './components/select/Index';
 // import Icone from './assets/images/Coracao.svg';
-// import Routes from './components/Routes';
-import LocationData from './pages/cadastro-do-doador/cadastro-dados-localizacao';
+import Routes from "./components/Routes";
+// import LocationData from './pages/cadastro-do-doador/cadastro-dados-localizacao';
 // const { Button } = require('./components/button/Index');
 
-
 function App() {
-	// const [person, setPerson] = useState("")
+  // const [person, setPerson] = useState("")
 
-	return (
-		<div className="App">
-			{/* <DonorRegister /> */}
-			<LocationData/>
-			{/* <Routes /> */}
-			{/* <Button name="Vamos" icon={Icone} class="purple"></Button>
+  return (
+    <div className="App">
+      {/* <DonorRegister /> */}
+      {/* <LocationData/> */}
+      <Routes />
+      {/* <Button name="Vamos" icon={Icone} class="purple"></Button>
 			<Select type="estado" /> */}
-			
-		</div>
-	);
+    </div>
+  );
 }
 
 export default App;
