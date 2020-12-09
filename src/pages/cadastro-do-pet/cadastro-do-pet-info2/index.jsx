@@ -34,11 +34,11 @@ export default function RegisterPet2() {
           <div className="form-box-info">
             <RadioButton
               text="Sim, todas as vacinas necessárias"
-              name="typePerson"
+              name="infovaccine"
             />
-            <RadioButton text="Não, não tomou as vacinas" name="typePerson" />
-            <RadioButton text="Apenas algumas vacinas" name="typePerson" />
-            <RadioButton text="Não sei" name="typePerson" />
+            <RadioButton text="Não, não tomou as vacinas" name="infovaccine" />
+            <RadioButton text="Apenas algumas vacinas" name="infovaccine" />
+            <RadioButton text="Não sei" name="infovaccine" />
           </div>
         </div>
       </section>

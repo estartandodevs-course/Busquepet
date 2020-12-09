@@ -1,6 +1,6 @@
 import "./TextArea.scss";
 
-export function TextArea(props) {
+export default function TextArea(props) {
   const { placeholder, label} = props;
 
   return (
@@ -16,5 +16,3 @@ export function TextArea(props) {
     </div>
   );
 }
-
-export default TextArea
