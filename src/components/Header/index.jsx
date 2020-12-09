@@ -4,11 +4,11 @@ import Text from '../Text/';
 import './Header.scss';
 
 export default function Header(props) {
-	const { title, subTitle } = props;
+	const { title, subTitle, goBack } = props;
 
 	return (
 		<header className="header">
-			<img className="arrow" src={Seta} alt="seta"></img>
+			<img onClick={goBack} className="arrow" src={Seta} alt="seta"></img>
 			<div className="textform">
 				<Text className="titulo" type="titleheader">
 					{title}
