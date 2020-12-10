@@ -50,7 +50,7 @@ export const Select = (props) => {
 
   return (
     <div className="select-container">
-      <label className="label" className={identificador}>
+      <label className="label" id={identificador}>
         {props.label} <span className="asterisk">*</span>
       </label>
       <select
