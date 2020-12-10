@@ -4,6 +4,10 @@ $text-form-color: #4f4f4f;
 $text-buttonnext-color: #fbfbfb;
 $text-buttonskip-color: #800080;
 $final-form-color: #121212;
+$title-card-pet-color: #800080;
+$age-pet-card-pet-color: #333333;
+$genrer-pet-card-pet-color: #9B3A9B;
+$location-pet-card-pet-color: #333333;
 
 @mixin config-button {
 	color: $text-buttonnext-color;
@@ -95,3 +99,36 @@ $final-form-color: #121212;
 	font-weight: bold;
 	text-align: center;
 }
+
+.title-pet{
+    color: $title-card-pet-color;
+    font-family: Nunito;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+.age-pet{
+    color: $age-pet-card-pet-color;
+    font-family: Jost;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.gender-pet{
+    color: $genrer-pet-card-pet-color;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 8px;
+    letter-spacing: 0.02em;
+}
+
+.location-pet{
+    color: $location-pet-card-pet-color;
+    font-family: Jost;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+}
+
