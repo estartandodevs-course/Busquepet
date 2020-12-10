@@ -9,7 +9,7 @@ import DonorRegister from '../../pages/cadastro-do-doador/cadastro-tipo-de-pesso
 import RegisterPet1 from "../../pages/cadastro-do-pet/cadastro-do-pet-info1";
 import RegisterPet2 from '../../pages/cadastro-do-pet/cadastro-do-pet-info2'
 import ContactDetails from '../../pages/cadastro-do-doador/cadastro-dados-contato'
-import ProfilePet from '../../pages/perfil-pet'
+import ProfilePet from '../../pages/perfil-pet/detalhe-perfil-pet'
 import Login from '../../pages/login'
 
 export default function Routes(){
