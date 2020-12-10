@@ -1,0 +1,17 @@
+#container-load {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	.image-load {
+		width: 260px;
+		height: 200px;
+		animation: gira 2s ease-in-out infinite;
+	}
+}
+
+@keyframes gira {
+	to {
+		transform: rotate(360deg);
+	}
+}
