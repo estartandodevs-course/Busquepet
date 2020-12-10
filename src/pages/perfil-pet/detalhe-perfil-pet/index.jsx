@@ -5,6 +5,7 @@ import imageArrow from "../../../assets/images/arrowPurple.svg";
 import purpleHeart from "../../../assets/images/purpleHeart.svg";
 import HeaderAdoption from "../../../components/HeaderAdoption";
 import dogImage from '../../../assets/images/Melzinha.png'
+import Feed from '../../../pages/feed'
 export default function PetDetail() {
 //   const { dogImage, description } = props;
 
@@ -59,7 +60,8 @@ export default function PetDetail() {
 
           <div className="localizacao">
             <span>
-              <a href="#">Ver mais...</a>
+         {/* Adicionando o feed na anchor pra não dar erro no deploy, mas depois será mudado */}
+              <a href={Feed}>Ver mais...</a>
             </span>
           </div>
 
