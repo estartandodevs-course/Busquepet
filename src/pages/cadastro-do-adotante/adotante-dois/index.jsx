@@ -1,23 +1,26 @@
 import { useState } from "react";
+// import { useHistory } from "react-router-dom";
 import InputField from "../../../components/InputField";
 import Text from "../../../components/Text";
 import Button from "../../../components/Button/index.jsx";
-import Icon from "../../../assets/images/SetaProx.svg";
+// import Icon from "../../../assets/images/SetaProx.svg";
+import { Select } from "../../../components/Select";
+import Check from "../../../assets/images/Check.svg";
 import "./styles.scss";
 import React from "react";
 import Seta from "../../../assets/images/seta.svg";
 import { useHistory } from "react-router-dom";
 
-export default function RegisterAdopter1() {
+export default function RegisterAdopter2() {
   const [value, setValue] = useState("");
   const history = useHistory();
 
   function goBack() {
-    history.push("/login");
+    history.push("/cadastro-do-adotante1");
   }
 
   function handleClick() {
-    history.push("/cadastro-do-adotante2");
+    history.push("/");
   }
 
   return (
@@ -30,53 +33,50 @@ export default function RegisterAdopter1() {
           <Text className="titulo" type="titleheader">
             Você quer adotar!
           </Text>
-          <Text type="subtitleheader">Vai ser bem rapidinho!</Text>
+          <Text type="subtitleheader">Só mais essa, tá?!</Text>
         </div>
       </div>
-      <Text type="titleform">Seus Dados Pessoais</Text>
-      <section className="contacte-form">
+      <Text type="titleform">Seus Dados de Localização</Text>
+
+      <div className="contact-form">
         <InputField
           idendifier="adotante"
-          placeholder="Ex.: Maria José"
+          label="Seu CEP"
           type="text"
-          label="Seu Nome Completo"
+          placeholder="0000-000"
           onChange={setValue}
+        />
+        <Select
+          identificador="labelRoxo"
+          identifier="roxo"
+          typeMap="estado"
+          label="Seu Estado"
         />
         <InputField
-          idendifier="adotante"
-          placeholder="00/00/0000"
-          type="number"
-          label="Sua Idade"
+          label="Sua Cidade"
+          type="text"
           onChange={setValue}
+          idendifier="adotante"
         />
         <InputField
-          idendifier="adotante"
-          placeholder="exemplo@email.com"
-          type="email"
-          label="Seu E-mail"
+          label="Seu Endereço"
+          type="text"
           onChange={setValue}
+          idendifier="adotante"
         />
         <InputField
-          idendifier="adotante"
-          placeholder="****"
-          type="password"
-          label="Crie uma senha"
+          label="Seu Bairro"
+          type="text"
           onChange={setValue}
-        />
-        <InputField
           idendifier="adotante"
-          placeholder="****"
-          type="password"
-          label="Confirme sua senha"
-          onChange={setValue}
         />
-      </section>
+      </div>
       <div className="button-skip">
         <Button
           disabled={!value}
-          name="Próximo"
           identifier="purple"
-          icon={Icon}
+          name="Cadastrar"
+          icon={Check}
           onClick={handleClick}
         />
       </div>

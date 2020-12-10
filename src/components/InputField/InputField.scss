@@ -1,38 +1,81 @@
-.input-field {
-	.label {
-		font-family: Jost;
-		color: #008080;
-		font-weight: 500;
-		letter-spacing: 0.02em;
-		font-size: 12px;
-		margin-left: 10px;
-    
-		.asterisk {
-			color: #cb6fcb;
-			display: inline;
-			float: right;
-		}
-	}
-	.input {
-		font-family: Jost;
-		border: 1px solid #008080;
-		border-radius: 10px;
-		margin-bottom: 20px;
-		margin-top: 8px;
-		padding-left: 10px;
-		display: block;
-		height: 48px;
-		width: 300px;
+@mixin config-input-general {
+  font-family: Jost;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 12px;
+  margin-left: 10px;
+}
 
-		&::placeholder {
-			color: #e0e0e0;
-			letter-spacing: 0.02em;
-			font-size: 14px;
-		}
+@mixin config-input-unick {
+  font-family: Jost;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  padding-left: 10px;
+  display: block;
+  height: 48px;
+  width: 300px;
+}
 
-		&:focus {
-			outline: none;
-			border: 1px solid #cb6fcb;
-		}
-	}
+.doador {
+  .label {
+    @include config-input-general();
+    color: #008080;
+
+    .asterisk {
+      color: #cb6fcb;
+      display: inline;
+      float: right;
+    }
+  }
+  .input-field {
+    .label {
+      font-family: Jost;
+      color: #008080;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      font-size: 12px;
+      margin-left: 10px;
+
+      .asterisk {
+        color: #cb6fcb;
+        display: inline;
+        float: right;
+      }
+    }
+  }
+}
+.adotante {
+  .label {
+    @include config-input-general();
+    color: #800080;
+
+    .asterisk {
+      color: #008080;
+      display: inline;
+      float: right;
+    }
+  }
+  .input {
+    font-family: Jost;
+    border: 1px solid #800080;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding-left: 10px;
+    display: block;
+    height: 48px;
+    width: 300px;
+
+    &::placeholder {
+      color: #e0e0e0;
+      letter-spacing: 0.02em;
+      font-size: 14px;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid #cb6fcb;
+    }
+  }
 }
