@@ -1,5 +1,5 @@
 import "./Style.scss";
-import TextDescription from "../../../components/text-description/index";
+import TextDescription from "../../../components/TextDescription";
 import Button from "../../../components/Button/index";
 import imageArrow from "../../../assets/images/arrowPurple.svg";
 import purpleHeart from "../../../assets/images/purpleHeart.svg";
