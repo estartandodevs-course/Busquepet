@@ -1,10 +1,10 @@
 import './InputField.scss';
 
 export function InputField(props) {
-	const { placeholder, label, type, onChange, value } = props;
+	const { placeholder, label, type, onChange, value, idendifier } = props;
 
 	return (
-		<div className="input-field">
+		<div className={idendifier}>
 			<label className="label">
 				{label} <span className="asterisk">*</span>
 			</label>

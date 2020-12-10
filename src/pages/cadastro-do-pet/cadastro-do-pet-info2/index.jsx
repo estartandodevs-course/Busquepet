@@ -18,6 +18,7 @@ export default function RegisterPet2() {
           placeholder="Nome do Bichinho"
           type="text"
           label="Qual o nome do bichinho?"
+          idendifier="doador"
         />
         <span className="subtitle-info">
           Se não tiver nome, pode criar uma para ao cadastro
@@ -55,7 +56,7 @@ export default function RegisterPet2() {
       </div>
 
       <div className="form-button-skip">
-          <Button name="Próximo" identifier="green" icon={Icon} />
+        <Button name="Próximo" identifier="green" icon={Icon} />
       </div>
     </>
   );
