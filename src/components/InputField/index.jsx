@@ -1,10 +1,10 @@
 import './InputField.scss';
 
 export function InputField(props) {
-	const { placeholder, label, type, onChange } = props;
+	const { placeholder, label, type, onChange, value, idendifier } = props;
 
 	return (
-		<div className="input-field">
+		<div className={idendifier}>
 			<label className="label">
 				{label} <span className="asterisk">*</span>
 			</label>
@@ -12,9 +12,11 @@ export function InputField(props) {
 				className="input"
 				type={type}
 				placeholder={placeholder}
+				value={value}
 				onChange={event => onChange(event.target.value)}
-				required
 			/>
 		</div>
 	);
 }
+
+export default InputField;
