@@ -13,8 +13,8 @@ export default function CardComponent(props) {
 					<img src={img} alt="#" />
 				</div>
 				<div className="content-card">
-					<Text type="labelform">Melzinha</Text>
-					<Text type="labelform">1 - 3 meses</Text>
+					<Text type="titlecardpet">Melzinha</Text>
+					<Text type="agecardpet">1 - 3 meses</Text>
 					<img src={cao} alt="#" />
 				</div>
 				<div className="container-genre">

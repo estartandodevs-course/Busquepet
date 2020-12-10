@@ -1,6 +1,7 @@
-import './app.scss';
+import React from 'react';
 import CardComponent from './components/CardComponent';
 // import Routes from './components/Routes';
+import './app.scss';
 
 function App() {
 	return (
