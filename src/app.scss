@@ -1,0 +1,14 @@
+html, body, .App, #root{
+    height: 100vh;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+}
+
+// @media (max-height: 830px) {
+//     .App{
+//         height: 110%;
+//     }
+// }

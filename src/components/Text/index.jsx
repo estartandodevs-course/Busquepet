@@ -1,5 +1,4 @@
 import './text.scss';
-
 // Cadastro
 
 function TitleHeader (props) {
@@ -73,7 +72,6 @@ function LocationPet (props) {
 
 
 
-
 function Text(props) {
     const { type, children } = props;
 
@@ -95,12 +93,8 @@ function Text(props) {
         locationcardpet: <LocationPet>{children}</LocationPet>,
 
     }
-
-    console.log(type)
     return types[type]
 }
-
-
-
+    
 export default Text;
 
