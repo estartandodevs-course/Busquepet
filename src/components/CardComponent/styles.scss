@@ -4,19 +4,19 @@
 	height: 136px;
 	border-radius: 15px;
 	border: 1px solid #c0c0c0;
+	margin: 24px 8px;
 	.content-card {
 		height: 80%;
 		margin-left: 10px;
-	}
-	.container-img img {
-		width: 180px;
-		height: 137px;
+		.age-pet {
+			display: inline;
+		}
 	}
 	.container-genre {
 		height: 75%;
 		width: 95px;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 		align-items: flex-end;
 	}
 	.content-image {
@@ -25,6 +25,6 @@
 
 	.container-location {
 		position: absolute;
-		transform: translate(190px, 110px);
+		transform: translate(199px, 110px);
 	}
 }
