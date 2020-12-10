@@ -1,17 +1,17 @@
-import Header from '../../../components/Header/index';
-import Text from '../../../components/Text/index';
-import { InputField } from '../../../components/InputField';
-import { Select } from '../../../components/Select';
-import Button from '../../../components/Button';
-import Check from '../../../assets/images/Check.svg';
-import './Style.scss';
-import { useState } from 'react';
+import Header from "../../../components/Header/index";
+import Text from "../../../components/Text/index";
+import { InputField } from "../../../components/InputField";
+import { Select } from "../../../components/Select";
+import Button from "../../../components/Button";
+import Check from "../../../assets/images/Check.svg";
+import "./Style.scss";
+import { useState } from "react";
 export default function LocationData() {
-	const [value, setValue] = useState('');
-	return (
-		<>
-			<Header title="Você quer doar!" subTitle="Esse é o último!!!!!" />
-			<Text type="titleform">Seus Dados de Localização</Text>
+  const [value, setValue] = useState("");
+  return (
+    <>
+      <Header title="Você quer doar!" subTitle="Esse é o último!!!!!" />
+      <Text type="titleform">Seus Dados de Localização</Text>
 
       <div className="contact-form">
         <InputField
@@ -21,12 +21,14 @@ export default function LocationData() {
           placeholder="0000-000"
           onChange={setValue}
         />
+
         <Select
           identifier="verde"
           identificador="labelVerde"
           typeMap="estado"
           label="Seu Estado"
         />
+
         <InputField
           label="Sua Cidade"
           type="text"
