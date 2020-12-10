@@ -1,7 +1,9 @@
 import './styles.scss';
 import Text from '../Text';
 import img from '../../assets/images/groundimg.png';
-import seta from '../../assets/images/seta.svg';
+import seta from '../../assets/images/Fêmea.svg';
+import locationX from '../../assets/images/Local-do-Pet-List.svg';
+import cao from '../../assets/images/Dog-M.svg';
 export default function CardComponent(props) {
 	const { image, icon, location } = props;
 	return (
@@ -13,8 +15,14 @@ export default function CardComponent(props) {
 				<div className="content-card">
 					<Text type="labelform">Melzinha</Text>
 					<Text type="labelform">1 - 3 meses</Text>
-					<img src={seta} alt="#" />
+					<img src={cao} alt="#" />
 				</div>
+				<div className="container-genre">
+					<img className="content-image" src={seta} alt="#" />
+				</div>
+				<footer className="container-location">
+					<img className="x" src={locationX} alt="#" />
+				</footer>
 			</section>
 		</>
 	);

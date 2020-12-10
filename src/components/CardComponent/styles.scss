@@ -3,10 +3,28 @@
 	width: 360px;
 	height: 136px;
 	border-radius: 15px;
-	border: 1px solid;
-	background-color: rgb(179, 66, 66);
+	border: 1px solid #c0c0c0;
+	.content-card {
+		height: 80%;
+		margin-left: 10px;
+	}
 	.container-img img {
 		width: 180px;
 		height: 137px;
+	}
+	.container-genre {
+		height: 75%;
+		width: 95px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	.content-image {
+		height: 38px;
+	}
+
+	.container-location {
+		position: absolute;
+		transform: translate(190px, 110px);
 	}
 }
