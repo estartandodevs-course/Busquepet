@@ -6,7 +6,7 @@ export default function Button (props) {
     const {identifier, icon, name, onClick, disabled} = props;
     return(
         <div>
-            <button className={identifier} onClick={onClick} disabled={disabled} >
+            <button className={identifier} onClick={onClick}  >
                 <div className="button-Dad">
                         <Text type="textbutton">{name}</Text>
                     <img className="Icons" src={icon} alt="Icon"/>

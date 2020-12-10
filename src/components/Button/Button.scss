@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
-
 %buttonStyle{
     width: 140px;
     height: 40px;
@@ -48,10 +47,14 @@
 .white{
     @extend %buttonStyle;
 
+    .text-button{
+        color: #800080 ;
+    }
+
     &:enabled{
         background:#FBFBFB;
         border: 1.5px solid #800080;
-        color: #800080;
+        
 
         img{
             display: none;
@@ -98,4 +101,25 @@
             }
         }
     }
+
+    
+}
+
+.whiteGreen{
+    @extend %buttonStyle;
+    .text-button{
+        color: #008080 ;
+    }
+    &:enabled{
+        background:#FBFBFB;
+        border: 1.5px solid #00CCCC;
+
+    img{
+        display: none;
+    }
+
+    &:hover{
+        //Ver se tem no figma
+    }
+}
 }
