@@ -14,13 +14,12 @@ main{
     img{
         max-width: 359px;
         height: 272px;
-        padding: 8px 2%;
-        margin: 0 auto;
+        margin: 8px 8px 0 8px;
     }
 
     .dogData{
         max-width: 375px;
-        margin: 0px auto;
+        margin-top: 24px;
         display: flex;
         flex-wrap: wrap;
     
@@ -37,6 +36,12 @@ main{
                 align-self: center;
             }
         }
+
+        .localizacao{
+            flex: 1 1 100px;
+            margin: 30px 10px 0px 20px;
+        }
+
     }
     
     a{
@@ -86,7 +91,6 @@ main{
     }
 
     #position{
-        
         position: sticky;
         bottom: 0;
         background: -moz-linear-gradient(top, transparent 0%, transparent 100%);

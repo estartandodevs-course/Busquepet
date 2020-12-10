@@ -1,125 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
-%buttonStyle{
-    width: 140px;
-    height: 40px;
-    border: 0;
-    border-radius: 10px;
-    color: #FBFBFB;
-    font-family: 'Jost', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 23px;
-    cursor: pointer;
-    box-shadow: -1px 6px 10px rgba(0, 0, 0, 0.15);
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
+%buttonStyle {
+  width: 140px;
+  height: 40px;
+  border: 0;
+  border-radius: 10px;
+  color: #fbfbfb;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  cursor: pointer;
+  box-shadow: -1px 6px 10px rgba(0, 0, 0, 0.15);
 
-    &:disabled{
-        background: #808080;
+  &:disabled {
+    background: #808080;
 
-        &:hover{
-            background: #808080;
-        }
+    &:hover {
+      background: #808080;
     }
+  }
 
-    &:focus{
-        outline: none;
-    } 
+  &:focus {
+    outline: none;
+  }
 
-    .button-Dad{
-        display: flex;
-        align-items: center;
-        justify-content: space-around; 
-    }
+  .button-Dad {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
-.green{
-    @extend %buttonStyle;
+.green {
+  @extend %buttonStyle;
 
-    &:enabled{
-        background:#008080;
+  &:enabled {
+    background: #008080;
 
-        &:hover{
-            background:#00CCCC; 
-        }
+    &:hover {
+      background: #00cccc;
     }
+  }
 }
 
-.white{
-    @extend %buttonStyle;
+.white {
+  @extend %buttonStyle;
 
-    .text-button{
-        color: #800080 ;
+  .text-button {
+    color: #800080;
+  }
+
+  &:enabled {
+    background: #fbfbfb;
+    border: 1.5px solid #800080;
+
+    img {
+      display: none;
     }
 
-    &:enabled{
-        background:#FBFBFB;
-        border: 1.5px solid #800080;
-        
-
-        img{
-            display: none;
-        }
-
-        &:hover{
-            border: 1.5px solid #CB6FCB;
-            background:#FBFBFB; 
-            color: #9B3A9B;
-        }
+    &:hover {
+      border: 1.5px solid #cb6fcb;
+      background: #fbfbfb;
+      color: #9b3a9b;
     }
+  }
 }
 
-.purple{
-    @extend %buttonStyle;
+.purple {
+  @extend %buttonStyle;
 
-    &:enabled{
-        background: #800080;    
+  &:enabled {
+    background: #800080;
 
-        &:hover{
-            background: #CB6FCB;
-        }
+    &:hover {
+      background: #cb6fcb;
     }
+  }
 }
 
-.gradient{
-    @extend %buttonStyle;
+.gradient {
+  @extend %buttonStyle;
 
-    &:enabled{
-        background: linear-gradient(90deg, #800080 0%, #008080 98.75%);
-        border-radius: 20px;
-        color: white;
-        
+  &:enabled {
+    background: linear-gradient(90deg, #800080 0%, #008080 98.75%);
+    border-radius: 20px;
+    color: white;
 
-        img{
-            display: none;
-        }
-
-        &:hover{
-            background: #EFBCEF;
-
-            .text-button{
-                color: #800080;
-            }
-        }
+    img {
+      display: none;
     }
 
-    
+    &:hover {
+      background: #efbcef;
+
+      .text-button {
+        color: #800080;
+      }
+    }
+  }
 }
 
-.whiteGreen{
-    @extend %buttonStyle;
-    .text-button{
-        color: #008080 ;
-    }
-    &:enabled{
-        background:#FBFBFB;
-        border: 1.5px solid #00CCCC;
+.whiteGreen {
+  @extend %buttonStyle;
+  .text-button {
+    color: #008080;
+  }
+  &:enabled {
+    background: #fbfbfb;
+    border: 1.5px solid #00cccc;
 
-    img{
-        display: none;
+    img {
+      display: none;
     }
-
-    &:hover{
-        //Ver se tem no figma
-    }
-}
+  }
 }
