@@ -21,7 +21,14 @@ export default function LocationData() {
           placeholder="0000-000"
           onChange={setValue}
         />
-        <Select typeMap="estado" label="Seu Estado" />
+
+        <Select
+          identifier="verde"
+          identificador="labelVerde"
+          typeMap="estado"
+          label="Seu Estado"
+        />
+
         <InputField
           label="Sua Cidade"
           type="text"

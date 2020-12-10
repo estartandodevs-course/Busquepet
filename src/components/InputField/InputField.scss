@@ -28,6 +28,7 @@
       float: right;
     }
   }
+
   .input {
     @include config-input-unick();
     border: 1px solid #008080;
@@ -45,6 +46,7 @@
   }
 }
 
+
 .adotante {
   .label {
     @include config-input-general();
@@ -57,8 +59,11 @@
     }
   }
   .input {
+
+
     @include config-input-unick();
     border: 1px solid #800080;
+
 
     &::placeholder {
       color: #e0e0e0;
