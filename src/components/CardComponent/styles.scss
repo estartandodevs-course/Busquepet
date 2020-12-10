@@ -1,0 +1,30 @@
+.container-card {
+	display: flex;
+	width: 360px;
+	height: 136px;
+	border-radius: 15px;
+	border: 1px solid #c0c0c0;
+	margin: 24px 8px;
+	.content-card {
+		height: 80%;
+		margin-left: 10px;
+		.age-pet {
+			display: inline;
+		}
+	}
+	.container-genre {
+		height: 75%;
+		width: 95px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	.content-image {
+		height: 38px;
+	}
+
+	.container-location {
+		position: absolute;
+		transform: translate(199px, 110px);
+	}
+}
