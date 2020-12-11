@@ -8,6 +8,9 @@
 	.content-card {
 		height: 80%;
 		margin-left: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		.age-pet {
 			display: inline;
 		}
