@@ -91,6 +91,9 @@ function Text(props) {
         agecardpet: <AgePet>{children}</AgePet>,
         gendercardpet: <GenderPet>{children}</GenderPet>,
         locationcardpet: <LocationPet>{children}</LocationPet>,
+        profilename: <LocationPet>{children}</LocationPet>,
+        profilebutton: <LocationPet>{children}</LocationPet>,
+        registerpet: <LocationPet>{children}</LocationPet>
 
     }
     return types[type]
