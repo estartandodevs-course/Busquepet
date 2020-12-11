@@ -1,7 +1,6 @@
 import "./style.scss";
 import HeaderAdoption from "../../components/HeaderAdoption";
 import imageArrow from "../../assets/images/arrowPurple.svg";
-import purpleHeart from "../../assets/images/purpleHeart.svg";
 import whatsApp from "../../assets/images/Whatsapp.svg";
 
 export default function ContatoDoador() {
@@ -10,7 +9,6 @@ export default function ContatoDoador() {
       <HeaderAdoption
         imageOne={imageArrow}
         titleName="Doador"
-        imageTwo={purpleHeart}
         identification="headerDonor"
       />
       <div className="container">
@@ -24,16 +22,16 @@ export default function ContatoDoador() {
         </p>
 
         <p className="steps">
-          <strong>Passo 01</strong>: Entre em contato com o Doador;
+          <span>Passo 01</span>: Entre em contato com o Doador;
         </p>
 
         <p className="steps">
-          <strong>Passo 02</strong>: Ao conversar com o doador, podem decidir o
+          <span>Passo 02</span>: Ao conversar com o doador, podem decidir o
           melhor local para se encontrarem;
         </p>
 
         <p className="steps">
-          <strong>Passo 03</strong>: Levar o seu mais novo amigo de 4 patas para
+          <span>Passo 03</span>: Levar o seu mais novo amigo de 4 patas para
           sua casa e dar muito amor para ele!
         </p>
 
