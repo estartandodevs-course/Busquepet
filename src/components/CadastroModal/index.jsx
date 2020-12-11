@@ -1,6 +1,7 @@
 import React from "react";
 import "./CadastroModal.scss";
 import ErrorModal from "../../assets/images/ErrorModal.svg";
+import Button from '../../components/Button/index'
 // import { useHistory } from "react-router-dom";
 
 const CadastroModal = (props) => {
@@ -24,6 +25,8 @@ const CadastroModal = (props) => {
         </p>
 
         <span>Vem, vai ser bem rapidinho! 😸😻</span>
+
+        <Button identifier="whiteOrange" name="Entendi!"></Button>
       </div>
     </div>
   );

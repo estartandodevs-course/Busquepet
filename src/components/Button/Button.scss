@@ -76,3 +76,18 @@
         }
     }
 }
+
+.whiteOrange {
+    @extend %buttonStyle;
+    .text-button {
+      color: #F45151;
+    }
+    &:enabled {
+      background: #fbfbfb;
+      border: 1.5px solid #F45151;
+  
+      img {
+        display: none;
+      }
+    }
+  }
