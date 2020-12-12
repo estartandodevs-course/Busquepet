@@ -7,8 +7,7 @@ import DetailUrl from './pages/cadastro-do-pet/cadastro-upload-foto';
 function App() {
 	return (
 		<div className="App">
-			<DetailUrl></DetailUrl>
-			{/* <Routes /> */}
+			<Routes />
 		</div>
 	);
 }
