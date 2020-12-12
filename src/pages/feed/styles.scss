@@ -7,7 +7,7 @@
 	display: flex;
 	justify-content: center;
 	height: 45px;
-	border-bottom: 1px solid rgba(161, 145, 145, 0.466);
+	border-bottom: 0.5px solid gray;
 	.content-filter {
 		display: flex;
 		align-items: center;
@@ -20,5 +20,13 @@
 		.content-header-feed {
 			width: 80% !important;
 		}
+	}
+}
+@media (max-width: 320px) {
+	.container-header {
+		width: 106% !important;
+	}
+	.container-filter {
+		width: 106% !important;
 	}
 }
