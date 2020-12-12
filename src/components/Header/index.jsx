@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import Seta from '../../assets/images/seta.svg';
 import Text from '../Text/';
 import './Header.scss';
