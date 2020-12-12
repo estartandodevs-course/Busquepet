@@ -23,9 +23,9 @@ export default function Feed() {
 			</div>
 			<section className="container-main">
 				<CardComponent image={afonso} name="Afosinho" age="1 - 3 meses" />
-				<CardComponent image={stark} name="Stark" age=" 1 - 3 meses" />
+				<CardComponent image={stark} name="Stark" age="1 - 3 meses" />
 				<CardComponent image={mel} name="Mel" age="1 ano" />
-				<CardComponent image={timao} name="Timão" age=" 1 - 2 meses" />
+				<CardComponent image={timao} name="Timão" age="1 - 2 meses" />
 				<CardComponent image={venus} name="Vênus" age=" 2 anos" />
 			</section>
 		</>

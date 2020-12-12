@@ -1,6 +1,5 @@
 import './styles.scss';
 import Text from '../Text';
-// import imageCao from '../../assets/images/Foto-do-Pet.svg';
 import gener from '../../assets/images/Fêmea.svg';
 import locationX from '../../assets/images/Local-do-Pet-List.svg';
 import petSize from '../../assets/images/Dog-M.svg';
