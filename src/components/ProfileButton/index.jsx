@@ -11,6 +11,9 @@ export default function ProfileButton() {
           <Text type="profilebutton">Seu Pet</Text>
         </a>
       </div>
+      <div className="borda">
+        <div className="line"></div>
+      </div>
     </>
   );
 }

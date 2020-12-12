@@ -6,13 +6,17 @@
 
     .photo-profile{
         margin-top: 14px;
+
+        .float-button{
+            transform: translate(-17px,0px);
+            cursor: pointer;
+        }
     }
 
     .location-pet{
         font-size: 18px;
         margin: 7.67px 0 0 0;
         font-weight: 500;
-
     }
 
     

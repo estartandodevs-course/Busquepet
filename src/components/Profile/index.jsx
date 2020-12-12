@@ -10,6 +10,7 @@ export default function Profile() {
         <div className="photo-profile">
           <img src={ProfileDefault} alt="profile-default" />
           {/* Lembrar que isso vai ser um botão */}
+          <img src={EditProfile} alt="Edit Profile" className="float-button"/>
         </div>
         <Text type="profilename">Olá, Henrique Soares</Text>
       </div>

@@ -2,12 +2,25 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 2px solid #e0e0e0;
   list-style: none;
   margin-top: 35px;
 
   a {
     text-decoration: none;
+  }
+}
+
+.borda{
+  margin: 0 auto;
+  width: 98%;
+  min-width: 359px;
+  border-bottom: 2px solid #e0e0e0;
+
+  .line{
+    transform: translate(0px,2px);
+    width: 50%;
+    margin:0 0 0 auto;
+    border: 1px solid #00CCCC;
   }
 }
 
