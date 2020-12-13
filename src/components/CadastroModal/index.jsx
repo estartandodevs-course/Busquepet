@@ -2,6 +2,7 @@ import React from "react";
 import "./CadastroModal.scss";
 import ErrorModal from "../../assets/images/ErrorModal.svg";
 import Button from '../../components/Button/index'
+import closeButton from '../../assets/images/close-button.svg'
 // import { useHistory } from "react-router-dom";
 
 const CadastroModal = (props) => {
@@ -12,7 +13,7 @@ const CadastroModal = (props) => {
     <div className="modal-container">
       <div className="modal">
         <div className="close-button-modal" onClick={close}>
-          <span className="close-button">X</span>
+          <img src={closeButton} alt="" className="close-button"/>
         </div>
 
         <img src={ErrorModal} alt=""></img>
@@ -26,7 +27,7 @@ const CadastroModal = (props) => {
 
         <span>Vem, vai ser bem rapidinho! 😸😻</span>
 
-        <Button identifier="whiteOrange" name="Entendi!"></Button>
+        <Button identifier="whiteOrange" name="Fazer o Cadastro" />
       </div>
     </div>
   );

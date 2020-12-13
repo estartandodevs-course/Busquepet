@@ -38,13 +38,18 @@
 
       .close-button {
         color: #4f4f4f;
-        font-weight: 900;
         text-align: center;
       }
     }
 
     span {
       font-weight: 500;
+    }
+
+    .buttonStyle {
+      height: 40px;
+      width: 150px;
+      border-radius: 10px;
     }
   }
 
@@ -61,9 +66,10 @@
     color: black;
     line-height: 21px;
     text-align: center;
+    font-family: Poppins;
   }
 
-  button{
+  button {
     margin-top: 28px;
     margin-bottom: 21px;
   }

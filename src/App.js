@@ -1,5 +1,6 @@
 import './app.scss';
-import Routes from './components/Routes';
+import CadastroModal from './components/CadastroModal';
+// import Routes from './components/Routes';
 
 function App() {
 	return (
