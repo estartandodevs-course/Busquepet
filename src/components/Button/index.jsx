@@ -9,7 +9,7 @@ export default function Button(props) {
       <button className={identifier} onClick={onClick} disabled={disabled}>
         <div className="button-Dad">
           <Text type="textbutton">{name}</Text>
-          <img className="Icons" src={icon} alt="Icon" />
+          <img className="Icons" src={icon} />
         </div>
       </button>
     </div>
