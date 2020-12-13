@@ -1,3 +1,7 @@
+.container-header {
+	display: flex;
+	justify-content: center;
+}
 .container-main {
 	display: flex;
 	flex-direction: column;
@@ -13,12 +17,12 @@
 		align-items: center;
 	}
 }
-@media (max-width: 920px) {
+@media (max-width: 620px) {
 	.container-header {
 		display: flex !important;
 		justify-content: space-between !important;
 		.content-header-feed {
-			width: 80% !important;
+			width: 93% !important;
 		}
 	}
 }

@@ -10,6 +10,8 @@ export default function HeaderFeed(props) {
 					<Text className="titulo" type="titleheader">
 						{title}
 					</Text>
+				</div>
+				<div className="container-icon">
 					<img className="image-icon" src={image} alt="#" />
 				</div>
 			</header>
