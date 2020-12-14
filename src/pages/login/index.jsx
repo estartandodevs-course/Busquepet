@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "../../components/Button";
 import Text from "../../components/Text";
-import Logo from "../../assets/images/Group-107.svg";
+import Logo from "../../assets/images/logo.svg";
 import InputField from "../../components/InputField";
 import Icon from "../../assets/images/SetaProx.svg";
 import "./styles.scss";
