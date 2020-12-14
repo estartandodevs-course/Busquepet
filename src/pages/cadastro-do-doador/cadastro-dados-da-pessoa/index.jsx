@@ -32,12 +32,14 @@ export default function DonorRegister() {
         <Text type="titleform">Seus Dados Pessoais</Text>
 
         <InputField
+          idendifier="doador"
           label="Seu Nome Completo"
           placeholder="Ex.: Maria José"
           // onChange={setInput}
         ></InputField>
 
         <InputField
+          idendifier="doador"
           label="Sua idade"
           placeholder="00/00/0000"
           id="date"

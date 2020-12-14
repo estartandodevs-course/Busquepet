@@ -1,10 +1,11 @@
-import './InputField.scss';
+import "./InputField.scss";
 
 export function InputField(props) {
-	const { placeholder, label, type, onChange, value } = props;
+
+	const { placeholder, label, type, onChange, value, idendifier } = props;
 
 	return (
-		<div className="input-field">
+		<div className={idendifier}>
 			<label className="label">
 				{label} <span className="asterisk">*</span>
 			</label>
@@ -17,6 +18,7 @@ export function InputField(props) {
 			/>
 		</div>
 	);
+
 }
 
 export default InputField;
