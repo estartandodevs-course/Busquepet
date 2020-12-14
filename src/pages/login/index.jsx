@@ -5,15 +5,27 @@ import Logo from "../../assets/images/Group-107.svg";
 import InputField from "../../components/InputField";
 import Icon from "../../assets/images/SetaProx.svg";
 import "./styles.scss";
+import { login } from "../../services/auth.service";
+import { useHistory } from "react-router-dom";
+
+
 export default function Login(props) {
+  const history = useHistory();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const { href } = props;
 
-  function handleLogin() {
-    // Implementar funcionalidade do login
-    console.log(user, password);
+
+  async function handleLogin() {
+    const responseLogin = await login(user, password);
+    
+    if (responseLogin.success === true) {
+      history.push("/")
+    } else {
+      alert("Erro com email ou senha, tente novamente!")
+    }
   }
+
   return (
     <>
       <section className="container-form">
@@ -23,24 +35,24 @@ export default function Login(props) {
 
         <InputField
           idendifier="doador"
-          label="Usuário :"
+          label="Email:"
           type="text"
-          placeholder="Digite seu usuário..!!"
+          placeholder="Digite seu email"
           value={user}
           onChange={setUser}
         />
 
         <InputField
           idendifier="doador"
-          label="Senha :"
+          label="Senha:"
           type="password"
-          placeholder="Digite sua senha.."
+          placeholder="Digite sua senha"
           value={password}
           onChange={setPassword}
         />
         <div id="content-text">
           <Text type="textform">
-            Ainda não possui conta? <br />
+            Ainda não possui conta? 
             <a className="text-link" href={href}>
               Cadastre-se
             </a>
