@@ -3,7 +3,7 @@ import CharacteristicsPet from './steps/characteristics-pet';
 import DataPet from './steps/data-pet';
 import ImagePet from './steps/image-pet';
 
-export default function RegisterDonor() {
+export default function RegisterPet() {
     const [form, setForm] = useState({});
     const [step, setStep] = useState(0);
 

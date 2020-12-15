@@ -4,7 +4,6 @@ import { InputField } from "../../../components/InputField";
 import Header from "../../../components/Header";
 import Button from "../../../components/Button";
 import Icon from "../../../assets/images/SetaProx.svg";
-// import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 export default function DonorRegister() {
@@ -14,15 +13,15 @@ export default function DonorRegister() {
     history.push("/");
   }
 
-  function goBack() {
-    history.push("/");
+  function comeBack() {
+    history.goBack();
   }
 
   return (
     <>
       <div className="header">
         <Header
-          goBack={goBack}
+          goBack={comeBack}
           title="Você quer doar!"
           subTitle="Vai ser bem rapidinho!"
         ></Header>

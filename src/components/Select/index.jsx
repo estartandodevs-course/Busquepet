@@ -2,7 +2,7 @@ import React from "react";
 import "./Select.scss";
 
 export const Select = (props) => {
-  const { identifier, identificador } = props;
+  const { identifier, identificador, onChange } = props;
   const typeMap = {
     idade: [
       { value: "", text: "" },
@@ -58,6 +58,7 @@ export const Select = (props) => {
         name="Select"
         id=""
         placeholder="Selecione um estado"
+        onChange={(event)=> onChange(event.target.value)}
       >
         {typeMap[props.typeMap].map((element, index) => {
           return (

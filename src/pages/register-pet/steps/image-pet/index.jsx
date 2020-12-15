@@ -1,12 +1,12 @@
 import './Style.scss';
-import Header from '../../../components/Header/index';
-import Text from '../../../components/Text/index'
-import InputField from '../../../components/InputField/index';
-import Button from '../../../components/Button/index'
-import Check from '../../../assets/images/Check.svg'
-import Pontos from '../../../assets/images/pontos.svg'
+import Header from '../../../../components/Header/index';
+import Text from '../../../../components/Text/index'
+import InputField from '../../../../components/InputField/index';
+import Button from '../../../../components/Button/index'
+import Check from '../../../../assets/images/Check.svg'
+import Pontos from '../../../../assets/images/pontos.svg'
 
-export default function DetailUrl(props){
+export default function ImagePet(props){
     return (
         <>
             <Header title="Vamos ajudar o bichinho a encontrar um lar de amor?!"></Header>
