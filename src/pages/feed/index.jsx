@@ -4,6 +4,8 @@ import { petsMock } from "../../_mock/feed";
 import iconPerfil from "../../assets/images/accountCircle.svg";
 import CardComponent from "../../components/CardComponent";
 // import filterPet from '../../assets/images/Filter-Pet.png';
+import iconCao from "../../assets/images/iconcao.svg";
+import iconGato from "../../assets/images/icongato.svg";
 import HeaderFeed from "../../components/HeaderFeed";
 import "./styles.scss";
 
@@ -13,11 +15,13 @@ export default function Feed() {
   function ClickIcon() {
     history.push("/login");
   }
-  
+
   function filterPetByType(type) {
-	  const petsFiltered = petsMock.filter(pet => pet.type === type)
-	  setPets(petsFiltered)
+    const petsFiltered = petsMock.filter((pet) => pet.type === type);
+    setPets(petsFiltered);
   }
+
+  
 
   return (
     <>
@@ -26,16 +30,16 @@ export default function Feed() {
       </header>
       <div className="container-filter">
         <div className="content-filter">
-          {/* <img src={filterPet}
-                        alt="Filtro do pet"/> */}
-          <button onClick={() => filterPetByType("cao")}>Cão</button>
-          <button onClick={() => filterPetByType("gato")}>Gato</button>
+          <button className="cao" onClick={() => filterPetByType("cao")}>
+          </button>
+          <button className="gato" onClick={() => filterPetByType("gato")}>
+          </button>
         </div>
       </div>
       <section className="container-main">
-        {pets.map(({image, name, age, type, id}) => (
+        {pets.map(({ image, name, age, type, id }) => (
           <CardComponent
-			key={id}
+            key={id}
             image={image}
             name={name}
             age={age}
