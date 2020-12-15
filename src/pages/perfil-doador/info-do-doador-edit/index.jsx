@@ -3,20 +3,19 @@ import Profile from "../../../components/Profile";
 import ProfileButton from "../../../components/ProfileButton";
 import imageArrow from "../../../assets/images/arrowPurple.svg";
 import TextDescription from "../../../components/TextDescription";
-import Button from "../../../components/Button";
-import editIcon from "../../../assets/images/edit-icon.svg"
 import "./styles.scss";
+import Button from "../../../components/Button";
 
-export default function InfoProfile() {
+export default function InfoProfileEdit() {
   return (
     <>
-      <header>
-        <HeaderAdoption
-          imageOne={imageArrow}
-          titleName="Perfil"
-          identification="headerWhite"
-        />
-      </header>
+    <header>
+      <HeaderAdoption
+        imageOne={imageArrow}
+        titleName="Perfil"
+        identification="headerWhite"
+      />
+    </header>
       <Profile />
       <ProfileButton />
 
@@ -36,7 +35,7 @@ export default function InfoProfile() {
         <TextDescription title="Endereço" description="Rua dos Pet Fofinhos" />
         <TextDescription title="Bairro" description="Dog Cat" />
         <div className="button-container">
-          <Button identifier="addpet" icon={editIcon} />
+          <Button identifier="whiteOrange" name="Salvar alterações" />
         </div>
       </div>
     </>
