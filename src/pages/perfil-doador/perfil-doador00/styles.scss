@@ -1,0 +1,39 @@
+h1{
+  padding-right: 31px !important;
+}
+
+body{
+  @media (max-width:320px){
+    width: 116% !important;
+  }
+}
+
+.container-pet{
+  height: 88px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 95px;
+}
+
+.register-pet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 30px 0 30px;
+  //padding: 90px 30px 0;
+
+  .location-pet {
+    color: #828282;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.plus-button {
+  display: flex;
+  justify-content: center;
+}
