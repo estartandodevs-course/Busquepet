@@ -1,4 +1,5 @@
 import React from 'react';
+// import { useHistory } from 'react-router-dom';
 import Seta from '../../assets/images/seta.svg';
 import Text from '../Text/';
 import './Header.scss';
@@ -8,7 +9,7 @@ export default function Header(props) {
 
 	return (
 		<header className="header">
-			<img onClick={goBack} className="arrow" src={Seta} alt="seta"></img>
+			<img onClick={goBack} className="arrow" src={Seta} alt="seta" />
 			<div className="textform">
 				<Text className="titulo" type="titleheader">
 					{title}

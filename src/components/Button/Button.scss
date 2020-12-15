@@ -12,6 +12,10 @@
   cursor: pointer;
   box-shadow: -1px 6px 10px rgba(0, 0, 0, 0.15);
 
+  img{
+    margin-right: 10px;
+  }
+
   &:disabled {
     background: #808080;
 
@@ -23,7 +27,7 @@
   &:focus {
     outline: none;
   }
-
+  
   .button-Dad {
     display: flex;
     align-items: center;
@@ -53,6 +57,7 @@
   &:enabled {
     background: #fbfbfb;
     border: 1.5px solid #800080;
+
 
     img {
       display: none;
