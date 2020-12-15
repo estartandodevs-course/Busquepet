@@ -1,7 +1,7 @@
 import './styles.scss';
 import Text from '../Text';
 export default function HeaderFeed(props) {
-	const { image, title } = props;
+	const { image, title, onClick} = props;
 
 	return (
 		<>
@@ -12,7 +12,7 @@ export default function HeaderFeed(props) {
 					</Text>
 				</div>
 				<div className="container-icon">
-					<img className="image-icon" src={image} alt="#" />
+					<img className="image-icon" onClick={onClick} src={image} alt="#" />
 				</div>
 			</header>
 		</>

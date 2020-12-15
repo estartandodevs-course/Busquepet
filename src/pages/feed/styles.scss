@@ -1,6 +1,9 @@
 .container-header {
 	display: flex;
 	justify-content: center;
+	.image-icon:hover {
+		cursor: pointer;
+	}
 }
 .container-main {
 	display: flex;

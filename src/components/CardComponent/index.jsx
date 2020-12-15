@@ -4,10 +4,10 @@ import gener from '../../assets/images/Fêmea.svg';
 import locationX from '../../assets/images/Local-do-Pet-List.svg';
 import petSize from '../../assets/images/Dog-M.svg';
 export default function CardComponent(props) {
-	const { image, name, age } = props;
+	const { image, name, age, type } = props;
 	return (
 		<>
-			<section className="container-card">
+			<section className="container-card" type={type}>
 				<div className="container-img">
 					<img src={image} alt="#" />
 				</div>
