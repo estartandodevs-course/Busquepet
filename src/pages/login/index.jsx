@@ -25,7 +25,6 @@ export default function Login(props) {
       alert("Erro com email ou senha, tente novamente!")
     }
   }
-
   return (
     <>
       <section className="container-form">

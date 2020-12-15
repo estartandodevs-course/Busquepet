@@ -27,7 +27,7 @@
   &:focus {
     outline: none;
   }
-
+  
   .button-Dad {
     display: flex;
     align-items: center;
@@ -57,6 +57,7 @@
   &:enabled {
     background: #fbfbfb;
     border: 1.5px solid #800080;
+
 
     img {
       display: none;
