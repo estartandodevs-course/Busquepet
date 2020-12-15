@@ -18,7 +18,7 @@ export default function RegisterPet() {
         <>
         {(step === 0 && <CharacteristicsPet setValue={handleChange} onSubmit={() => setStep(1)} />)}
         {(step === 1 && <DataPet setValue={handleChange} onSubmit={() => setStep(2)}/>)}
-        {(step === 2 && <ImagePet />)}
+        {(step === 2 && <ImagePet setValue={handleChange} />)}
 
 
         </>

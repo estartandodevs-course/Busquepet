@@ -6,12 +6,13 @@ import Button from '../../../../components/Button/index'
 import Check from '../../../../assets/images/Check.svg'
 import Pontos from '../../../../assets/images/pontos.svg'
 
-export default function ImagePet(props){
+export default function ImagePet({setValue}){
+
     return (
         <>
             <Header title="Vamos ajudar o bichinho a encontrar um lar de amor?!"></Header>
             <Text type="titleform">As fotos fazem toda a diferença para o bichinho conseguir um lar que vai dar amor para ele.</Text>
-            <InputField idendifier="doador" label="Insira a URL da foto do seu bichinho" type="text"></InputField>
+            <InputField idendifier="doador" label="Insira a URL da foto do seu bichinho" type="text" name="Url" onChange={(event) => setValue("Url", event)} />
 
             <div className="text-instruction">
                 <span className="title-instruction">Como fazer isso:</span><br></br>
