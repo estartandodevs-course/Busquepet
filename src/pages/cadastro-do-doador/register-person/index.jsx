@@ -17,7 +17,7 @@ export default function RegisterPerson() {
     function chooseScreen() {
         console.log(person);
         const location = {
-            pathname: person === "adotante" ? "/registro-adotante" : "/cadastro-do-doador",
+            pathname: person === "adotante" ? "/registro-adotante" : "/registro-doador",
             state: {
                 person
             }
