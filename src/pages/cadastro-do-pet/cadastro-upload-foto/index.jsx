@@ -10,7 +10,7 @@ export default function DetailUrl(props){
     return (
         <>
             <Header title="Vamos ajudar o bichinho a encontrar um lar de amor?!"></Header>
-            <Text type="titleform">As fotos fazem toda a diferença para o bichinho conseguir um lar que vai dar amor para ele.</Text>
+            <Text type="titleformblack">As fotos fazem toda a diferença para o bichinho conseguir um lar que vai dar amor para ele.</Text>
             <InputField idendifier="doador" label="Insira a URL da foto do seu bichinho" type="text"></InputField>
 
             <div className="text-instruction">
