@@ -10,7 +10,7 @@ export default function HeaderAdoption(props) {
           <img src={imageOne} alt="seta volta" />
         </div>
           <h1>{titleName}</h1>
-        <img src={imageTwo} alt="perfil"/>
+        <img src={imageTwo} alt="icon"/>
       </header>
     </>
   );
