@@ -1,5 +1,4 @@
 import './text.scss';
-// Cadastro
 
 function TitleHeader (props) {
     const text = props.children;

@@ -7,16 +7,9 @@ import HeaderAdoption from "../../../components/HeaderAdoption";
 import dogImage from '../../../assets/images/Melzinha.png'
 import Feed from '../../../pages/feed'
 export default function PetDetail() {
-//   const { dogImage, description } = props;
 
   return (
     <>
-      {/* <header>
-                <img src={imageArrow} alt="seta volta"/>
-                <h1>{titleName}</h1>
-                <img src={purpleHeart} alt="coracao"/>
-            </header> */}
-
       <HeaderAdoption
         imageOne={imageArrow}
         titleName="Melzinha"
