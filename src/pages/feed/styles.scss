@@ -18,8 +18,8 @@
   .content-filter {
     display: flex;
     align-items: center;
-    .cao,
-    .gato {
+    .buttonCao,
+    .buttonGato {
       width: 50px;
       height: 28px;
       background: #fff;
@@ -30,7 +30,7 @@
         outline: none;
       }
     }
-    .cao {
+    .buttonCao {
       border-bottom-left-radius: 8px;
       border-top-left-radius: 8px;
       background: url("../../assets/images/iconcao.svg") no-repeat center;
@@ -41,7 +41,7 @@
       }
     }
 
-    .gato {
+    .buttonGato {
       border-bottom-right-radius: 8px;
       border-top-right-radius: 8px;
       background: url("../../assets/images/icongato.svg") no-repeat center;

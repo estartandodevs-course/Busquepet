@@ -3,9 +3,6 @@ import { useHistory } from "react-router-dom";
 import { petsMock } from "../../_mock/feed";
 import iconPerfil from "../../assets/images/accountCircle.svg";
 import CardComponent from "../../components/CardComponent";
-// import filterPet from '../../assets/images/Filter-Pet.png';
-import iconCao from "../../assets/images/iconcao.svg";
-import iconGato from "../../assets/images/icongato.svg";
 import HeaderFeed from "../../components/HeaderFeed";
 import "./styles.scss";
 
@@ -30,9 +27,9 @@ export default function Feed() {
       </header>
       <div className="container-filter">
         <div className="content-filter">
-          <button className="cao" onClick={() => filterPetByType("cao")}>
+          <button className="buttonCao" onClick={() => filterPetByType("cao")}>
           </button>
-          <button className="gato" onClick={() => filterPetByType("gato")}>
+          <button className="buttonGato" onClick={() => filterPetByType("gato")}>
           </button>
         </div>
       </div>
