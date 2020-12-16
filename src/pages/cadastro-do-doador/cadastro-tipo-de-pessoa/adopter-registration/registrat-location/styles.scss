@@ -8,6 +8,11 @@
   height: 83px;
   align-items: center;
 }
+.container-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
 
 .profile {
   padding-left: 11px;
@@ -16,15 +21,16 @@
   cursor: pointer;
 }
 
-.contacte-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 35px;
-}
-
 .title-form {
   color: rgba(128, 0, 128, 1);
   margin-top: 23px;
   text-align: center;
+}
+
+.button-skip {
+  width: 90%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  
 }

@@ -1,20 +1,16 @@
 import { useState } from "react";
-import InputField from "../../../components/InputField";
-import Text from "../../../components/Text";
-import Button from "../../../components/Button/index.jsx";
-import Icon from "../../../assets/images/SetaProx.svg";
+import InputField from "../../../../../components/InputField";
+import Text from "../../../../../components/Text";
+import Button from "../../../../../components/Button/index.jsx";
+import Icon from "../../../../../assets/images/SetaProx.svg";
 import "./styles.scss";
 import React from "react";
-import Seta from "../../../assets/images/seta.svg";
+import Seta from "../../../../../assets/images/seta.svg";
 import { useHistory } from "react-router-dom";
 
-export default function RegisterAdopter1() {
+export default function RegisterAdopterData() {
   const [value, setValue] = useState("");
   const history = useHistory();
-
-  function goBack() {
-    history.push("/login");
-  }
 
   function handleClick() {
     history.push("/cadastro-do-adotante2");
@@ -24,7 +20,7 @@ export default function RegisterAdopter1() {
     <>
       <div className="cabeça">
         <div className="profile">
-          <img goBack={goBack} src={Seta} alt="perfil"></img>
+          <img src={Seta} alt="perfil"></img>
         </div>
         <div className="textcabeça">
           <Text className="titulo" type="titleheader">
