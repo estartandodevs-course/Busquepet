@@ -1,8 +1,8 @@
-import Header from "../../../components/Header/index";
-import Text from "../../../components/Text/index";
-import { InputField } from "../../../components/InputField";
-import { Select } from "../../../components/Select";
-import Button from "../../../components/Button";
+import Header from "../../../../../../components/Header/index";
+import Text from "../../../../../../components/Text/index";
+import { InputField } from "../../../../../../components/InputField";
+import { Select } from "../../../../../../components/Select";
+import Button from "../../../../../../components/Button";
 import Check from "../../../assets/images/Check.svg";
 import "./Style.scss";
 import { useState } from "react";

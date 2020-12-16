@@ -1,9 +1,9 @@
 import "./styles.scss";
-import Text from "../../../components/Text";
-import { InputField } from "../../../components/InputField";
-import Header from "../../../components/Header";
-import Button from "../../../components/Button";
-import Icon from "../../../assets/images/SetaProx.svg";
+import Text from "../../../../../components/Text";
+import { InputField } from "../../../../../components/InputField";
+import Header from "../../../../../components/Header";
+import Button from "../../../../../components/Button";
+import Icon from "../../../../../assets/images/SetaProx.svg";
 import { useHistory } from "react-router-dom";
 
 export default function DonorRegister() {

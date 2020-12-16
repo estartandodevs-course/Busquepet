@@ -5,8 +5,8 @@ import CardPet from '../../pages/card-pet';
 import ProfilePerson from '../../pages/perfil-adotante';
 import RegisterPet from '../../pages/register-pet';
 import RegisterPerson from '../../pages/cadastro-do-doador/register-person/index';
-import DonorRegister from '../../pages/cadastro-do-doador/cadastro-dados-da-pessoa';
-import ContactDetails from '../../pages/cadastro-do-doador/cadastro-dados-contato';
+import DonorRegister from '../../pages/cadastro-do-doador/register-person/register-donor/cadastro-dados-da-pessoa';
+import ContactDetails from '../../pages/cadastro-do-doador/register-person/register-donor/cadastro-dados-contato';
 import ProfilePet from '../../pages/perfil-pet';
 import Login from '../../pages/login';
 import RegisterAdopter from '../../pages/cadastro-do-doador/register-person/adopter-registration/steps'

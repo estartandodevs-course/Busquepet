@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import Header from "../../../components/Header";
-import InputField from "../../../components/InputField";
-import Text from "../../../components/Text";
-import Button from "../../../components/Button/index.jsx";
-import Icon from "../../../assets/images/SetaProx.svg";
+import Header from "../../../../../components/Header";
+import InputField from "../../../../../components/InputField";
+import Text from "../../../../../components/Text";
+import Button from "../../../../../components/Button/index.jsx";
+import Icon from "../../../../../assets/images/seta.svg";
 import "./styles.scss";
 
 export default function ContactDetails() {
