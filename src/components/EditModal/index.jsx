@@ -1,11 +1,11 @@
 import React from "react";
-import "./CadastroModal.scss";
-import ErrorModal from "../../assets/images/ErrorModal.svg";
+import "./styles.scss";
+import ErrorModal from "../../assets/images/sucess-icon.svg";
 import Button from '../../components/Button/index'
 import closeButton from '../../assets/images/close-button.svg'
 // import { useHistory } from "react-router-dom";
 
-const CadastroModal = (props) => {
+const EditModal = (props) => {
   const { close } = props;
   // const history = useHistory();
 
@@ -18,19 +18,17 @@ const CadastroModal = (props) => {
 
         <img src={ErrorModal} alt=""></img>
 
-        <h4 className="title">Ooops</h4>
+        <h4 className="title">Uhuuul</h4>
 
         <p className="text">
-          Para você poder salvar o perfil desse pet, é necessário fazer um
-          cadastro.
+        Suas alterações foram realizadas com sucesso!!
         </p>
-
-        <span>Vem, vai ser bem rapidinho! 😸😻</span>
-
-        <Button identifier="whiteOrange" name="Fazer o Cadastro" />
+        <div className="button-container-edit">
+        <Button identifier="whiteOrange" name="Entendido!" />
+        </div>
       </div>
     </div>
   );
 };
 
-export default CadastroModal;
+export default EditModal;
