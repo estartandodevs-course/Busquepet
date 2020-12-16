@@ -16,8 +16,24 @@
   cursor: pointer;
 }
 
+.contacte-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+
 .title-form {
   color: rgba(128, 0, 128, 1);
   margin-top: 23px;
   text-align: center;
+}
+
+.button-skip {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  .purple {
+    margin-bottom: 5px;
+  }
 }

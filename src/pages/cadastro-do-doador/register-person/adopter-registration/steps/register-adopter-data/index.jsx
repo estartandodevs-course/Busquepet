@@ -1,30 +1,18 @@
-import { useState } from "react";
-import InputField from "../../../components/InputField";
-import Text from "../../../components/Text";
-import Button from "../../../components/Button/index.jsx";
-import Icon from "../../../assets/images/SetaProx.svg";
-import "./styles.scss";
 import React from "react";
-import Seta from "../../../assets/images/seta.svg";
-import { useHistory } from "react-router-dom";
+import InputField from "../../../../../../components/InputField";
+import Text from "../../../../../../components/Text";
+import Button from "../../../../../../components/Button/index.jsx";
+import Icon from "../../../../../../assets/images/SetaProx.svg";
+import "./styles.scss";
+import Seta from "../../../../../../assets/images/seta.svg";
 
-export default function RegisterAdopter1() {
-  const [value, setValue] = useState("");
-  const history = useHistory();
-
-  function goBack() {
-    history.push("/login");
-  }
-
-  function handleClick() {
-    history.push("/cadastro-do-adotante2");
-  }
-
+export default function RegisterAdopterData(props) {
+  const {setValue, onSubmit} = props;
   return (
     <>
       <div className="cabeça">
         <div className="profile">
-          <img goBack={goBack} src={Seta} alt="perfil"></img>
+          <img src={Seta} alt="perfil"></img>
         </div>
         <div className="textcabeça">
           <Text className="titulo" type="titleheader">
@@ -40,44 +28,43 @@ export default function RegisterAdopter1() {
           placeholder="Ex.: Maria José"
           type="text"
           label="Seu Nome Completo"
-          onChange={setValue}
+          onChange={(event) => setValue("Adopter", event)}
         />
         <InputField
           idendifier="adotante"
           placeholder="00/00/0000"
           type="number"
           label="Sua Idade"
-          onChange={setValue}
+          onChange={(event) => setValue("Age", event)}
         />
         <InputField
           idendifier="adotante"
           placeholder="exemplo@email.com"
           type="email"
           label="Seu E-mail"
-          onChange={setValue}
+          onChange={(event) => setValue("Email", event)}
         />
         <InputField
           idendifier="adotante"
           placeholder="****"
           type="password"
           label="Crie uma senha"
-          onChange={setValue}
+          onChange={(event) => setValue("password", event)}
         />
         <InputField
           idendifier="adotante"
           placeholder="****"
           type="password"
           label="Confirme sua senha"
-          onChange={setValue}
+          onChange={(event) => setValue("password", event)}
         />
       </section>
       <div className="button-skip">
         <Button
-          disabled={!value}
           name="Próximo"
           identifier="purple"
           icon={Icon}
-          onClick={handleClick}
+          onClick={onSubmit}
         />
       </div>
     </>
