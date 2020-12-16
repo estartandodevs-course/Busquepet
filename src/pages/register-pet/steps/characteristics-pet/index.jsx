@@ -1,36 +1,18 @@
 import "./styles.scss";
-import Text from "../../../components/Text";
-import RadioButton from "../../../components/RadioButton";
-import Button from "../../../components/Button/index.jsx";
-import Icon from "../../../assets/images/SetaProx.svg";
-import Header from "../../../components/Header";
-import { Select } from "../../../components/Select";
-import { useHistory } from "react-router-dom";
-import { useState } from "react";
+import Text from "../../../../components/Text";
+import RadioButton from "../../../../components/RadioButton";
+import Button from "../../../../components/Button/index.jsx";
+import Icon from "../../../../assets/images/SetaProx.svg";
+import Header from "../../../../components/Header";
+import { Select } from "../../../../components/Select";
 
-export default function RegisterPet1() {
-  const history = useHistory();
-
-  const [typePet, setTypePet] = useState("");
-  const [gender, setGender] = useState("");
-  const [size, setSize] = useState("");
-
-  function handleClick() {
-    history.push({
-      pathname: "/",
-      state: { typePet, gender, size },
-    });
-  }
-
-  function goBack() {
-    history.push("/");
-  }
+export default function CharacteristicsPet(props) {
+  const { setValue, onSubmit} = props;
 
   return (
     <>
       <div className="textheader">
         <Header
-          goBack={goBack}
           title="Vamos ajudar o bichinho a encontrar um lar de amor?!"
         />
       </div>
@@ -44,13 +26,13 @@ export default function RegisterPet1() {
               text="Cachorrinho"
               name="typePet"
               id="cachorro"
-              onChange={setTypePet}
+              onChange={(event) => setValue("typePet", event)}
             />
             <RadioButton
               text="Gatinho"
               name="typePet"
               id="gato"
-              onChange={setTypePet}
+              onChange={(event) => setValue("typePet", event)}
             />
           </div>
         </div>
@@ -64,13 +46,13 @@ export default function RegisterPet1() {
               text="Fêmea"
               name="gender"
               id="femea"
-              onChange={setGender}
+              onChange={(event) => setValue("gender", event)}
             />
             <RadioButton
               text="Macho"
               name="gender"
               id="macho"
-              onChange={setGender}
+              onChange={(event) => setValue("gender", event)}
             />
           </div>
         </div>
@@ -84,24 +66,24 @@ export default function RegisterPet1() {
               text="Pequeno"
               name="size"
               id="pequeno"
-              onChange={setSize}
+              onChange={(event) => setValue("size", event)}
             />
             <RadioButton
               text="Médio"
               name="size"
               id="medio"
-              onChange={setSize}
+              onChange={(event) => setValue("size", event)}
             />
             <RadioButton
               text="Grande"
               name="size"
               id="grande"
-              onChange={setSize}
+              onChange={(event) => setValue("size", event)}
             />
           </div>
         </div>
         <div className="age">
-          <Select typeMap="idade" label="Qual a idade do seu bichinho?" />
+          <Select typeMap="idade" label="Qual a idade do seu bichinho?" onChange={(event => setValue("age", event))} />
         </div>
       </section>
 
@@ -110,7 +92,7 @@ export default function RegisterPet1() {
           name="Próximo"
           identifier="green"
           icon={Icon}
-          onClick={handleClick}
+          onClick={onSubmit}
         />
       </div>
     </>

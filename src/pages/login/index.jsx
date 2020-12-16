@@ -28,7 +28,6 @@ export default function Login() {
   function redirect() {
     history.push("/cadastro-tipo-de-pessoa")
   }
-
   return (
     <>
       <section className="container-form">

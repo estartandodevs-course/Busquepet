@@ -6,8 +6,10 @@ export default function TextDescription(props){
 
     return(
         <>
+            <div className="textdescription">
             <h2>{title}</h2>
             <span>{description}</span>
+            </div>
         </>
     )
 }

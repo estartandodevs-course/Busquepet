@@ -1,7 +1,7 @@
 import "./TextArea.scss";
 
 export default function TextArea(props) {
-  const { placeholder, label} = props;
+  const { placeholder, label, onChange} = props;
 
   return (
     <div className="textarea-field">
@@ -11,6 +11,7 @@ export default function TextArea(props) {
       <textarea
         className="textarea"
         placeholder={placeholder}
+        onChange={(event) => onChange(event.target.value)}
         required
       />
     </div>
