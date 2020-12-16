@@ -13,7 +13,9 @@ export default function RegisterAdopter() {
 
     
     const history = useHistory()
+
     function chooseScreen() {
+        console.log(person);
         const location = {
             pathname: person === "juridica" ? "/cadastro-pessoa-juridica" : "/cadastro-pessoa-fisica",
             state: {

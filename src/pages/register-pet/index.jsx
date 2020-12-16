@@ -3,7 +3,7 @@ import CharacteristicsPet from './steps/characteristics-pet';
 import DataPet from './steps/data-pet';
 import ImagePet from './steps/image-pet';
 
-export default function RegisterDonor() {
+export default function RegisterPet() {
     const [form, setForm] = useState({});
     const [step, setStep] = useState(0);
 
@@ -18,7 +18,7 @@ export default function RegisterDonor() {
         <>
         {(step === 0 && <CharacteristicsPet setValue={handleChange} onSubmit={() => setStep(1)} />)}
         {(step === 1 && <DataPet setValue={handleChange} onSubmit={() => setStep(2)}/>)}
-        {(step === 2 && <ImagePet />)}
+        {(step === 2 && <ImagePet setValue={handleChange} />)}
 
 
         </>
