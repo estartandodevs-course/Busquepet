@@ -1,18 +1,33 @@
 import { useState } from "react";
 import Button from "../../components/Button";
 import Text from "../../components/Text";
-import Logo from "../../assets/images/Group-107.svg";
+import Logo from "../../assets/images/logo.svg";
 import InputField from "../../components/InputField";
 import Icon from "../../assets/images/SetaProx.svg";
 import "./styles.scss";
-export default function Login(props) {
+import { login } from "../../services/auth.service";
+import { useHistory } from "react-router-dom";
+
+
+export default function Login() {
+  const history = useHistory();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
-  const { href } = props;
+  
 
-  function handleLogin() {
-    // Implementar funcionalidade do login
-    console.log(user, password);
+
+  async function handleLogin() {
+    const responseLogin = await login(user, password);
+    
+    if (responseLogin.success === true) {
+      history.push("/feed")
+    } else {
+      alert("Erro com email ou senha, tente novamente!")
+    }
+  }
+
+  function redirect() {
+    history.push("/cadastro-tipo-de-pessoa")
   }
   return (
     <>
@@ -23,27 +38,27 @@ export default function Login(props) {
 
         <InputField
           idendifier="doador"
-          label="Usuário :"
+          label="Email:"
           type="text"
-          placeholder="Digite seu usuário..!!"
+          placeholder="Digite seu email"
           value={user}
           onChange={setUser}
         />
 
         <InputField
           idendifier="doador"
-          label="Senha :"
+          label="Senha:"
           type="password"
-          placeholder="Digite sua senha.."
+          placeholder="Digite sua senha"
           value={password}
           onChange={setPassword}
         />
         <div id="content-text">
           <Text type="textform">
-            Ainda não possui conta? <br />
-            <a className="text-link" href={href}>
+            Ainda não possui conta? 
+            <span className="text-link" onClick={redirect}>
               Cadastre-se
-            </a>
+            </span>
           </Text>
         </div>
       </section>

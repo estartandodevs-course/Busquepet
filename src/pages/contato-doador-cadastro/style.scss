@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	font-family: poppins;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 34px 24px 0 24px;
+
+	.title {
+		color: #9b3a9b;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		letter-spacing: 0.02em;
+		margin-bottom: 47px;
+		font-weight: 600;
+	}
+
+	.description,
+	.steps {
+		font-size: 16px;
+		line-height: 24px;
+
+		span {
+			font-weight: bold;
+		}
+	}
+
+	.description {
+		margin-bottom: 35px;
+	}
+
+	.footer {
+		margin-top: 42px;
+		margin-bottom: 34px;
+		font-size: 18px;
+		font-family: Jost;
+		font-weight: 500;
+	}
+
+	.buttonWhatsApp {
+		font-family: Jost;
+		width: 265px;
+		height: 40px;
+		border-radius: 10px;
+		margin-top: 34px;
+		font-size: 16px;
+		box-shadow: -1px 6px 10px rgba(0, 0, 0, 0.15);
+		background: #fbfbfb;
+		border: 1.5px solid #008080;
+		color: #008080;
+		cursor: pointer;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			margin-left: 10px;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}

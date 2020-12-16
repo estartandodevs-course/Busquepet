@@ -14,7 +14,7 @@ export function InputField(props) {
 				type={type}
 				placeholder={placeholder}
 				value={value}
-				onChange={event => onChange(event.target.value)}
+				onChange={(event) => onChange(event.target.value)}
 			/>
 		</div>
 	);

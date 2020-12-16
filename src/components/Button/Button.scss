@@ -27,7 +27,7 @@
   &:focus {
     outline: none;
   }
-
+  
   .button-Dad {
     display: flex;
     align-items: center;
@@ -57,6 +57,7 @@
   &:enabled {
     background: #fbfbfb;
     border: 1.5px solid #800080;
+
 
     img {
       display: none;
@@ -120,16 +121,24 @@
 }
 
 .whiteOrange {
-    @extend %buttonStyle;
-    .text-button {
-      color: #F45151;
-    }
-    &:enabled {
-      background: #fbfbfb;
-      border: 1.5px solid #F45151;
-  
-      img {
-        display: none;
-      }
+  @extend %buttonStyle;
+  .text-button {
+    color: #f45151;
+  }
+  &:enabled {
+    background: #fbfbfb;
+    border: 1.5px solid #f45151;
+
+    img {
+      display: none;
     }
   }
+}
+
+.addpet {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  border: 1px solid #00CCCC;
+  background-color: white;
+}

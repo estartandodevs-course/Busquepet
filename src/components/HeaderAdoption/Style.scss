@@ -7,10 +7,16 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.05);
-
+    
+    .arrow-back{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
     img{
         cursor: pointer;
     }
