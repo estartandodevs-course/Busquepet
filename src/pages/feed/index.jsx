@@ -10,7 +10,7 @@ export default function Feed() {
   const history = useHistory("");
   const [pets, setPets] = useState(petsMock);
   function ClickIcon() {
-    history.push("/login");
+    history.push("/");
   }
 
   function filterPetByType(type) {
