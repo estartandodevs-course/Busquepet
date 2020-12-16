@@ -17,7 +17,7 @@ export default function ImagePet({setValue}){
             <div className="text-instruction">
                 <span className="title-instruction">Como fazer isso:</span><br></br>
                 <span className="title-instruction">Passo 01: </span><span>Entrar no seu Google Drive, Google Fotos, DropBox ou iCloud e identificar qual a foto que você quer enviar;</span><br></br>
-                <span className="title-instruction">Passo 02: </span><span>Ao escolher a foto, você clicar nos três pontinhos ao lado ( <img src={Pontos}></img> );</span><br></br>
+                <span className="title-instruction">Passo 02: </span><span>Ao escolher a foto, você clicar nos três pontinhos ao lado ( <img src={Pontos} alt="Três Pontos" /> );</span><br></br>
                 <span className="title-instruction">Passo 03: </span><span>Procure pela opção de “Copiar Link”</span><br></br>
                 <span className="title-instruction">Passo 04: </span><span>Volte aqui e cole o link na caixa de texto.</span><br></br>
             </div>
