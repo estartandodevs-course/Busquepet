@@ -1,21 +1,14 @@
 import React from "react";
-import { useState } from "react";
-import { useHistory } from "react-router-dom";
-import InputField from "../../../../../components/InputField";
-import Text from "../../../../../components/Text";
-import Button from "../../../../../components/Button";
-import { Select } from "../../../../../components/Select";
-import Check from "../../../../../assets/images/Check.svg";
+import InputField from "../../../../../../components/InputField";
+import Text from "../../../../../../components/Text";
+import Button from "../../../../../../components/Button";
+import { Select } from "../../../../../../components/Select";
+import Check from "../../../../../../assets/images/Check.svg";
+import Seta from "../../../../../../assets/images/seta.svg";
 import "./styles.scss";
-import Seta from "../../../../../assets/images/seta.svg";
 
-export default function RegisterAdopter2() {
-  const [value, setValue] = useState("");
-  const history = useHistory();
-
-  function handleClick() {
-    history.push("/");
-  }
+export default function RegistratLocation(props) {
+  const {setValue, onSubmit} = props;
 
   return (
     <>
@@ -39,41 +32,41 @@ export default function RegisterAdopter2() {
             label="Seu CEP"
             type="text"
             placeholder="0000-000"
-            onChange={setValue}
-          />
+            onChange={(event) => setValue("Cep", event)}
+            />
           <Select
             identificador="labelRoxo"
             identifier="roxo"
             typeMap="estado"
             label="Seu Estado"
+            onChange={(event) => setValue("State", event)}
           />
           <InputField
             label="Sua Cidade"
             type="text"
-            onChange={setValue}
             idendifier="adotante"
+            onChange={(event) => setValue("City", event)}
           />
           <InputField
             label="Seu Endereço"
             type="text"
-            onChange={setValue}
             idendifier="adotante"
+            onChange={(event) => setValue("Address", event)}
           />
           <InputField
             label="Seu Bairro"
             type="text"
-            onChange={setValue}
             idendifier="adotante"
+            onChange={(event) => setValue("District", event)}
           />
         </div>
       </section>
       <div className="button-skip">
         <Button
-          disabled={!value}
           identifier="purple"
           name="Cadastrar"
           icon={Check}
-          onClick={handleClick}
+          onClick={onSubmit}
         />
       </div>
     </>

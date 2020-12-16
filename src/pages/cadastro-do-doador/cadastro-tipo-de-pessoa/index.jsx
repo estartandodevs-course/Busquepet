@@ -7,7 +7,7 @@ import Header from '../../../components/Header'
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
-export default function RegisterAdopter() {
+export default function RegisterPerson() {
 
     const [person, setPerson] = useState("")
 
@@ -17,7 +17,7 @@ export default function RegisterAdopter() {
     function chooseScreen() {
         console.log(person);
         const location = {
-            pathname: person === "adotante" ? "/cadastro-dados-adotante" : "/cadastro-do-doador",
+            pathname: person === "adotante" ? "/registro-adotante" : "/cadastro-do-doador",
             state: {
                 person
             }
