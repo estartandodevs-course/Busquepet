@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import RegisterAdopterData from '../steps/register-adopter-data'
-import RegistratLocation from '../steps/registrat-location'
+import Feed from '../../../../feed';
+import RegisterAdopterData from './register-adopter-data'
+import RegistratLocation from './registrat-location'
 
 export default function RegisterAdopter() {
     const [form, setForm] = useState({});
@@ -17,6 +18,8 @@ export default function RegisterAdopter() {
         <>
         {(step === 0 && <RegisterAdopterData setValue={handleChange} onSubmit={() => setStep(1)} />)}
         {(step === 1 && <RegistratLocation setValue={handleChange} onSubmit={() => setStep(2)}/>)} 
+        {(step === 2 && <Feed/>)} 
+
 
 
 
