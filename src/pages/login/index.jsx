@@ -20,7 +20,7 @@ export default function Login(props) {
     const responseLogin = await login(user, password);
     
     if (responseLogin.success === true) {
-      history.push("/")
+      history.push("/feed")
     } else {
       alert("Erro com email ou senha, tente novamente!")
     }
