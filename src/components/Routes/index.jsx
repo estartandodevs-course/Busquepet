@@ -9,6 +9,8 @@ import RegisterAdopter2 from '../../pages/cadastro-do-adotante/adotante-dois';
 import DonorRegister from '../../pages/cadastro-do-doador/cadastro-tipo-de-pessoa';
 import RegisterPet1 from '../../pages/cadastro-do-pet/cadastro-do-pet-info1';
 import RegisterPet2 from '../../pages/cadastro-do-pet/cadastro-do-pet-info2';
+import RegisterAdopter from '../../pages/cadastro-do-doador/cadastro-tipo-de-pessoa';
+
 import ContactDetails from '../../pages/cadastro-do-doador/cadastro-dados-contato';
 import ProfilePet from '../../pages/perfil-pet';
 import Login from '../../pages/login';
@@ -21,6 +23,8 @@ export default function Routes() {
 				<Route exact path="/filtro" component={Filter} />
 				<Route exact path="/card-do-Pet" component={CardPet} />
 				<Route exact path="/perfil-do-adotante" component={ProfilePerson} />
+				<Route exact path="/cadastro-tipo-de-pessoa" component={RegisterAdopter} />
+
 				<Route
 					exact
 					path="/cadastro-do-adotante1"

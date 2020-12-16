@@ -9,11 +9,10 @@ import { login } from "../../services/auth.service";
 import { useHistory } from "react-router-dom";
 
 
-export default function Login(props) {
+export default function Login() {
   const history = useHistory();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
-  const { href } = props;
 
 
   async function handleLogin() {
@@ -24,6 +23,10 @@ export default function Login(props) {
     } else {
       alert("Erro com email ou senha, tente novamente!")
     }
+  }
+
+  function redirect() {
+    history.push("/cadastro-tipo-de-pessoa")
   }
 
   return (
@@ -53,9 +56,9 @@ export default function Login(props) {
         <div id="content-text">
           <Text type="textform">
             Ainda não possui conta? 
-            <a className="text-link" href={href}>
+            <span className="text-link" href="#" onClick={redirect} >
               Cadastre-se
-            </a>
+            </span>
           </Text>
         </div>
       </section>
