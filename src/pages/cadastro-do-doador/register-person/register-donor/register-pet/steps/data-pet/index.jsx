@@ -17,7 +17,7 @@ export default function DataPet(props) {
             <div className="pet-name">
                 <InputField placeholder="Nome do Bichinho" type="text" label="Qual o nome do bichinho?" name="pet" idendifier="doador"
                     onChange={
-                        (event) => setValue("pet", event)
+                        (event) => setValue("namePet", event)
                     }/>
                 <span className="subtitle-info">
                     Se não tiver nome, pode criar uma para ao cadastro

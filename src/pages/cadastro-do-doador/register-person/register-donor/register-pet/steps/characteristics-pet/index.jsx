@@ -83,7 +83,7 @@ export default function CharacteristicsPet(props) {
           </div>
         </div>
         <div className="age">
-          <Select typeMap="idade" label="Qual a idade do seu bichinho?" onChange={(event => setValue("age", event))} />
+          <Select typeMap="idade" label="Qual a idade do seu bichinho?" onChange={(event => setValue("agePet", event))} />
         </div>
       </section>
 
