@@ -5,14 +5,21 @@ import Button from "../../../../../../components/Button/index.jsx";
 import Icon from "../../../../../../assets/images/SetaProx.svg";
 import "./styles.scss";
 import Seta from "../../../../../../assets/images/seta.svg";
+import { useHistory } from "react-router-dom";
 
 export default function RegisterAdopterData(props) {
-  const {setValue, onSubmit} = props;
+  const { setValue, onSubmit } = props;
+  const history = useHistory();
+
+  function comeBack() {
+    history.goBack();
+  }
+
   return (
     <>
       <div className="cabeça">
         <div className="profile">
-          <img src={Seta} alt="perfil"></img>
+          <img src={Seta} alt="perfil" onClick={comeBack}></img>
         </div>
         <div className="textcabeça">
           <Text className="titulo" type="titleheader">

@@ -25,7 +25,7 @@ export default function RegistratLocation(props) {
       </div>
       <Text type="titleform">Seus Dados de Localização</Text>
 
-      <section className="container-form">
+      <section className="container-form-location">
         <div className="contact-form">
           <InputField
             idendifier="adotante"

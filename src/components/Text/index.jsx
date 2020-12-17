@@ -1,5 +1,4 @@
 import './text.scss';
-// Cadastro
 
 function TitleHeader (props) {
     const text = props.children;
@@ -14,6 +13,11 @@ function SubtitleHeader (props) {
 function TitleForm (props) {
     const text = props.children;
     return <p className="title-form">{text}</p>
+}
+
+function Titleformblack (props) {
+    const text = props.children;
+    return <p className="title-form-black">{text}</p>
 }
 
 function LabelForm (props) {
@@ -80,6 +84,7 @@ function Text(props) {
         titleheader: <TitleHeader>{children}</TitleHeader>,
         subtitleheader: <SubtitleHeader>{children}</SubtitleHeader>,
         titleform: <TitleForm>{children}</TitleForm>,
+        titleformblack: <Titleformblack>{children}</Titleformblack>,
         labelform: <LabelForm>{children}</LabelForm>,
         textform: <TextForm>{children}</TextForm>,
         textbutton: <TextButton>{children}</TextButton>,
