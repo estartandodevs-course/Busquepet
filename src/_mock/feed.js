@@ -5,6 +5,9 @@ import timaoImage from '../assets/images/timao.svg'
 import venusImage from '../assets/images/venus.svg'
 
 
+const res = localStorage.getItem("myForm")
+const result = JSON.parse(res)
+
 export const petsMock = [
     {
         id: 1,
@@ -39,6 +42,13 @@ export const petsMock = [
         name: "MVênusel",
         age: "2 anos",
         type: "gato",
+        image: venusImage
+    },
+    {
+        id: 6,
+        name: result.namePet,
+        age: result.agePet,
+        type: result.typePet,
         image: venusImage
     }
 ]

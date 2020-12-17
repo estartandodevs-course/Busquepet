@@ -18,7 +18,6 @@ export default function Feed() {
     setPets(petsFiltered);
   }
 
-  
 
   return (
     <>

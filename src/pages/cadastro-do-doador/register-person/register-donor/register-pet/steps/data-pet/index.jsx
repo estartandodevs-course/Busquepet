@@ -1,10 +1,10 @@
-import Header from "../../../../components/Header";
-import InputField from "../../../../components/InputField";
-import TextArea from "../../../../components/TextArea";
-import RadioButton from "../../../../components/RadioButton";
-import Text from "../../../../components/Text";
-import Icon from "../../../../assets/images/SetaProx.svg";
-import Button from "../../../../components/Button";
+import Header from "../../../../../../../components/Header";
+import InputField from "../../../../../../../components/InputField";
+import TextArea from "../../../../../../../components/TextArea";
+import RadioButton from "../../../../../../../components/RadioButton";
+import Text from "../../../../../../../components/Text";
+import Icon from "../../../../../../../assets/images/SetaProx.svg";
+import Button from "../../../../../../../components/Button";
 import "./styles.scss";
 
 export default function DataPet(props) {
@@ -17,7 +17,7 @@ export default function DataPet(props) {
             <div className="pet-name">
                 <InputField placeholder="Nome do Bichinho" type="text" label="Qual o nome do bichinho?" name="pet" idendifier="doador"
                     onChange={
-                        (event) => setValue("pet", event)
+                        (event) => setValue("namePet", event)
                     }/>
                 <span className="subtitle-info">
                     Se não tiver nome, pode criar uma para ao cadastro

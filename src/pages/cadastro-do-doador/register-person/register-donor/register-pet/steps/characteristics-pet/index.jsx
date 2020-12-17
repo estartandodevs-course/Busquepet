@@ -1,10 +1,10 @@
 import "./styles.scss";
-import Text from "../../../../components/Text";
-import RadioButton from "../../../../components/RadioButton";
-import Button from "../../../../components/Button/index.jsx";
-import Icon from "../../../../assets/images/SetaProx.svg";
-import Header from "../../../../components/Header";
-import { Select } from "../../../../components/Select";
+import Text from "../../../../../../../components/Text";
+import RadioButton from "../../../../../../../components/RadioButton";
+import Button from "../../../../../../../components/Button/index.jsx";
+import Icon from "../../../../../../../assets/images/SetaProx.svg";
+import Header from "../../../../../../../components/Header";
+import { Select } from "../../../../../../../components/Select";
 
 export default function CharacteristicsPet(props) {
   const { setValue, onSubmit} = props;
@@ -83,7 +83,7 @@ export default function CharacteristicsPet(props) {
           </div>
         </div>
         <div className="age">
-          <Select typeMap="idade" label="Qual a idade do seu bichinho?" onChange={(event => setValue("age", event))} />
+          <Select typeMap="idade" label="Qual a idade do seu bichinho?" onChange={(event => setValue("agePet", event))} />
         </div>
       </section>
 

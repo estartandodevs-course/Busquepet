@@ -9,7 +9,7 @@ export default function SucessScreen() {
 	const history = useHistory("");
 
 	function redirect() {
-		history.push("/feed")
+		history.push("/cadastro-do-pet")
 	}
 	return (
 		<>

@@ -7,6 +7,8 @@ export default function RegisterPet() {
     const [form, setForm] = useState({});
     const [step, setStep] = useState(0);
 
+    localStorage.setItem('myForm', JSON.stringify(form))
+    
     function handleChange(name, value) {
         setForm({
           ...form,
