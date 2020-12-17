@@ -1,10 +1,10 @@
 import "./styles.scss";
-import Text from "../../../../components/Text";
-import RadioButton from "../../../../components/RadioButton";
-import Button from "../../../../components/Button/index.jsx";
-import Icon from "../../../../assets/images/SetaProx.svg";
-import Header from "../../../../components/Header";
-import { Select } from "../../../../components/Select";
+import Text from "../../../../../../../components/Text";
+import RadioButton from "../../../../../../../components/RadioButton";
+import Button from "../../../../../../../components/Button/index.jsx";
+import Icon from "../../../../../../../assets/images/SetaProx.svg";
+import Header from "../../../../../../../components/Header";
+import { Select } from "../../../../../../../components/Select";
 
 export default function CharacteristicsPet(props) {
   const { setValue, onSubmit} = props;

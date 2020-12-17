@@ -3,7 +3,7 @@ import Feed from "../../pages/feed";
 import Filter from "../../pages/filtro";
 import CardPet from "../../pages/card-pet";
 import ProfilePerson from "../../pages/perfil-adotante";
-import RegisterPet from "../../pages/register-pet";
+import RegisterPet from "../../pages/cadastro-do-doador/register-person/register-donor/register-pet";
 import RegisterPerson from "../../pages/cadastro-do-doador/register-person/index";
 import ProfilePet from "../../pages/perfil-pet";
 import Login from "../../pages/login";
