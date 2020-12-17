@@ -28,8 +28,10 @@ export default function RegisterAdopterData(props) {
           <Text type="subtitleheader">Vai ser bem rapidinho!</Text>
         </div>
       </div>
+      <div className="testando">
       <Text type="titleform">Seus Dados Pessoais</Text>
-      <section className="contacte-form">
+      </div>
+      <section className="contacte-forme">
         <InputField
           idendifier="adotante"
           placeholder="Ex.: Maria José"

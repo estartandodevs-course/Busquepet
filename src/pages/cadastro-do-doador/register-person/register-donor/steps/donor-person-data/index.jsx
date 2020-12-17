@@ -16,9 +16,11 @@ export default function DonorPersonData(props) {
           subTitle="Vai ser bem rapidinho!"
         />
       </div>
-
-      <section className="contentform">
-        <Text type="titleform">Seus Dados Pessoais</Text>
+      <div className="teste">
+ <Text type="titleform">Seus Dados Pessoais</Text>
+</div>
+      <section className="contentforme">
+       
 
         <InputField
           idendifier="doador"

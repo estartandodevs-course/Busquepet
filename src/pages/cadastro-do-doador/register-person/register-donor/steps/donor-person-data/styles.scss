@@ -1,11 +1,11 @@
-.contentform {
+.contentforme {
+  margin-top: 44px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .title-form {
-  margin-bottom: 35px;
   margin-top: 23px;
 }
 
@@ -20,9 +20,17 @@
   margin-right: 35px;
 }
 
+.teste {
+  color: #008080;
+}
+
 .input-field .input {
+  text-decoration-color: #e0e0e0;
   background-color: rgba(251, 251, 251, 1);
-  color: rgba(224, 224, 224, 1);
+}
+
+.input.placeholder {
+  color: #e0e0e0;
 }
 
 .button-skip {

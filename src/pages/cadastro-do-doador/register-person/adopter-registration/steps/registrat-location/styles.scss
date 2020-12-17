@@ -9,9 +9,11 @@
   align-items: center;
 }
 .container-form-location {
+  @media (max-width: 360px) {
+    margin-top: -35px;
+  }
   display: flex;
   justify-content: center;
-
 }
 
 .profile {
