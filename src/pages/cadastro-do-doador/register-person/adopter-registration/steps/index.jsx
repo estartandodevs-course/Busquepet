@@ -19,10 +19,6 @@ export default function RegisterAdopter() {
         {(step === 0 && <RegisterAdopterData setValue={handleChange} onSubmit={() => setStep(1)} />)}
         {(step === 1 && <RegistratLocation setValue={handleChange} onSubmit={() => setStep(2)}/>)} 
         {(step === 2 && <Feed/>)} 
-
-
-
-
         </>
     )
 }

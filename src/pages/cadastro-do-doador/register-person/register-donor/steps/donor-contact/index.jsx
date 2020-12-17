@@ -1,25 +1,12 @@
-import { useState } from "react";
-import { useHistory } from "react-router-dom";
-import Header from "../../../components/Header";
-import InputField from "../../../components/InputField";
-import Text from "../../../components/Text";
-import Button from "../../../components/Button/index.jsx";
-import Icon from "../../../assets/images/SetaProx.svg";
+import Header from "../../../../../../components/Header";
+import InputField from "../../../../../../components/InputField";
+import Text from "../../../../../../components/Text";
+import Button from "../../../../../../components/Button/index.jsx";
+import Icon from "../../../../../../assets/images/SetaProx.svg";
 import "./styles.scss";
 
-export default function ContactDetails() {
-  const [dataPerson, setdataPerson] = useState("");
-
-  const history = useHistory();
-  function chooseScreen() {
-    const location = {
-      pathname: "/cadastro-pessoa-fisica",
-      state: {
-        dataPerson,
-      },
-    };
-    history.push(location);
-  }
+export default function DonorContact(props) {
+    const {setValue, onSubmit} = props;
 
   return (
     <>
@@ -34,44 +21,43 @@ export default function ContactDetails() {
           placeholder="(xx) 9 9999-9999"
           type="number"
           label="Seu WhatsApp"
-          onChange={setdataPerson}
+          onChange={(event) => setValue("number", event)}
         />
         <InputField
           idendifier="doador"
           placeholder="exemplo@email.com"
           type="email"
           label="Seu E-mail"
-          onChange={setdataPerson}
+          onChange={(event) => setValue("Email", event)}
         />
         <InputField
           idendifier="doador"
           placeholder="exemplo@email.com"
           type="email"
           label="Confirmar E-mail"
-          onChange={setdataPerson}
+          onChange={(event) => setValue("Email", event)}
         />
         <InputField
           idendifier="doador"
           placeholder="********"
           type="password"
           label="Crie uma senha"
-          onChange={setdataPerson}
+          onChange={(event) => setValue("Password", event)}
         />
         <InputField
           idendifier="doador"
           placeholder="********"
           type="password"
           label="Repita a sua senha"
-          onChange={setdataPerson}
+          onChange={(event) => setValue("Password", event)}
         />
       </section>
       <div className="button-skip">
         <Button
-          disabled={!dataPerson}
           name="Próximo"
           identifier="green"
           icon={Icon}
-          onClick={() => chooseScreen({ dataPerson })}
+          onClick={onSubmit}
         />
       </div>
     </>

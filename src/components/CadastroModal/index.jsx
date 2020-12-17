@@ -3,11 +3,9 @@ import "./CadastroModal.scss";
 import ErrorModal from "../../assets/images/ErrorModal.svg";
 import Button from '../../components/Button/index'
 import closeButton from '../../assets/images/close-button.svg'
-// import { useHistory } from "react-router-dom";
 
 const CadastroModal = (props) => {
   const { close } = props;
-  // const history = useHistory();
 
   return (
     <div className="modal-container">
