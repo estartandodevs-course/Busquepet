@@ -3,6 +3,8 @@ import starkImage from '../assets/images/stark.svg'
 import melImage from '../assets/images/mel.svg'
 import timaoImage from '../assets/images/timao.svg'
 import venusImage from '../assets/images/venus.svg'
+import mingauImage from '../assets/images/mingau.svg'
+import tecaImage from '../assets/images/teca.svg'
 
 
 export const petsMock = [
@@ -40,5 +42,19 @@ export const petsMock = [
         age: "2 anos",
         type: "gato",
         image: venusImage
+    },
+    {
+        id: 6,
+        name: "Mingau",
+        age: "8 anos +",
+        type: "gato",
+        image: mingauImage
+    },
+    {
+        id: 7,
+        name: "Teca",
+        age: "1 - 3 meses",
+        type: "gato",
+        image: tecaImage
     }
 ]
