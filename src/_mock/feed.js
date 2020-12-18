@@ -55,5 +55,5 @@ export const petsMock = [
         age: "1 - 3 meses",
         type: "gato",
         image: tecaImage
-    },
+    }
 ]
