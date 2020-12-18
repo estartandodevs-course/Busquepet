@@ -9,11 +9,13 @@ import ProfilePet from "../../pages/perfil-pet";
 import Login from "../../pages/login";
 import RegisterAdopter from "../../pages/cadastro-do-doador/register-person/adopter-registration/steps";
 import RegisterDonor from "../../pages/cadastro-do-doador/register-person/register-donor/steps";
+import PetDetail from "../../pages/perfil-pet/detalhe-perfil-pet"
 export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Login} />
+        <Route exact path="/detalhe-do-pet" component={PetDetail} />
         <Route exact path="/feed" component={Feed} />
         <Route exact path="/filtro" component={Filter} />
         <Route exact path="/card-do-Pet" component={CardPet} />

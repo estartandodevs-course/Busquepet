@@ -3,7 +3,7 @@
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    height: 44px;
+    min-height: 44px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -25,6 +25,7 @@
 .headerWhite{
     @extend %headerStyle;
     color: #800080;
+
 }
 
 .headerGreen{
