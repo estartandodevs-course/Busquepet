@@ -15,6 +15,10 @@ function FlowProfile00() {
   function goRegister () {
     history.push("/registro-doador")
   }
+
+  function goBack () {
+    history.goBack()
+  }
   return (
     <>
       <HeaderAdoption
