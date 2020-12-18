@@ -5,12 +5,13 @@
   position: relative;
 
   width: 100%;
-  height: 83px;
+  min-height: 83px;
   align-items: center;
 }
 .container-form-location {
   display: flex;
   justify-content: center;
+
 }
 
 .profile {
@@ -31,5 +32,4 @@
   margin-bottom: 10px;
   display: flex;
   justify-content: flex-end;
-  
 }

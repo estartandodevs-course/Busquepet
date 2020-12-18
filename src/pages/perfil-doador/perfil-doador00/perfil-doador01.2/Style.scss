@@ -1,15 +1,15 @@
-body{
-    @media (max-width:320px){
-        width: 116% !important;
-    }
+body {
+  @media (max-width: 320px) {
+    width: 116% !important;
+  }
 }
 
-h1{
+h1 {
   padding-right: 31px !important;
 }
 
-header{
-    min-height: 44px;
+header {
+  min-height: 44px;
 }
 
   .dogData{
@@ -33,14 +33,15 @@ header{
             flex: 1 1 300px;
         }
     }
+  }
 }
 
 .plus-button {
-    display: flex;
-    justify-content: center;
-    margin: 78px auto 44px 281px;
+  display: flex;
+  justify-content: center;
+  margin: 78px auto 44px 281px;
 
-    button{
-        cursor: pointer;
-    }
+  button {
+    cursor: pointer;
   }
+}
