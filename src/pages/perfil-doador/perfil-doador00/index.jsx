@@ -6,8 +6,15 @@ import Text from "../../../components/Text";
 import PlusButton from "../../../assets/images/plus-button.svg";
 import Button from "../../../components/Button";
 import "./styles.scss";
+import { useHistory } from "react-router-dom";
 
 function FlowProfile00() {
+
+  const history = useHistory("")
+
+  function goRegister () {
+    history.push("/registro-doador")
+  }
   return (
     <>
       <HeaderAdoption
@@ -26,7 +33,7 @@ function FlowProfile00() {
         </div>
       </div>
       <div className="plus-button">
-        <Button identifier="addpet" icon={PlusButton} />
+        <Button onClick={goRegister} identifier="addpet" icon={PlusButton} />
       </div>
     </>
   );
