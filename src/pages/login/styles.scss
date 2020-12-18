@@ -15,12 +15,13 @@
 	.text-form {
 		font-size: 15px;
 		.text-link {
+			color: #1673ad;
 			display: flex;
 			justify-content: center;
 			text-decoration: none;
 			font-size: 15px;
 			transition: all 0.3s;
-			font-weight: bold;
+			text-decoration: underline #1673ad;
 		}
 		.text-link:hover {
 			color: #1673ad;
