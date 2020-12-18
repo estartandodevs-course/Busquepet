@@ -26,7 +26,7 @@ export default function DataPet(props) {
 
             <section className="contentform">
                 <div className="form">
-                    <div className="textform">
+                    <div className="textform-data">
                         <Text type="labelform">
                             O seu animalzinho já tem todas as vacinas?
                         </Text>
