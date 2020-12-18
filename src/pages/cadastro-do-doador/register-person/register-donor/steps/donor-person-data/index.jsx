@@ -29,7 +29,7 @@ export default function DonorPersonData(props) {
 
         <InputField
           idendifier="doador"
-          label="Sua idade"
+          label="Data de Nascimento"
           placeholder="00/00/0000"
           id="date"
           type="date"
