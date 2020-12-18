@@ -9,11 +9,13 @@ import Pontos from "../../../../../../../assets/images/pontos.svg";
 export default function ImagePet({ setValue, onSubmit }) {
   return (
     <>
-      <Header title="Vamos ajudar o bichinho a encontrar um lar de amor?!"></Header>
-      <Text type="titleformblack">
-        As fotos fazem toda a diferença para o bichinho conseguir um lar que vai
-        dar amor para ele.
-      </Text>
+      <Header title="Vamos ajudar o bichinho a encontrar um lar de amor?!" />
+      <div className="container-titleimage">
+        <Text type="titleimage">
+          As fotos fazem toda a diferença para o bichinho conseguir um lar que
+          vai dar amor para ele.
+        </Text>
+      </div>
       <InputField
         onChange={(event) => setValue("imagePet", event)}
         idendifier="doador"

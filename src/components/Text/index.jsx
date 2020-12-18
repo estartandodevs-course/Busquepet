@@ -73,6 +73,11 @@ function LocationPet (props) {
     return <p className="location-pet">{label}</p>
 }
 
+function TitleImage (props) {
+    const label = props.children;
+    return <p className="title-image">{label}</p>
+}
+
 
 
 
@@ -98,7 +103,8 @@ function Text(props) {
         locationcardpet: <LocationPet>{children}</LocationPet>,
         profilename: <LocationPet>{children}</LocationPet>,
         profilebutton: <LocationPet>{children}</LocationPet>,
-        registerpet: <LocationPet>{children}</LocationPet>
+        registerpet: <LocationPet>{children}</LocationPet>,
+        titleimage: <TitleImage>{children}</TitleImage>
 
     }
     return types[type]
