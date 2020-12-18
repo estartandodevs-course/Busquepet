@@ -5,6 +5,13 @@
     }
 }
 
+.container-titleimage{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    text-align: center;
+    margin-bottom: 60px;
+}
 .doador{
     margin: 0 auto;
 
@@ -21,14 +28,15 @@
     .title-instruction{
         font-family: Jost;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 14px;
         color: #828282;
     }
     
     span{
+        font-family: Jost;
         color: #828282;
-        font-size: 14px;
+        font-size: 14px;    
         
     }
 
