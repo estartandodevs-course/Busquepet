@@ -9,51 +9,51 @@ import tecaImage from '../assets/images/teca.svg'
 export const petsMock = [
     {
         id: 1,
-        name: "Afosinho",
-        age: "1 - 3 meses",
-        type: "cao",
-        image: afonsoImage
+        namePet: "Afosinho",
+        agePet: "1 - 3 meses",
+        typePet: "cao",
+        imagePet: afonsoImage
     },
     {
         id: 2,
-        name: "Stark",
-        age: "1 - 3 meses",
-        type: "cao",
-        image: starkImage
+        namePet: "Stark",
+        agePet: "1 - 3 meses",
+        typePet: "cao",
+        imagePet: starkImage
     },
     {
         id: 3,
-        name: "Mel",
-        age: "1 ano",
-        type: "cao",
-        image: melImage
+        namePet: "Mel",
+        agePet: "1 ano",
+        typePet: "cao",
+        imagePet: melImage
     },
     {
         id: 4,
-        name: "Timão",
-        age: "1 - 2 meses",
-        type: "gato",
-        image: timaoImage
+        namePet: "Timão",
+        agePet: "1 - 2 meses",
+        typePet: "gato",
+        imagePet: timaoImage
     },
     {
         id: 5,
-        name: "MVênusel",
-        age: "2 anos",
-        type: "gato",
-        image: venusImage
+        namePet: "MVênusel",
+        agePet: "2 anos",
+        typePet: "gato",
+        imagePet: venusImage
     },
     {
         id: 6,
-        name: "Mingau",
-        age: "8 anos +",
-        type: "gato",
-        image: mingauImage
+        namePet: "Mingau",
+        agePet: "8 anos +",
+        typePet: "gato",
+        imagePet: mingauImage
     },
     {
         id: 7,
-        name: "Teca",
-        age: "1 - 3 meses",
-        type: "gato",
-        image: tecaImage
+        namePet: "Teca",
+        agePet: "1 - 3 meses",
+        typePet: "gato",
+        imagePet: tecaImage
     }
 ]
