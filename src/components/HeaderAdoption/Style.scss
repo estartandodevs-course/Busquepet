@@ -1,7 +1,6 @@
 %headerStyle{
     display: flex;
     width: 100%;
-    justify-content: space-around;
     align-items: center;
     height: 44px;
     font-family: 'Poppins', sans-serif;
@@ -11,16 +10,24 @@
     font-style: normal;
     box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.05);
     
-    .arrow-back{
-        display: flex;
-        justify-content: space-around;
-        
-    }
     
     img{
         cursor: pointer;
     }
 }
+
+.arrow-back {
+    margin-left: 21px;
+}
+
+
+.title-headeradoption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 
 .headerWhite{
     @extend %headerStyle;
