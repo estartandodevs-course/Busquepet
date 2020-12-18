@@ -3,18 +3,16 @@ import "./Style.scss";
 
 export default function HeaderAdoption(props) {
   const { titleName, imageOne, imageTwo, identification } = props;
-
-  const history = useHistory("");
-
+  const history = useHistory();
   function comeBack() {
-    history.goBack();
+    history.goBack()
   }
-
+        
   return (
     <>
       <header className={identification}>
         <div className="arrow-back">
-          <img src={imageOne} alt="seta volta" onClick={comeBack} />
+          <img onClick={comeBack} src={imageOne} alt="seta volta" />
         </div>
         <div className="title-headeradoption">
           <h1>{titleName}</h1>
