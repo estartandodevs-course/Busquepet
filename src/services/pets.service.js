@@ -1,0 +1,17 @@
+import { petsMock } from "../_mock/feed";
+
+export function getPets() {
+  const petsStorage = localStorage.getItem("pets");
+  if (petsStorage) {
+    return JSON.parse(petsStorage);
+  }
+  localStorage.setItem("pets", JSON.stringify(petsMock));
+  return petsMock;
+}
+
+export function addPet(pet) {
+  const petsStorage = JSON.parse(localStorage.getItem("pets")) || petsMock;
+  const petsListModified = [...petsStorage, pet];
+  localStorage.setItem("pets", JSON.stringify(petsListModified));
+  return petsListModified;
+}
