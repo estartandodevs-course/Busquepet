@@ -3,11 +3,9 @@ import "./styles.scss";
 import ErrorModal from "../../assets/images/sucess-icon.svg";
 import Button from '../../components/Button/index'
 import closeButton from '../../assets/images/close-button.svg'
-// import { useHistory } from "react-router-dom";
 
 const EditModal = (props) => {
   const { close } = props;
-  // const history = useHistory();
 
   return (
     <div className="modal-container">

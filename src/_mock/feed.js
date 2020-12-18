@@ -7,6 +7,9 @@ import mingauImage from '../assets/images/mingau.svg'
 import tecaImage from '../assets/images/teca.svg'
 
 
+const res = localStorage.getItem("myForm")
+const result = JSON.parse(res)
+
 export const petsMock = [
     {
         id: 1,
@@ -56,5 +59,12 @@ export const petsMock = [
         age: "1 - 3 meses",
         type: "gato",
         image: tecaImage
+    },
+    {
+        id: 8,
+        name: result.namePet,
+        age: result.agePet,
+        type: result.typePet,
+        image: venusImage
     }
 ]

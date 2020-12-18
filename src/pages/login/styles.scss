@@ -4,6 +4,11 @@
 	justify-content: center;
 	flex-direction: column;
 	height: 100%;
+
+	@media (max-width:320px){
+        width: 93%;
+   }
+
 	.logo-container-form {
 		margin-bottom: 35px;
 	}
@@ -30,4 +35,12 @@
 	margin-top: auto;
 	margin-right: 30px;
 	margin-bottom: 30px;
+
+	@media (max-width:320px){
+        margin-top: 15px;
+   }
+
+   @media (min-width:1000px){
+	width: 72%;
+}
 }
