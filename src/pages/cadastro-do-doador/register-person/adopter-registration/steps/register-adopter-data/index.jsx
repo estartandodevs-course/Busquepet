@@ -40,8 +40,8 @@ export default function RegisterAdopterData(props) {
         <InputField
           idendifier="adotante"
           placeholder="00/00/0000"
-          type="number"
-          label="Sua Idade"
+          type="date"
+          label="Data de Nascimento"
           onChange={(event) => setValue("Age", event)}
         />
         <InputField
@@ -53,14 +53,14 @@ export default function RegisterAdopterData(props) {
         />
         <InputField
           idendifier="adotante"
-          placeholder="****"
+          placeholder="********"
           type="password"
           label="Crie uma senha"
           onChange={(event) => setValue("password", event)}
         />
         <InputField
           idendifier="adotante"
-          placeholder="****"
+          placeholder="********"
           type="password"
           label="Confirme sua senha"
           onChange={(event) => setValue("password", event)}

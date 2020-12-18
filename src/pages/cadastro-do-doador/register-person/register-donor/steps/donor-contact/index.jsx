@@ -48,7 +48,7 @@ export default function DonorContact(props) {
           idendifier="doador"
           placeholder="********"
           type="password"
-          label="Repita a sua senha"
+          label="Confirme a sua senha"
           onChange={(event) => setValue("Password", event)}
         />
       </section>

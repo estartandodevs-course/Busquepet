@@ -11,7 +11,7 @@ export default function Feed() {
   const [pets, setPets] = useState([]);
 
   function ClickIcon() {
-    history.push("/");
+    history.push("/perfil");
   }
 
   function filterPetByType(type) {
@@ -35,11 +35,11 @@ export default function Feed() {
           <button
             className="buttonCao"
             onClick={() => filterPetByType("cao")}
-          ></button>
+          />
           <button
             className="buttonGato"
             onClick={() => filterPetByType("gato")}
-          ></button>
+          />
         </div>
       </div>
       <section className="container-main">

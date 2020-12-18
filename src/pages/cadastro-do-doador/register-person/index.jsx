@@ -33,7 +33,7 @@ export default function RegisterPerson() {
             <section className="contentform">
                 <div className="form">
                     <div className="textform">
-                        <Text type="labelform">Deseja se cadastrar como :</Text>
+                        <Text type="labelform">Deseja se cadastrar como:</Text>
                     </div>
                     <div className="form-box">
                         <RadioButton text="Adotante" name="typePerson" id="adotante" onChange={setPerson} />

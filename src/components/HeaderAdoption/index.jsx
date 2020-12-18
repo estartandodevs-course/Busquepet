@@ -1,3 +1,4 @@
+import { useHistory } from "react-router-dom";
 import "./Style.scss";
 import {useHistory} from 'react-router-dom'
 export default function HeaderAdoption(props) {
@@ -6,14 +7,17 @@ export default function HeaderAdoption(props) {
   function comeBack() {
     history.goBack()
   }
+        
   return (
     <>
       <header className={identification}>
         <div className="arrow-back">
           <img onClick={comeBack} src={imageOne} alt="seta volta" />
         </div>
+        <div className="title-headeradoption">
           <h1>{titleName}</h1>
-        <img src={imageTwo} alt="icon"/>
+        </div>
+        {imageTwo && <img src={imageTwo} alt="icon" />}
       </header>
     </>
   );
