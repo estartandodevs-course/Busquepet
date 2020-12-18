@@ -3,7 +3,7 @@ import Button from "../../components/Button";
 import Text from "../../components/Text";
 import Logo from "../../assets/images/logo.svg";
 import InputField from "../../components/InputField";
-import Icon from "../../assets/images/SetaProx.svg";
+import Icon from "../../assets/images/Check.svg";
 import "./styles.scss";
 import { login } from "../../services/auth.service";
 import { useHistory } from "react-router-dom";
@@ -64,8 +64,8 @@ export default function Login() {
       </section>
       <footer className="container-btn">
         <Button
-          name="Login"
-          identifier="green"
+          name="Entrar"
+          identifier="purple"
           icon={Icon}
           onClick={handleLogin}
         />
