@@ -1,31 +1,20 @@
+import Text from "../../../../../../components/Text";
+import { InputField } from "../../../../../../components/InputField";
+import Header from "../../../../../../components/Header";
+import Button from "../../../../../../components/Button";
+import Icon from "../../../../../../assets/images/SetaProx.svg";
 import "./styles.scss";
-import Text from "../../../components/Text";
-import { InputField } from "../../../components/InputField";
-import Header from "../../../components/Header";
-import Button from "../../../components/Button";
-import Icon from "../../../assets/images/SetaProx.svg";
-// import { useState } from "react";
-import { useHistory } from "react-router-dom";
 
-export default function DonorRegister() {
-  const history = useHistory();
-
-  function handleClick() {
-    history.push("/");
-  }
-
-  function goBack() {
-    history.push("/");
-  }
+export default function DonorPersonData(props) {
+    const {setValue, onSubmit} = props;
 
   return (
     <>
       <div className="header">
         <Header
-          goBack={goBack}
           title="Você quer doar!"
           subTitle="Vai ser bem rapidinho!"
-        ></Header>
+        />
       </div>
 
       <section className="contentform">
@@ -35,7 +24,7 @@ export default function DonorRegister() {
           idendifier="doador"
           label="Seu Nome Completo"
           placeholder="Ex.: Maria José"
-          // onChange={setInput}
+          onChange={(event) => setValue("Donor", event)}
         ></InputField>
 
         <InputField
@@ -44,8 +33,7 @@ export default function DonorRegister() {
           placeholder="00/00/0000"
           id="date"
           type="date"
-
-          // onChange={setInput}
+          onChange={(event) => setValue("Age", event)}
         ></InputField>
       </section>
       <div className="button-skip">
@@ -53,8 +41,8 @@ export default function DonorRegister() {
           name="Próximo"
           identifier="green"
           icon={Icon}
-          onClick={handleClick}
-        ></Button>
+          onClick={onSubmit}
+        />
       </div>
     </>
   );

@@ -7,15 +7,17 @@ import Header from '../../../components/Header'
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
-export default function RegisterAdopter() {
+export default function RegisterPerson() {
 
     const [person, setPerson] = useState("")
 
     
     const history = useHistory()
+
     function chooseScreen() {
+        console.log(person);
         const location = {
-            pathname: person === "juridica" ? "/cadastro-pessoa-juridica" : "/cadastro-pessoa-fisica",
+            pathname: person === "adotante" ? "/registro-adotante" : "/registro-doador",
             state: {
                 person
             }
@@ -26,16 +28,16 @@ export default function RegisterAdopter() {
 
     return (
         <>
-            <Header title="Você quer doar!" subTitle="Vamos lá!" />
+            <Header title="Vamos nos cadastar!" subTitle="Escolha a forma de cadastro." />
             <Text type="titleform">Vamos começar!</Text>
             <section className="contentform">
                 <div className="form">
                     <div className="textform">
-                        <Text type="labelform">Você é:</Text>
+                        <Text type="labelform">Deseja se cadastrar como :</Text>
                     </div>
                     <div className="form-box">
-                        <RadioButton text="Pessoa Física" name="typePerson" id="fisica" onChange={setPerson} />
-			            <RadioButton text="Pessoa Jurídica (ONG)" name="typePerson" id="juridica" onChange={setPerson} />
+                        <RadioButton text="Adotante" name="typePerson" id="adotante" onChange={setPerson} />
+			            <RadioButton text="Doador" name="typePerson" id="doador" onChange={setPerson} />
                     </div>
                 </div>
             </section>
