@@ -7,14 +7,12 @@ import Header from "../../../../../../../components/Header";
 import { Select } from "../../../../../../../components/Select";
 
 export default function CharacteristicsPet(props) {
-  const { setValue, onSubmit} = props;
+  const { setValue, onSubmit } = props;
 
   return (
     <>
       <div className="textheader">
-        <Header
-          title="Vamos ajudar o bichinho a encontrar um lar de amor?!"
-        />
+        <Header title="Vamos ajudar o bichinho a encontrar um lar de amor?!" />
       </div>
       <section className="contentform">
         <div className="form">
@@ -25,7 +23,7 @@ export default function CharacteristicsPet(props) {
             <RadioButton
               text="Cachorrinho"
               name="typePet"
-              id="cachorro"
+              id="cao"
               onChange={(event) => setValue("typePet", event)}
             />
             <RadioButton
@@ -83,7 +81,11 @@ export default function CharacteristicsPet(props) {
           </div>
         </div>
         <div className="age">
-          <Select typeMap="idade" label="Qual a idade do seu bichinho?" onChange={(event => setValue("agePet", event))} />
+          <Select
+            typeMap="idade"
+            label="Qual a idade do seu bichinho?"
+            onChange={(event) => setValue("agePet", event)}
+          />
         </div>
       </section>
 
