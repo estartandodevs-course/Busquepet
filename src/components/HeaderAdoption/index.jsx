@@ -1,6 +1,6 @@
 import { useHistory } from "react-router-dom";
 import "./Style.scss";
-import {useHistory} from 'react-router-dom'
+
 export default function HeaderAdoption(props) {
   const { titleName, imageOne, imageTwo, identification } = props;
   const history = useHistory();
