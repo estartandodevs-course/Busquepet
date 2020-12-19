@@ -5,7 +5,6 @@ import Button from "../../components/Button/index";
 import imageArrow from "../../assets/images/arrowPurple.svg";
 import purpleHeart from "../../assets/images/purpleHeart.svg";
 import HeaderAdoption from "../../components/HeaderAdoption";
-import dogImage from "../../assets/images/Melzinha.png";
 import { getPetById } from "../../services/pets.service";
 
 export default function PerfilPet() {
