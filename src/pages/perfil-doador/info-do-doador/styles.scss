@@ -1,20 +1,39 @@
-.textdescription{
-    margin: 16px 0 10px 16px;
+.textdescription {
+  margin: 16px 0 10px 16px;
 
-    span{
-        font-family: Poppins;
-        font-size: 16px;
-    }
-    .whiteOrange{
-        border-color: #00CCCC;
-        height: 40px;
-    }
+  span {
+    font-family: Poppins;
+    font-size: 16px;
+  }
+  .whiteOrange {
+    border-color: #00cccc;
+    height: 40px;
+  }
 }
 
-.button-container{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: auto;
-    margin-right: 30px;
-    margin-bottom: 30px;
+.button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 186px;
+  margin-bottom: 30px;
+}
+
+.button-unique {
+  display: flex;
+  margin-right: 44px;
+}
+
+.textinfo {
+  display: flex;
+  margin-left: 23px;
+  flex-direction: column;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #1673ad;
 }
