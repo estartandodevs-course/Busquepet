@@ -3,9 +3,11 @@ import "./CadastroModal.scss";
 import ErrorModal from "../../assets/images/ErrorModal.svg";
 import Button from '../../components/Button/index'
 import closeButton from '../../assets/images/close-button.svg'
+import { useHistory } from "react-router-dom";
 
 const CadastroModal = (props) => {
-  const { close } = props;
+  const { close, text } = props;
+  const history = useHistory();
 
   return (
     <div className="modal-container">
@@ -19,13 +21,12 @@ const CadastroModal = (props) => {
         <h4 className="title">Ooops</h4>
 
         <p className="text">
-          Para você poder salvar o perfil desse pet, é necessário fazer um
-          cadastro.
+          {text}
         </p>
 
         <span>Vem, vai ser bem rapidinho! 😸😻</span>
 
-        <Button identifier="whiteOrange" name="Fazer o Cadastro" />
+        <Button identifier="whiteOrange" name="Fazer o Cadastro" onClick={() => history.push("/cadastro-tipo-de-pessoa")}/>
       </div>
     </div>
   );
