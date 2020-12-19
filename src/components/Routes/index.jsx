@@ -22,9 +22,8 @@ export default function Routes() {
     const unsubscribe = onAuthStateChange(setUser);
 
     return () => unsubscribe();
-
   }, []);
-  console.log(user)
+  console.log(user);
 
   return (
     <BrowserRouter>
@@ -38,11 +37,10 @@ export default function Routes() {
             <Route exact path="/contato-doador" component={ContactDonor} />
             <Route exact path="/perfil" component={Profile} />
             <Route exact path="/perfil-edit" component={ProfileEdit} />
-            <Route exact path="/cadastro-do-pet" component={RegisterPet} />
             <Route exact path="/perfil-do-pet/:id" component={PerfilPet} />
             <Redirect to="/feed" />
           </>
-        ) : ( 
+        ) : (
           <>
             <Route exact path="/" component={Login} />
             <Redirect to="/" />
@@ -51,6 +49,8 @@ export default function Routes() {
               path="/cadastro-tipo-de-pessoa"
               component={RegisterPerson}
             />
+            <Route exact path="/cadastro-do-pet" component={RegisterPet} />
+            <Route exact path="/feed" component={Feed} />
             <Route
               exact
               path="/registro-adotante"
@@ -58,7 +58,7 @@ export default function Routes() {
             />
             <Route exact path="/registro-doador" component={RegisterDonor} />
           </>
-         )} 
+        )}
       </Switch>
     </BrowserRouter>
   );
