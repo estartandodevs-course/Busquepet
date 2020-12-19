@@ -23,21 +23,16 @@ export default function Routes() {
   //   return () => unsubscribe();
   // }, []);
   // console.log(user);
-  {
-    /* {user.loggedIn ? ( */
-  }
-  {
-    /* <Redirect to="/feed" /> */
-  }
-  {
-    /* ) : ( */
-  }
-  {
-    /* <Redirect to="/" /> */
-  }
-  {
-    /* )} */
-  }
+
+  /* {user.loggedIn ? ( */
+
+  /* <Redirect to="/feed" /> */
+
+  /* ) : ( */
+
+  /* <Redirect to="/" /> */
+
+  /* )} */
 
   return (
     <BrowserRouter>
