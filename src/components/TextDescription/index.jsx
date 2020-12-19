@@ -7,8 +7,8 @@ export default function TextDescription(props){
     return(
         <>
             <div className="textdescription">
-            <h2>{title}</h2>
-            <span>{description}</span>
+            <h2 class="label-profilepet" >{title}</h2>
+            <span class="description-profilepet">{description}</span>
             </div>
         </>
     )
