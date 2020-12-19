@@ -2,7 +2,6 @@ import './style.scss';
 import HeaderAdoption from '../../components/HeaderAdoption';
 import imageArrow from '../../assets/images/arrowPurple.svg';
 import whatsApp from '../../assets/images/Whatsapp.svg';
-
 export default function ContactDonor() {
 	return (
 		<>
@@ -11,6 +10,8 @@ export default function ContactDonor() {
 				titleName="Doador"
 				identification="headerDonor"
 			/>
+
+			
 			<div className="container">
 				<h4 className="title">
 					Estamos muito feliz com sua decisão em adotar esse pet! 😻
@@ -39,9 +40,8 @@ export default function ContactDonor() {
 					Você pode escolher entrar em contato com o doador por meio do WhatsApp
 					ou E-mail que estão abaixo:
 				</p>
-
 				<button className="buttonWhatsApp">
-					WhatsApp do Doador <img src={whatsApp} alt="WhatsApp"></img>
+					WhatsApp do Doador <img src={whatsApp} alt="WhatsApp" ></img>
 				</button>
 			</div>
 		</>

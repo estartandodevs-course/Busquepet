@@ -17,7 +17,7 @@ export default function InfoProfileEdit() {
       />
     </header>
       <Profile />
-      <ProfileButton />
+
 
       <div className="info-container">
         <TextDescription title="Nome" description="EzReal Blindado" />

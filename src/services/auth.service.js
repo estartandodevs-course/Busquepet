@@ -12,3 +12,13 @@ export async function login(email, password) {
     return { success: false, data: error };
   }
 }
+
+export function onAuthStateChange(callback) {
+  return firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      callback({ loggedIn: true });
+    } else {
+      callback({ loggedIn: false });
+    }
+  });
+}

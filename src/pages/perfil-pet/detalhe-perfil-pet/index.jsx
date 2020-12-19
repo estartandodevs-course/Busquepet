@@ -6,7 +6,13 @@ import purpleHeart from "../../../assets/images/purpleHeart.svg";
 import HeaderAdoption from "../../../components/HeaderAdoption";
 import dogImage from '../../../assets/images/Melzinha.png'
 import Feed from '../../../pages/feed'
+import { useHistory } from "react-router-dom";
 export default function PetDetail() {
+  const history = useHistory()
+  
+  function goContact () {
+    history.push("/contato-doador")
+  } 
 
   return (
     <>
@@ -71,7 +77,7 @@ export default function PetDetail() {
         </section>
 
         <div id="position">
-          <Button identifier="gradient" name="Quero adotar"></Button>
+          <Button onClick={goContact} identifier="gradient" name="Quero adotar"></Button>
         </div>
       </main>
     </>
