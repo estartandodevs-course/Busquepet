@@ -22,7 +22,7 @@ export default function InfoProfile() {
       <ProfileButton identificador="line-profile" />
 
       <div className="info-container">
-        <TextDescription title="Nome" description="EzReal Blindado" />
+        <TextDescription title="Nome" description="Henrique Soares" />
         <TextDescription title="WhatsApp" description="+55 00 0 0000-0000" />
         <TextDescription
           title="E-mail"
@@ -34,8 +34,8 @@ export default function InfoProfile() {
           title="Localização"
           description="Rio de Janeiro - RJ"
         />
-        <TextDescription title="Endereço" description="Rua dos Pet Fofinhos" />
-        <TextDescription title="Bairro" description="Dog Cat" />
+        <TextDescription title="Endereço" description="Rio de Janeiro" />
+        <TextDescription title="Bairro" description="Rio de Janeiro" />
         <div className="button-container">
           <div className="button-unique">
           <Button identifier="addpet" icon={editIcon} />
