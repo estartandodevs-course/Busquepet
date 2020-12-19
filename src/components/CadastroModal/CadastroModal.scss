@@ -14,7 +14,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(26, 36, 46, 0.2);
+  background-color: rgba(26, 36, 46, 0.6);
 
   .modal {
     @include flex-box(column, flex-start, center);

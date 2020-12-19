@@ -1,13 +1,19 @@
+import { Select } from "../../../../../../../components/Select";
+import { useState } from "react";
 import "./styles.scss";
 import Text from "../../../../../../../components/Text";
 import RadioButton from "../../../../../../../components/RadioButton";
 import Button from "../../../../../../../components/Button/index.jsx";
 import Icon from "../../../../../../../assets/images/SetaProx.svg";
 import Header from "../../../../../../../components/Header";
-import { Select } from "../../../../../../../components/Select";
 
 export default function CharacteristicsPet(props) {
   const { setValue, onSubmit } = props;
+
+  const [typePet, setTypePet] = useState("");
+  const [gender, setGender] = useState("");
+  const [size, setSize] = useState("");
+  const [agePet, setAgepet] = useState("");
 
   return (
     <>
@@ -24,13 +30,13 @@ export default function CharacteristicsPet(props) {
               text="Cachorrinho"
               name="typePet"
               id="cao"
-              onChange={(event) => setValue("typePet", event)}
+              onChange={(event) => setTypePet(event) || setValue("typePet", event)}
             />
             <RadioButton
               text="Gatinho"
               name="typePet"
               id="gato"
-              onChange={(event) => setValue("typePet", event)}
+              onChange={(event) => setTypePet(event) || setValue("typePet", event)}
             />
           </div>
         </div>
@@ -44,13 +50,13 @@ export default function CharacteristicsPet(props) {
               text="Fêmea"
               name="gender"
               id="femea"
-              onChange={(event) => setValue("gender", event)}
+              onChange={(event) => setGender(event) || setValue("gender", event)}
             />
             <RadioButton
               text="Macho"
               name="gender"
               id="macho"
-              onChange={(event) => setValue("gender", event)}
+              onChange={(event) => setGender(event) || setValue("gender", event)}
             />
           </div>
         </div>
@@ -64,19 +70,19 @@ export default function CharacteristicsPet(props) {
               text="Pequeno"
               name="size"
               id="pequeno"
-              onChange={(event) => setValue("size", event)}
+              onChange={(event) => setSize(event) || setValue("size", event)}
             />
             <RadioButton
               text="Médio"
               name="size"
               id="medio"
-              onChange={(event) => setValue("size", event)}
+              onChange={(event) => setSize(event) || setValue("size", event)}
             />
             <RadioButton
               text="Grande"
               name="size"
               id="grande"
-              onChange={(event) => setValue("size", event)}
+              onChange={(event) => setSize(event) || setValue("size", event)}
             />
           </div>
         </div>
@@ -84,13 +90,14 @@ export default function CharacteristicsPet(props) {
           <Select
             typeMap="idade"
             label="Qual a idade do seu bichinho?"
-            onChange={(event) => setValue("agePet", event)}
+            onChange={(event) => setAgepet(event) || setValue("agePet", event)}
           />
         </div>
       </section>
 
       <div className="button-skip">
         <Button
+          disabled={!typePet || !gender || !size || !agePet}
           name="Próximo"
           identifier="green"
           icon={Icon}

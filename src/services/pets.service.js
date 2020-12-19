@@ -9,6 +9,12 @@ export function getPets() {
   return petsMock;
 }
 
+export function getPetById(id) {
+  const pets = getPets();
+  const pet = pets.find((_pet) => _pet.id === id);
+  return pet;
+}
+
 export function addPet(pet) {
   const petsStorage = JSON.parse(localStorage.getItem("pets")) || petsMock;
   const petsListModified = [...petsStorage, pet];

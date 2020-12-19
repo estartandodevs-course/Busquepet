@@ -20,10 +20,15 @@ export default function Feed() {
     setPets(petsFiltered);
   }
 
+  function redirectToPetProfile(id) {
+    history.push(`/perfil-do-pet/${id}`);
+  }
+
   useEffect(() => {
     const petsResponse = getPets();
     setPets(petsResponse);
   }, []);
+  console.log(pets);
 
   return (
     <>
@@ -50,6 +55,7 @@ export default function Feed() {
             name={namePet}
             age={agePet}
             type={typePet}
+            onClick={() => redirectToPetProfile(id)}
           />
         ))}
       </section>
