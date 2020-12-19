@@ -7,16 +7,21 @@ import DataPet from "./steps/data-pet";
 import ImagePet from "./steps/image-pet";
 
 export default function RegisterPet() {
-  const [form, setForm] = useState({});
+  const [form, setForm] = useState({ id: randomNumberId() });
   const [step, setStep] = useState(0);
   const history = useHistory();
+
+  function randomNumberId() {
+    const randomNumber = Math.floor(Math.random() * 1000);
+    return randomNumber.toString();
+  }
 
   function handleChange(name, value) {
     setForm({
       ...form,
       [name]: value,
     });
-    console.log(form)
+    console.log(form);
   }
 
   function handleSubmit() {

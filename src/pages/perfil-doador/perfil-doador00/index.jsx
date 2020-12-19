@@ -9,11 +9,10 @@ import "./styles.scss";
 import { useHistory } from "react-router-dom";
 
 function FlowProfile00() {
+  const history = useHistory("");
 
-  const history = useHistory("")
-
-  function goRegister () {
-    history.push("/registro-doador")
+  function goRegister() {
+    history.push("/cadastro-do-pet");
   }
 
   return (
@@ -24,7 +23,7 @@ function FlowProfile00() {
         identification="headerWhite"
       />
       <Profile />
-      <ProfileButton identificador="line-pet"/>
+      <ProfileButton identificador="line-pet" />
       <div className="container-pet">
         <div className="register-pet">
           <Text type="registerpet">

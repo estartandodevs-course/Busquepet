@@ -10,7 +10,7 @@ export default function CardComponent(props) {
     <>
       <section className="container-card" type={type}>
         <div className="container-img">
-          <img classNamw="image-cards" onClick={onClick} src={image} alt="#" />
+          <img onClick={onClick} src={image} alt="#" />
         </div>
         <div className="content-card">
           <Text type="titlecardpet">{name}</Text>
