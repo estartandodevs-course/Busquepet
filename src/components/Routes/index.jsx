@@ -38,6 +38,7 @@ export default function Routes() {
             <Route exact path="/perfil-edit" component={ProfileEdit} />
             <Route exact path="/cadastro-do-pet" component={RegisterPet} />
             <Route exact path="/perfil-do-pet" component={ProfilePet} />
+            <Redirect to="/feed" />
           </>
         ) : (
           <>
