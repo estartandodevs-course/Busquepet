@@ -43,7 +43,6 @@
 
     img{
         &:first-child{
-           opacity: 0;
            cursor:default;
         }
     }
@@ -55,7 +54,6 @@
 
     img{
         &:last-child{
-            opacity: 0;
             cursor:default;
         }
     }
