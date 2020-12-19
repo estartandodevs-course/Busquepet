@@ -1,109 +1,98 @@
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-main{
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    max-width: 359px;
+    height: 272px;
+    margin: 8px 8px 0 8px;
+    border-radius: 45px;
+  }
+
+  .dogData {
+    max-width: 375px;
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .dogCerto {
+      flex: 1 1 100px;
+      margin: 10px 10px 0px 20px;
+
+      &:nth-of-type(5) {
+        flex: 1 1 300px;
+      }
+
+      &:nth-of-type(7) {
+        text-align: center;
+        align-self: center;
+      }
+    }
+
+    .localizacao {
+      flex: 1 1 100px;
+      margin: 30px 10px 0px 20px;
+    }
+  }
+
+  a {
+    color: #1673ad;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    &::before {
+      content: url("../../assets/images/locationData.svg");
+      width: 14px;
+      height: 14px;
+      margin: 5;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 6.92px;
+    }
+  }
+
+  .description {
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
+    max-width: 335px;
 
-    img{
-        max-width: 359px;
-        height: 272px;
-        margin: 8px 8px 0 8px;
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: #800080;
+      font-family: Jost;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
     }
 
-    .dogData{
-        max-width: 375px;
-        margin-top: 24px;
-        display: flex;
-        flex-wrap: wrap;
-    
-        .dogCerto{
-            flex: 1 1 100px;
-            margin: 10px 10px 0px 20px;
-    
-            &:nth-of-type(5){
-                flex: 1 1 300px;
-            }
-    
-            &:nth-of-type(7){
-                text-align: center;
-                align-self: center;
-            }
-        }
-
-        .localizacao{
-            flex: 1 1 100px;
-            margin: 30px 10px 0px 20px;
-        }
-
+    .paragraph {
+      font-family: Jost;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      margin-bottom: 24px;
     }
-    
-    a{
-        color: #1673AD;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-    
-        &::before{
-            content: url('../../assets/images/locationData.svg');
-            width: 14px;
-            height: 14px;
-            margin: 5;
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin-right: 6.92px;
-        }
-    }
+  }
 
-    .description{
-        display: flex;
-        flex-direction: column;
-        max-width: 335px;
-        
-        
+  #position {
+    position: sticky;
+    bottom: 0;
+    background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 100%);
+  }
 
-        h3{
-            margin-top: 20px;
-            margin-bottom: 8px;
-            color: #800080;
-            font-family: Jost;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-        }
-        
-        .paragraph{
-            font-family: Jost;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 23px;
-            margin-bottom: 24px;
-        }
-    
-        
-    }
-
-    #position{
-        position: sticky;
-        bottom: 0;
-        background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
-        background: -webkit-linear-gradient(top, transparent 0%,transparent 100%);
-        background: linear-gradient(to bottom, transparent 0%,transparent 100%);
-        
-    }
-
-    button{
-        justify-content: center;
-        margin-bottom: 24px;
-     }
-    
+  button {
+    justify-content: center;
+    margin-bottom: 24px;
+  }
 }
-
-
-
