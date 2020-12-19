@@ -6,6 +6,7 @@ import TextDescription from "../../../components/TextDescription";
 import Button from "../../../components/Button";
 import editIcon from "../../../assets/images/edit-icon.svg"
 import "./styles.scss";
+// import Text from "../../../components/Text";
 
 export default function InfoProfile() {
   return (
@@ -36,7 +37,13 @@ export default function InfoProfile() {
         <TextDescription title="Endereço" description="Rua dos Pet Fofinhos" />
         <TextDescription title="Bairro" description="Dog Cat" />
         <div className="button-container">
+          <div className="button-unique">
           <Button identifier="addpet" icon={editIcon} />
+        </div>
+        <div className="textinfo">
+        <p>Apagar conta</p>
+        <p >Sair do app</p>
+        </div>
         </div>
       </div>
     </>
