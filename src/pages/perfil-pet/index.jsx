@@ -16,8 +16,8 @@ export default function PerfilPet() {
 
   const { id } = useParams();
   const pet = getPetById(id);
-  const { namePet, agePet, imagePet } = pet;
   console.log(pet);
+  const { namePet, agePet, imagePet, infovaccine } = pet;
   return (
     <>
       <HeaderAdoption
@@ -48,10 +48,7 @@ export default function PerfilPet() {
           </div>
 
           <div className="dogCerto">
-            <TextDescription
-              title="Vacinação"
-              description="Todas as vacinas necessárias"
-            />
+            <TextDescription title="Vacinação" description={infovaccine} />
           </div>
 
           <div className="dogCerto">

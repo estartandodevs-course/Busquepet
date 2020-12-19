@@ -9,7 +9,7 @@ import { getPets } from "../../services/pets.service";
 export default function Feed() {
   const history = useHistory("");
   const [pets, setPets] = useState([]);
-  
+
   function ClickIcon() {
     history.push("/perfil");
   }
@@ -21,14 +21,14 @@ export default function Feed() {
   }
 
   function redirectToPetProfile(id) {
-    history.push(`/perfil-do-pet/${id}`)
+    history.push(`/perfil-do-pet/${id}`);
   }
 
   useEffect(() => {
     const petsResponse = getPets();
     setPets(petsResponse);
   }, []);
-  console.log(pets)
+  console.log(pets);
 
   return (
     <>
@@ -50,12 +50,12 @@ export default function Feed() {
       <section className="container-main">
         {pets.map(({ imagePet, namePet, agePet, typePet, id }, index) => (
           <CardComponent
-          key={index}
-          image={imagePet}
-          name={namePet}
-          age={agePet}
-          type={typePet}
-          onClick={() => redirectToPetProfile(id)}
+            key={index}
+            image={imagePet}
+            name={namePet}
+            age={agePet}
+            type={typePet}
+            onClick={() => redirectToPetProfile(id)}
           />
         ))}
       </section>
