@@ -5,8 +5,15 @@ import { Select } from "../../../../../../components/Select";
 import Button from "../../../../../../components/Button";
 import Check from "../../../../../../assets/images/Check.svg";
 import "./Style.scss";
+import { useState } from "react";
 export default function DonorLocation(props) {
   const {setValue, onSubmit} = props;
+
+  const [cepDonor, setCepDonor] = useState("");
+  const [stateDonor, setStateDonor] = useState("");
+  const [cityDonor, setCityDonor] = useState("");
+  const [addressDonor, setAddressDonor] = useState("");
+  const [districtDonor, setDistrictDonor] = useState("");
   return (
     <>
       <Header title="Você quer doar!" subTitle="Esse é o último!!!!!" />
@@ -18,7 +25,7 @@ export default function DonorLocation(props) {
           label="Seu CEP"
           type="text"
           placeholder="0000-000"
-          onChange={(event) => setValue("Cep", event)}
+          onChange={(event) => setCepDonor(event) && setValue("Cep", event)}
         />
 
         <Select
@@ -26,30 +33,31 @@ export default function DonorLocation(props) {
           identificador="labelVerde"
           typeMap="estado"
           label="Seu Estado"
-          onChange={(event) => setValue("State", event)}
+          onChange={(event) => setStateDonor(event) && setValue("State", event)}
         />
 
         <InputField
           label="Sua Cidade"
           type="text"
-          onChange={(event) => setValue("City", event)}
+          onChange={(event) => setCityDonor(event) && setValue("City", event)}
           idendifier="doador"
         />
         <InputField
           label="Seu Endereço"
           type="text"
-          onChange={(event) => setValue("Address", event)}
+          onChange={(event) => setAddressDonor(event) && setValue("Address", event)}
           idendifier="doador"
         />
         <InputField
           label="Seu Bairro"
           type="text"
-          onChange={(event) => setValue("district", event)}
+          onChange={(event) => setDistrictDonor(event) && setValue("district", event)}
           idendifier="doador"
         />
       </div>
       <div className="button-skip">
         <Button
+          disabled={!stateDonor || !cityDonor || !addressDonor || !districtDonor || !cepDonor}
           identifier="green"
           name="Cadastrar"
           icon={Check}
