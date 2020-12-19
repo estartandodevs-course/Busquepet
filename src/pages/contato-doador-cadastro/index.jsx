@@ -2,7 +2,6 @@ import './style.scss';
 import HeaderAdoption from '../../components/HeaderAdoption';
 import imageArrow from '../../assets/images/arrowPurple.svg';
 import whatsApp from '../../assets/images/Whatsapp.svg';
-
 export default function ContactDonor() {
 	return (
 		<>
@@ -39,9 +38,8 @@ export default function ContactDonor() {
 					Você pode escolher entrar em contato com o doador por meio do WhatsApp
 					ou E-mail que estão abaixo:
 				</p>
-
 				<button className="buttonWhatsApp">
-					WhatsApp do Doador <img src={whatsApp} alt="WhatsApp"></img>
+					WhatsApp do Doador <img src={whatsApp} alt="WhatsApp" ></img>
 				</button>
 			</div>
 		</>
