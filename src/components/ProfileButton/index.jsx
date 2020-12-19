@@ -2,7 +2,7 @@
 import { useHistory } from "react-router-dom";
 import Text from "../../components/Text";
 import "./styles.scss";
-export default function ProfileButton() {
+export default function ProfileButton({identificador}) {
   
   const history = useHistory("")
 
@@ -13,8 +13,6 @@ export default function ProfileButton() {
   function goBack() {
     history.push("/perfil")
   }
-  
-  
   
   return (
     <>
@@ -27,7 +25,7 @@ export default function ProfileButton() {
         </a>
       </div>
       <div className="borda">
-        <div className="line"></div>
+        <div className={identificador}></div>
       </div>
     </>
   );

@@ -18,7 +18,7 @@ export default function InfoProfile() {
         />
       </header>
       <Profile />
-      <ProfileButton />
+      <ProfileButton identificador="line-profile" />
 
       <div className="info-container">
         <TextDescription title="Nome" description="EzReal Blindado" />

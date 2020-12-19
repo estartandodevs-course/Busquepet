@@ -16,12 +16,19 @@
   min-width: 359px;
   border-bottom: 2px solid #e0e0e0;
 
-  .line{
-    transform: translate(0px,2px);
-    width: 50%;
-    margin:0 0 0 auto;
-    border: 1px solid #00CCCC;
-  }
+}
+
+.line-profile{
+  transform: translate(0px,2px);
+  width: 50%;
+  border: 1px solid #00CCCC;
+}
+
+.line-pet {
+  transform: translate(0px,2px);
+  width: 50%;
+  margin: 0 0 0 auto;
+  border: 1px solid #00CCCC;
 }
 
 .location-pet {

@@ -19,7 +19,7 @@ function FlowProfile01_2(){
             />
 
             <Profile />
-            <ProfileButton />
+            <ProfileButton/>
             
             <div className="dogData">
                 <div className="dogCerto">
