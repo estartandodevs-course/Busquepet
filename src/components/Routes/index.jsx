@@ -7,19 +7,25 @@ import RegisterPet from "../../pages/cadastro-do-doador/register-person/register
 import RegisterPerson from "../../pages/cadastro-do-doador/register-person/index";
 import ProfilePet from "../../pages/perfil-pet";
 import Login from "../../pages/login";
+import Profile from "../../pages/perfil-doador/perfil-doador00"
+import ProfileEdit from "../../pages/perfil-doador/info-do-doador"
 import RegisterAdopter from "../../pages/cadastro-do-doador/register-person/adopter-registration/steps";
 import RegisterDonor from "../../pages/cadastro-do-doador/register-person/register-donor/steps";
+import PetDetail from "../../pages/perfil-pet/detalhe-perfil-pet"
 export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Login} />
+        <Route exact path="/detalhe-do-pet" component={PetDetail} />
         <Route exact path="/feed" component={Feed} />
         <Route exact path="/filtro" component={Filter} />
         <Route exact path="/card-do-Pet" component={CardPet} />
         <Route exact path="/perfil-do-adotante" component={ProfilePerson} />
         <Route exact path="/registro-adotante" component={RegisterAdopter} />
         <Route exact path="/registro-doador" component={RegisterDonor} />
+        <Route exact path="/perfil" component={Profile} />
+        <Route exact path="/perfil-edit" component={ProfileEdit} />
         <Route
           exact
           path="/cadastro-tipo-de-pessoa"

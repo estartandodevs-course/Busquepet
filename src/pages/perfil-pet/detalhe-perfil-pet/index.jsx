@@ -54,7 +54,7 @@ export default function PetDetail() {
           <div className="localizacao">
             <span>
          {/* Adicionando o feed na anchor pra não dar erro no deploy, mas depois será mudado */}
-              <a href={Feed}>Ver mais...</a>
+              <span onClick={Feed}>Ver mais...</span>
             </span>
           </div>
 
