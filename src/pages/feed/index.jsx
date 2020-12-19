@@ -3,33 +3,15 @@ import { useHistory } from "react-router-dom";
 import iconPerfil from "../../assets/images/accountCircle.svg";
 import CardComponent from "../../components/CardComponent";
 import HeaderFeed from "../../components/HeaderFeed";
-import CadastroModal from "../../components/CadastroModal";
 import "./styles.scss";
-import { onAuthStateChange } from "../../services/auth.service";
 import { getPets } from "../../services/pets.service";
 
 export default function Feed() {
   const history = useHistory("");
   const [pets, setPets] = useState([]);
-  const [isItAble, setIsItAble] = useState(false);
-
-  const [user, setUser] = useState({ loggedIn: false });
-  useEffect(() => {
-    const unsubscribe = onAuthStateChange(setUser);
-
-    return () => unsubscribe();
-  }, []);
-
-  function closeSemCadastro() {
-    setIsItAble(false);
-  }
-
+  
   function ClickIcon() {
-    if (user.loggedIn) {
-      history.push("/perfil");
-    } else {
-      setIsItAble(true);
-    }
+    history.push("/perfil");
   }
 
   function filterPetByType(type) {
@@ -71,12 +53,6 @@ export default function Feed() {
           />
         ))}
       </section>
-      {isItAble && (
-        <CadastroModal
-          close={closeSemCadastro}
-          text="Para você conseguir acessar o perfil é necessario fazer um cadastro."
-        />
-      )}
     </>
   );
 }
