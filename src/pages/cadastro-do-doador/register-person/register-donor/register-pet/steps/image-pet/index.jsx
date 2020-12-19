@@ -5,8 +5,10 @@ import InputField from "../../../../../../../components/InputField/index";
 import Button from "../../../../../../../components/Button/index";
 import Check from "../../../../../../../assets/images/Check.svg";
 import Pontos from "../../../../../../../assets/images/pontos.svg";
+import { useState } from "react";
 
 export default function ImagePet({ setValue, onSubmit }) {
+  const [urlImage, setUrlImage] = useState("");
   return (
     <>
       <Header title="Vamos ajudar o bichinho a encontrar um lar de amor?!" />
@@ -17,7 +19,7 @@ export default function ImagePet({ setValue, onSubmit }) {
         </Text>
       </div>
       <InputField
-        onChange={(event) => setValue("imagePet", event)}
+        onChange={(event) => setUrlImage(event) && setValue("imagePet", event)}
         idendifier="doador"
         label="Insira a URL da foto do seu bichinho"
         type="text"
@@ -48,6 +50,7 @@ export default function ImagePet({ setValue, onSubmit }) {
 
       <footer className="container-btn">
         <Button
+          disabled={!urlImage}
           onClick={onSubmit}
           identifier="green"
           name="Finalizar"
