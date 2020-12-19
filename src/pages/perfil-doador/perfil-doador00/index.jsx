@@ -24,7 +24,7 @@ function FlowProfile00() {
         identification="headerWhite"
       />
       <Profile />
-      <ProfileButton />
+      <ProfileButton identificador="line-pet"/>
       <div className="container-pet">
         <div className="register-pet">
           <Text type="registerpet">
