@@ -26,7 +26,7 @@ export default function DonorLocation(props) {
           label="Seu CEP"
           type="text"
           placeholder="0000-000"
-          onChange={(event) => setCepDonor(event) && setValue("Cep", event)}
+          onChange={(event) => setCepDonor(event) || setValue("Cep", event)}
         />
 
         <Select
@@ -34,25 +34,25 @@ export default function DonorLocation(props) {
           identificador="labelVerde"
           typeMap="estado"
           label="Seu Estado"
-          onChange={(event) => setStateDonor(event) && setValue("State", event)}
+          onChange={(event) => setStateDonor(event) || setValue("State", event)}
         />
 
         <InputField
           label="Sua Cidade"
           type="text"
-          onChange={(event) => setCityDonor(event) && setValue("City", event)}
+          onChange={(event) => setCityDonor(event) || setValue("City", event)}
           idendifier="doador"
         />
         <InputField
           label="Seu Endereço"
           type="text"
-          onChange={(event) => setAddressDonor(event) && setValue("Address", event)}
+          onChange={(event) => setAddressDonor(event) || setValue("Address", event)}
           idendifier="doador"
         />
         <InputField
           label="Seu Bairro"
           type="text"
-          onChange={(event) => setDistrictDonor(event) && setValue("district", event)}
+          onChange={(event) => setDistrictDonor(event) || setValue("district", event)}
           idendifier="doador"
         />
       </div>

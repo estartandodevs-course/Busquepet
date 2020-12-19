@@ -28,35 +28,35 @@ export default function DonorContact(props) {
           placeholder="(xx) 9 9999-9999"
           type="number"
           label="Seu WhatsApp"
-          onChange={(event) => setNumberDonor(event) && setValue("number", event)}
+          onChange={(event) => setNumberDonor(event) || setValue("number", event)}
         />
         <InputField
           idendifier="doador"
           placeholder="exemplo@email.com"
           type="email"
           label="Seu E-mail"
-          onChange={(event) => setEmailDonor(event) && setValue("Email", event)}
+          onChange={(event) => setEmailDonor(event) || setValue("Email", event)}
         />
         <InputField
           idendifier="doador"
           placeholder="exemplo@email.com"
           type="email"
           label="Confirmar E-mail"
-          onChange={(event) => setCheckEmailDonor(event) && setValue("Email", event)}
+          onChange={(event) => setCheckEmailDonor(event) || setValue("Email", event)}
         />
         <InputField
           idendifier="doador"
           placeholder="********"
           type="password"
           label="Crie uma senha"
-          onChange={(event) => setPasswordDonor(event) && setValue("Password", event)}
+          onChange={(event) => setPasswordDonor(event) || setValue("Password", event)}
         />
         <InputField
           idendifier="doador"
           placeholder="********"
           type="password"
           label="Confirme a sua senha"
-          onChange={(event) => setCheckPasswordDonor(event) && setValue("Password", event)}
+          onChange={(event) => setCheckPasswordDonor(event) || setValue("Password", event)}
         />
       </section>
       <div className="button-skip">

@@ -19,7 +19,7 @@ export default function ImagePet({ setValue, onSubmit }) {
         </Text>
       </div>
       <InputField
-        onChange={(event) => setUrlImage(event) && setValue("imagePet", event)}
+        onChange={(event) => setUrlImage(event) || setValue("imagePet", event)}
         idendifier="doador"
         label="Insira a URL da foto do seu bichinho"
         type="text"

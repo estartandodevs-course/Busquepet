@@ -28,7 +28,7 @@ export default function DonorPersonData(props) {
           idendifier="doador"
           label="Seu Nome Completo"
           placeholder="Ex.: Maria José"
-          onChange={(event) => setNameDonor(event) && setValue("Donor", event)}
+          onChange={(event) => setNameDonor(event) || setValue("Donor", event)}
         ></InputField>
 
         <InputField
@@ -37,7 +37,7 @@ export default function DonorPersonData(props) {
           placeholder="00/00/0000"
           id="date"
           type="date"
-          onChange={(event) => setDateBirth(event) && setValue("Age", event)}
+          onChange={(event) => setDateBirth(event) || setValue("Age", event)}
         ></InputField>
       </section>
       <div className="button-skip">

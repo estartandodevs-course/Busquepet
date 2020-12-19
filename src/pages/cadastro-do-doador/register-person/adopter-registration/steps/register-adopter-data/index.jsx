@@ -17,8 +17,6 @@ export default function RegisterAdopterData(props) {
   const [email, setEmail] = useState("");
   const [ageAdopter, setAgeAdopter] = useState("");
 
-
-
   function comeBack() {
     history.goBack();
   }
@@ -44,35 +42,35 @@ export default function RegisterAdopterData(props) {
           placeholder="Ex.: Maria José"
           type="text"
           label="Seu Nome Completo"
-          onChange={(event) => setAdopter(event) && setValue("Adopter", event)}
+          onChange={(event) => setAdopter(event) || setValue("Adopter", event)}
         />
         <InputField
           idendifier="adotante"
           placeholder="00/00/0000"
           type="date"
           label="Data de Nascimento"
-          onChange={(event) => setAgeAdopter(event) && setValue("Age", event)}
+          onChange={(event) => setAgeAdopter(event) || setValue("Age", event)}
         />
         <InputField
           idendifier="adotante"
           placeholder="exemplo@email.com"
           type="email"
           label="Seu E-mail"
-          onChange={(event) => setEmail(event) && setValue("Email", event)}
+          onChange={(event) => setEmail(event) || setValue("Email", event)}
         />
         <InputField
           idendifier="adotante"
           placeholder="********"
           type="password"
           label="Crie uma senha"
-          onChange={(event) => setPassword(event) && setValue("password", event)}
+          onChange={(event) => setPassword(event) || setValue("password", event)}
         />
         <InputField
           idendifier="adotante"
           placeholder="********"
           type="password"
           label="Confirme sua senha"
-          onChange={(event) => setCheckPassword(event) && setValue("password", event)}
+          onChange={(event) => setCheckPassword(event) || setValue("password", event)}
         />
       </section>
       <div className="button-skip">
