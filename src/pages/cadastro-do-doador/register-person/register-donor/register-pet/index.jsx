@@ -16,6 +16,7 @@ export default function RegisterPet() {
       ...form,
       [name]: value,
     });
+    console.log(form)
   }
 
   function handleSubmit() {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import InputField from "../../../../../../components/InputField";
 import Text from "../../../../../../components/Text";
 import Button from "../../../../../../components/Button";
@@ -9,6 +9,12 @@ import "./styles.scss";
 
 export default function RegistratLocation(props) {
   const {setValue, onSubmit} = props;
+
+  const [cepAdopter, setCepAdopter] = useState("");
+  const [stateAdopter, setStateAdopter] = useState("");
+  const [city, setCity] = useState("");
+  const [addressAdopter, setAddress] = useState("");
+  const [district, setDistrict] = useState("");
 
   return (
     <>
@@ -32,37 +38,38 @@ export default function RegistratLocation(props) {
             label="Seu CEP"
             type="text"
             placeholder="0000-000"
-            onChange={(event) => setValue("Cep", event)}
+            onChange={(event) => setCepAdopter(event) || setValue("Cep", event)}
             />
           <Select
             identificador="labelRoxo"
             identifier="roxo"
             typeMap="estado"
             label="Seu Estado"
-            onChange={(event) => setValue("State", event)}
+            onChange={(event) => setStateAdopter(event) || setValue("State", event)}
           />
           <InputField
             label="Sua Cidade"
             type="text"
             idendifier="adotante"
-            onChange={(event) => setValue("City", event)}
+            onChange={(event) => setCity(event) || setValue("City", event)}
           />
           <InputField
             label="Seu Endereço"
             type="text"
             idendifier="adotante"
-            onChange={(event) => setValue("Address", event)}
+            onChange={(event) => setAddress(event) || setValue("Address", event)}
           />
           <InputField
             label="Seu Bairro"
             type="text"
             idendifier="adotante"
-            onChange={(event) => setValue("District", event)}
+            onChange={(event) => setDistrict(event) || setValue("District", event)}
           />
         </div>
       </section>
       <div className="button-skip">
         <Button
+        disabled={ !cepAdopter || !stateAdopter || !city || !addressAdopter || !district}
           identifier="purple"
           name="Cadastrar"
           icon={Check}
