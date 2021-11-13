@@ -42,7 +42,7 @@ export default function RegisterPerson() {
                 </div>
             </section>
                 <div className="button-skip" >
-                    <Button disabled={!person} name="Próximo" identifier="green" icon={Icon} onClick={ () => chooseScreen({person})} />
+                    <Button disabled={!person} name="Próximo" className="green" icon={Icon} onClick={ () => chooseScreen({person})} />
                 </div>
         </>
     )

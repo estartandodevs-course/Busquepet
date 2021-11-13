@@ -51,7 +51,7 @@ function FlowProfile01_2(){
                 </div>
 
                 <div className="plus-button">
-                    <Button identifier="addpet" icon={Pen} />
+                    <Button className="addpet" icon={Pen} />
                 </div>
             </div>
         </>

@@ -77,7 +77,7 @@ export default function RegisterAdopterData(props) {
         <Button
           disabled={!password || !adopter || !checkPassword || !email || !ageAdopter}
           name="Próximo"
-          identifier="purple"
+          className="purple"
           icon={Icon}
           onClick={onSubmit}
         />

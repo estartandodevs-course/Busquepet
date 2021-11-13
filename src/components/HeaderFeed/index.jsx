@@ -1,20 +1,17 @@
-import './styles.scss';
-import Text from '../Text';
-export default function HeaderFeed(props) {
-	const { image, title, onClick} = props;
+import Text from "../Text";
+import "./styles.scss";
 
-	return (
-		<>
-			<header className="header-feed">
-				<div className="content-header-feed">
-					<Text className="titulo" type="titleheader">
-						{title}
-					</Text>
-				</div>
-				<div className="container-icon">
-					<img className="image-icon" onClick={onClick} src={image} alt="#" />
-				</div>
-			</header>
-		</>
-	);
-}
+const HeaderFeed = ({ image, title, onClick }) => (
+  <header className="header-feed">
+    <div className="content-header-feed">
+      <Text className="titulo" type="titleheader">
+        {title}
+      </Text>
+    </div>
+    <div className="container-icon">
+      <img className="image-icon" onClick={onClick} src={image} alt="#" />
+    </div>
+  </header>
+);
+
+export default HeaderFeed;

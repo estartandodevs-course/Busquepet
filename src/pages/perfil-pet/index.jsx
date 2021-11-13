@@ -85,7 +85,7 @@ export default function PerfilPet() {
         <div id="position">
           <Button
             onClick={goContact}
-            identifier="gradient"
+            className="gradient"
             name="Quero adotar"
           ></Button>
         </div>

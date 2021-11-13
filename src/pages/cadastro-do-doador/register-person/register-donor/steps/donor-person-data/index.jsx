@@ -44,7 +44,7 @@ export default function DonorPersonData(props) {
         <Button
           disabled={!nameDonor || !dateBirth}
           name="Próximo"
-          identifier="green"
+          className="green"
           icon={Icon}
           onClick={onSubmit}
         />

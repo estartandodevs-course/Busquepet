@@ -70,7 +70,7 @@ export default function RegistratLocation(props) {
       <div className="button-skip">
         <Button
         disabled={ !cepAdopter || !stateAdopter || !city || !addressAdopter || !district}
-          identifier="purple"
+          className="purple"
           name="Cadastrar"
           icon={Check}
           onClick={onSubmit}

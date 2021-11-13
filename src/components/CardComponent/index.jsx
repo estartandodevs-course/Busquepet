@@ -1,13 +1,10 @@
-import "./styles.scss";
 import Text from "../Text";
 import gener from "../../assets/images/Fêmea.svg";
 import locationX from "../../assets/images/Local-do-Pet-List.svg";
 import petSize from "../../assets/images/Dog-M.svg";
-export default function CardComponent(props) {
-  const { image, name, age, type, onClick } = props;
+import "./styles.scss";
 
-  return (
-    <>
+const CardComponent = ({ image, name, age, type, onClick }) =>(
       <section className="container-card" type={type}>
         <div className="container-img">
           <img onClick={onClick} src={image} alt="#" />
@@ -24,6 +21,6 @@ export default function CardComponent(props) {
           <img className="x" src={locationX} alt="#" />
         </footer>
       </section>
-    </>
-  );
-}
+  )
+
+  export default CardComponent

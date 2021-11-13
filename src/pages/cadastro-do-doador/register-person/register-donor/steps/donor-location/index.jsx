@@ -59,7 +59,7 @@ export default function DonorLocation(props) {
       <div className="button-skip">
         <Button
           disabled={!stateDonor || !cityDonor || !addressDonor || !districtDonor || !cepDonor}
-          identifier="green"
+          className="green"
           name="Cadastrar"
           icon={Check}
           onClick={onSubmit}

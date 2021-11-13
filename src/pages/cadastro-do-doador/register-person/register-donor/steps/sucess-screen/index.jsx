@@ -24,7 +24,7 @@ export default function SucessScreen() {
         <Button
           onClick={redirect}
           name="Vamos"
-          identifier="green"
+          className="green"
           icon={Icon}
         />
       </footer>

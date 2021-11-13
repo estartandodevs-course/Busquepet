@@ -99,7 +99,7 @@ export default function CharacteristicsPet(props) {
         <Button
           disabled={!typePet || !gender || !size || !agePet}
           name="Próximo"
-          identifier="green"
+          className="green"
           icon={Icon}
           onClick={onSubmit}
         />
