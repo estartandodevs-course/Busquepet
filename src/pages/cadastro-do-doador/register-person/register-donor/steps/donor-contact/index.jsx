@@ -63,7 +63,7 @@ export default function DonorContact(props) {
         <Button
           disabled={!number || !emailDonor || !checkEmailDonor || !passwordDonor || !CheckPasswordDonor}
           name="Próximo"
-          identifier="green"
+          className="green"
           icon={Icon}
           onClick={onSubmit}
         />

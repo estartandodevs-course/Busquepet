@@ -35,7 +35,7 @@ export default function InfoProfileEdit() {
         <TextDescription title="Endereço" description="Rua dos Pet Fofinhos" />
         <TextDescription title="Bairro" description="Dog Cat" />
         <div className="button-container">
-          <Button identifier="whiteOrange" name="Salvar alterações" />
+          <Button className="whiteOrange" name="Salvar alterações" />
         </div>
       </div>
     </>

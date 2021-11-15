@@ -2,25 +2,25 @@
 import { useHistory } from "react-router-dom";
 import Text from "../../components/Text";
 import "./styles.scss";
-export default function ProfileButton({identificador}) {
-  
-  const history = useHistory("")
 
-  function goProfile () {
-    history.push("/perfil-edit")
+const ProfileButton = ({ identificador }) => {
+  const { push } = useHistory();
+
+  function goProfile() {
+    push("/perfil-edit");
   }
 
   function goBack() {
-    history.push("/perfil")
+    push("/perfil");
   }
-  
+
   return (
     <>
       <div className="container-buttonprofile">
-        <a href="#" onClick={goProfile} >
+        <a href="#" onClick={goProfile}>
           <Text type="profilebutton">Seu perfil</Text>
         </a>
-        <a href="#" onClick={goBack} >
+        <a href="#" onClick={goBack}>
           <Text type="profilebutton">Seu Pet</Text>
         </a>
       </div>
@@ -29,4 +29,6 @@ export default function ProfileButton({identificador}) {
       </div>
     </>
   );
-}
+};
+
+export default ProfileButton;

@@ -71,7 +71,7 @@ export default function DataPet(props) {
             </div>
 
             <div className="form-button-skip">
-                <Button disabled={!namePet || !infovaccine || !descriptionPet} name="Próximo" identifier="green"
+                <Button disabled={!namePet || !infovaccine || !descriptionPet} name="Próximo" className="green"
                     icon={Icon} onClick={onSubmit}/>
             </div>
         </>

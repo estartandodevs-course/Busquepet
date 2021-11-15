@@ -38,7 +38,7 @@ export default function InfoProfile() {
         <TextDescription title="Bairro" description="Rio de Janeiro" />
         <div className="button-container">
           <div className="button-unique">
-          <Button identifier="addpet" icon={editIcon} />
+          <Button className="addpet" icon={editIcon} />
         </div>
         <div className="textinfo">
         <p>Apagar conta</p>

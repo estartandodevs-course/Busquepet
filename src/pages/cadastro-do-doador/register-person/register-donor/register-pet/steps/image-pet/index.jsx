@@ -52,7 +52,7 @@ export default function ImagePet({ setValue, onSubmit }) {
         <Button
           disabled={!urlImage}
           onClick={onSubmit}
-          identifier="green"
+          className="green"
           name="Finalizar"
           icon={Check}
         />

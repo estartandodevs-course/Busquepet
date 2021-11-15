@@ -33,7 +33,7 @@ function FlowProfile00() {
         </div>
       </div>
       <div className="plus-button">
-        <Button onClick={goRegister} identifier="addpet" icon={PlusButton} />
+        <Button onClick={goRegister} className="addpet" icon={PlusButton} />
       </div>
     </>
   );
