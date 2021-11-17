@@ -4,7 +4,7 @@ import imageArrow from "../../../../assets/images/arrowPurple.svg";
 import Profile from "../../../../components/Profile";
 import ProfileButton from "../../../../components/ProfileButton";
 import TextDescription from '../../../../components/TextDescription';
-import Button from "../../../../components/Button";
+import Button from "../../../../components/ButtonLegacy";
 import Pen from "../../../../assets/images/Pen.svg";
 
 

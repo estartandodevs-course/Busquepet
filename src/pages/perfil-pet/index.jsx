@@ -1,7 +1,7 @@
 import { useHistory, useParams } from "react-router-dom";
 import "./Style.scss";
 import TextDescription from "../../components/TextDescription";
-import Button from "../../components/Button/index";
+import Button from "../../components/ButtonLegacy/index";
 import imageArrow from "../../assets/images/arrowPurple.svg";
 import purpleHeart from "../../assets/images/purpleHeart.svg";
 import HeaderAdoption from "../../components/HeaderAdoption";

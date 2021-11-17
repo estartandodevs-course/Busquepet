@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Button from "../../components/Button";
+// import Button from "../../components/Button";
+import Button from "../../components/Button/index";
 import Text from "../../components/Text";
 import Logo from "../../assets/images/logo.svg";
 import InputField from "../../components/InputField";
@@ -55,7 +56,7 @@ export default function Login() {
         />
         <div id="content-text">
           <Text type="textform">
-            Ainda não possui conta? 
+            Ainda não possui conta?
             <span className="text-link" onClick={redirect}>
               Cadastre-se
             </span>
@@ -64,8 +65,8 @@ export default function Login() {
       </section>
       <footer className="container-btn">
         <Button
+          typeVariant='Purple'
           name="Entrar"
-          identifier="purple"
           icon={Icon}
           onClick={handleLogin}
         />

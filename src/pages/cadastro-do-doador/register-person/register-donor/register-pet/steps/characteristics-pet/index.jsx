@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./styles.scss";
 import Text from "../../../../../../../components/Text";
 import RadioButton from "../../../../../../../components/RadioButton";
-import Button from "../../../../../../../components/Button/index.jsx";
+import Button from "../../../../../../../components/ButtonLegacy/index";
 import Icon from "../../../../../../../assets/images/SetaProx.svg";
 import Header from "../../../../../../../components/Header";
 

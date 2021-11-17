@@ -1,6 +1,6 @@
 import Icon from "../../../../../../assets/images/SetaProx.svg";
 import Logo from "../../../../../../assets/images/groundimg.png";
-import Button from "../../../../../../components/Button";
+import Button from "../../../../../../components/ButtonLegacy";
 import Text from "../../../../../../components/Text";
 import { useHistory } from "react-router-dom";
 import "./styles.scss";

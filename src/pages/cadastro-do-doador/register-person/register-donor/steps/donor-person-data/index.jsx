@@ -1,7 +1,7 @@
 import Text from "../../../../../../components/Text";
 import { InputField } from "../../../../../../components/InputField";
 import Header from "../../../../../../components/Header";
-import Button from "../../../../../../components/Button";
+import Button from "../../../../../../components/ButtonLegacy";
 import Icon from "../../../../../../assets/images/SetaProx.svg";
 import "./styles.scss";
 import { useState } from "react";

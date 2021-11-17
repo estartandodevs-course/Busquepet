@@ -2,7 +2,7 @@ import "./Style.scss";
 import Header from "../../../../../../../components/Header/index";
 import Text from "../../../../../../../components/Text/index";
 import InputField from "../../../../../../../components/InputField/index";
-import Button from "../../../../../../../components/Button/index";
+import Button from "../../../../../../../components/ButtonLegacy/index";
 import Check from "../../../../../../../assets/images/Check.svg";
 import Pontos from "../../../../../../../assets/images/pontos.svg";
 import { useState } from "react";

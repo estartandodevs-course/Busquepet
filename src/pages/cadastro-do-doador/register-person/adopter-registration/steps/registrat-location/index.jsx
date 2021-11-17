@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import InputField from "../../../../../../components/InputField";
 import Text from "../../../../../../components/Text";
-import Button from "../../../../../../components/Button";
+import Button from "../../../../../../components/ButtonLegacy";
 import { Select } from "../../../../../../components/Select";
 import Check from "../../../../../../assets/images/Check.svg";
 import Seta from "../../../../../../assets/images/seta.svg";

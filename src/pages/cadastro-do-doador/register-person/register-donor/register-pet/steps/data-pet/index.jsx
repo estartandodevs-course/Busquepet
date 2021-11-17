@@ -5,7 +5,7 @@ import TextArea from "../../../../../../../components/TextArea";
 import RadioButton from "../../../../../../../components/RadioButton";
 import Text from "../../../../../../../components/Text";
 import Icon from "../../../../../../../assets/images/SetaProx.svg";
-import Button from "../../../../../../../components/Button";
+import Button from "../../../../../../../components/ButtonLegacy";
 import "./styles.scss";
 
 export default function DataPet(props) {

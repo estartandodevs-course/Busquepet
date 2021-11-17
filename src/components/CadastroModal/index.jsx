@@ -1,6 +1,6 @@
 import { useHistory } from "react-router-dom";
 import ErrorModal from "../../assets/images/ErrorModal.svg";
-import Button from "../../components/Button/index";
+import Button from "../../components/ButtonLegacy/index";
 import closeButton from "../../assets/images/close-button.svg";
 import "./CadastroModal.scss";
 

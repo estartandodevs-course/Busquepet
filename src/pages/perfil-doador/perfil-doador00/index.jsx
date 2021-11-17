@@ -4,7 +4,7 @@ import Profile from "../../../components/Profile";
 import ProfileButton from "../../../components/ProfileButton";
 import Text from "../../../components/Text";
 import PlusButton from "../../../assets/images/plus-button.svg";
-import Button from "../../../components/Button";
+import Button from "../../../components/ButtonLegacy";
 import "./styles.scss";
 import { useHistory } from "react-router-dom";
 

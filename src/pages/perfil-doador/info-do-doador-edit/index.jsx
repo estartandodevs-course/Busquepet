@@ -1,10 +1,9 @@
 import HeaderAdoption from "../../../components/HeaderAdoption";
 import Profile from "../../../components/Profile";
-import ProfileButton from "../../../components/ProfileButton";
 import imageArrow from "../../../assets/images/arrowPurple.svg";
 import TextDescription from "../../../components/TextDescription";
 import "./styles.scss";
-import Button from "../../../components/Button";
+import Button from "../../../components/ButtonLegacy";
 
 export default function InfoProfileEdit() {
   return (

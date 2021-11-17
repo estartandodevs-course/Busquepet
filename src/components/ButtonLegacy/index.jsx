@@ -1,7 +1,7 @@
 import Text from "../Text";
 import "./Button.scss";
 
-const Button = ({  icon, name, ...restProps }) => (
+const ButtonLegacy = ({  icon, name, ...restProps }) => (
       <button 
         {...restProps}
       >
@@ -12,4 +12,4 @@ const Button = ({  icon, name, ...restProps }) => (
       </button>
   );
 
-  export default Button;
+  export default ButtonLegacy;

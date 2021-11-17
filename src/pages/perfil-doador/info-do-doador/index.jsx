@@ -3,7 +3,7 @@ import Profile from "../../../components/Profile";
 import ProfileButton from "../../../components/ProfileButton";
 import imageArrow from "../../../assets/images/arrowPurple.svg";
 import TextDescription from "../../../components/TextDescription";
-import Button from "../../../components/Button";
+import Button from "../../../components/ButtonLegacy";
 import editIcon from "../../../assets/images/edit-icon.svg"
 import "./styles.scss";
 // import Text from "../../../components/Text";
