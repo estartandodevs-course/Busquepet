@@ -1,0 +1,154 @@
+$header-color: #ffffff;
+$title-color: #008080;
+$text-form-color: #4f4f4f;
+$text-buttonnext-color: #fbfbfb;
+$text-buttonskip-color: #800080;
+$final-form-color: #121212;
+$title-card-pet-color: #800080;
+$age-pet-card-pet-color: #333333;
+$genrer-pet-card-pet-color: #9b3a9b;
+$location-pet-card-pet-color: #333333;
+
+@mixin config-button {
+  color: $text-buttonnext-color;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+@mixin config-header {
+  color: $header-color;
+  font-family: Poppins;
+  letter-spacing: 0.02em;
+}
+
+@mixin finalform-config {
+  color: $final-form-color;
+  font-family: Jost;
+  font-style: normal;
+  font-size: 26px;
+  letter-spacing: 0.02em;
+}
+
+.title-header {
+  @include config-header;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.subtitle-header {
+  @include config-header;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.title-form {
+  color: $title-color;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.title-form-black {
+  margin: 24px;
+  min-width: 327px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #121212;
+
+  @media (max-width: 280px) {
+    min-width: 300px;
+  }
+}
+
+.label-form {
+  color: $title-color;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.text-form {
+  color: $text-form-color;
+  font-family: Jost;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+.text-button {
+  color: $text-buttonnext-color;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  margin: 0 auto;
+}
+
+.text-buttonskip {
+  @include config-button;
+  color: $text-buttonskip-color;
+}
+
+.finaltext-form {
+  color: $final-form-color;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.finaltextform2 {
+  @include finalform-config;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title-pet {
+  color: $title-card-pet-color;
+  font-family: Nunito;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.age-pet {
+  color: $age-pet-card-pet-color;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.gender-pet {
+  color: $genrer-pet-card-pet-color;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 8px;
+  letter-spacing: 0.02em;
+}
+
+.location-pet {
+  color: $location-pet-card-pet-color;
+  font-family: Jost;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.title-image {
+  color: $final-form-color;
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
