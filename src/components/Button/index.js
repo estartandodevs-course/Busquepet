@@ -1,5 +1,5 @@
 import Text from "../Text";
-import "./Button.scss";
+import "./styles.scss";
 
 const Button = ({ icon, name, ...restProps }) => (
   <button {...restProps}>

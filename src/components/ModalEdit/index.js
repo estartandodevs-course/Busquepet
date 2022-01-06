@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.scss";
-import ErrorModal from "../../assets/images/sucess-icon.svg";
-import Button from "../../components/Button/index";
-import closeButton from "../../assets/images/close-button.svg";
+import ErrorModal from "assets/images/sucess-icon.svg";
+import Button from "components/Button/index";
+import closeButton from "assets/images/close-button.svg";
 
 const ModalEdit = ({ close }) => (
   <div className="modal-container">

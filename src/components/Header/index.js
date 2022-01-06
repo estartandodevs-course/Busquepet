@@ -1,19 +1,23 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import Seta from "assets/images/seta.svg";
-import Text from "Text/";
+import { Text } from "components";
 import "./styles.scss";
 
 export default function Header({ title, subTitle }) {
-  const { goBack } = useHistory();
+  // const { goBack } = useHistory();
 
-  function comeBack() {
-    goBack();
-  }
+  // // function comeBack() {
+  // //   goBack();
+  // // }
 
   return (
     <header className="header">
-      <img onClick={comeBack} className="arrow" src={Seta} alt="seta" />
+      <img
+        onClick={console.log("cu")}
+        className="arrow"
+        src={Seta}
+        alt="seta"
+      />
       <div className="textform">
         <Text className="titulo" type="titleheader">
           {title}

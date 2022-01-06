@@ -1,14 +1,8 @@
-import typeMap from "../../_mock/typeMap";
-import "styles.scss";
+import "./styles.scss";
 
-export const Select = ({
-  identifier,
-  identificador,
-  onChange,
-  ...restProps
-}) => (
+export const Select = ({ identifier, id, onChange, ...restProps }) => (
   <div className="select-container">
-    <label className="label" id={identificador}>
+    <label className="label" id={id}>
       {restProps.label} <span className="asterisk">*</span>
     </label>
     <select
@@ -17,15 +11,7 @@ export const Select = ({
       id=""
       placeholder="Selecione um estado"
       onChange={(event) => onChange(event.target.value)}
-    >
-      {typeMap[restProps.typeMap].map((element, index) => {
-        return (
-          <option key={index} value={element.value}>
-            {element.text}
-          </option>
-        );
-      })}
-    </select>
+    ></select>
   </div>
 );
 

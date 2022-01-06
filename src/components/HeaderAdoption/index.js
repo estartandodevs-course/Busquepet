@@ -1,5 +1,5 @@
 import { useHistory } from "react-router-dom";
-import "./Style.scss";
+import "./styles.scss";
 
 const HeaderAdoption = ({ titleName, imageOne, imageTwo, id }) => {
   const { goBack } = useHistory();

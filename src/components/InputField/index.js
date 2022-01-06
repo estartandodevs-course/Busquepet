@@ -1,4 +1,4 @@
-import "./InputField.scss";
+import "./styles.scss";
 
 export const InputField = ({
   placeholder,

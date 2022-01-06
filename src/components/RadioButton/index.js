@@ -1,5 +1,5 @@
 import Text from "../Text";
-import "./RadioButton.scss";
+import "./styles.scss";
 
 const RadioButton = ({ text, name, id, onChange }) => (
   <label

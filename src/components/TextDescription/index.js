@@ -1,4 +1,4 @@
-import "./style.scss";
+import "./styles.scss";
 
 const TextDescription = ({ title, description }) => (
   <div className="textdescription">

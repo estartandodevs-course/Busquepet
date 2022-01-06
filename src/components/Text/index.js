@@ -1,4 +1,4 @@
-import "styles.scss";
+import "./styles.scss";
 
 function TitleHeader(props) {
   const text = props.children;
