@@ -1,3 +1,4 @@
+import typeMap from "_mock/typeMap";
 import "./styles.scss";
 
 export const Select = ({ identifier, id, onChange, ...restProps }) => (
@@ -11,7 +12,15 @@ export const Select = ({ identifier, id, onChange, ...restProps }) => (
       id=""
       placeholder="Selecione um estado"
       onChange={(event) => onChange(event.target.value)}
-    ></select>
+    >
+      {typeMap[restProps.typeMap].map((element, index) => {
+        return (
+          <option key={index} value={element.value}>
+            {element.text}
+          </option>
+        );
+      })}
+    </select>
   </div>
 );
 

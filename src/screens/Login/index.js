@@ -4,9 +4,10 @@ import Icon from "assets/images/Check.svg";
 import { InputField, Text, Button } from "components";
 import "./styles.scss";
 // import { login } from "../../services/auth.service";
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 export default function Login() {
+  const history = useHistory();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
 
@@ -20,9 +21,10 @@ export default function Login() {
   //     }
   //   }
 
-  //   function redirect() {
-  //     history.push("/cadastro-tipo-de-pessoa");
-  //   }
+  function redirect() {
+    history.push("/cadastro-tipo-de-pessoa");
+  }
+
   return (
     <>
       <section className="container-form">
@@ -50,7 +52,7 @@ export default function Login() {
         <div id="content-text">
           <Text type="textform">
             Ainda não possui conta?
-            <span className="text-link" onClick={console.log("deu certo")}>
+            <span className="text-link" onClick={redirect}>
               Cadastre-se
             </span>
           </Text>

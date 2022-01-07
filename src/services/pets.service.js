@@ -1,4 +1,4 @@
-import { petsMock } from "_mock/feed";
+import { petsMock } from "../_mock/feed";
 
 export function getPets() {
   const petsStorage = localStorage.getItem("pets");

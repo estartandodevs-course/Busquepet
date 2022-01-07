@@ -14,6 +14,7 @@ import Select from "./Select";
 import Text from "./Text";
 import TextArea from "./TextArea";
 import TextDescription from "./TextDescription";
+import Routes from "./Routes";
 
 export {
   Button,
@@ -32,4 +33,5 @@ export {
   Text,
   TextArea,
   TextDescription,
+  Routes,
 };

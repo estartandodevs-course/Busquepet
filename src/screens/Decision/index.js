@@ -7,19 +7,18 @@ import "./styles.scss";
 export default function RegisterPerson() {
   const [person, setPerson] = useState("");
 
-  //   const history = useHistory();
+  const history = useHistory();
 
-  //   function chooseScreen() {
-  //     console.log(person);
-  //     const location = {
-  //       pathname:
-  //         person === "adotante" ? "/registro-adotante" : "/registro-doador",
-  //       state: {
-  //         person,
-  //       },
-  //     };
-  //     history.push(location);
-  //   }
+  function chooseScreen() {
+    console.log(person);
+    const location = {
+      pathname: person === "adotante" ? "/registroAdotante" : "/registrodoador",
+      state: {
+        person,
+      },
+    };
+    history.push(location);
+  }
 
   return (
     <>
@@ -55,6 +54,7 @@ export default function RegisterPerson() {
           name="Próximo"
           className="green"
           icon={Icon}
+          onClick={() => chooseScreen({ person })}
         />
       </div>
     </>

@@ -31,14 +31,14 @@ export default function RegistratLocation(props) {
       <section className="container-form-location">
         <div className="contact-form">
           <InputField
-            idendifier="adotante"
+            id="adotante"
             label="Seu CEP"
             type="text"
             placeholder="0000-000"
             onChange={(event) => setCepAdopter(event) || setValue("Cep", event)}
           />
           <Select
-            identificador="labelRoxo"
+            id="labelRoxo"
             identifier="roxo"
             typeMap="estado"
             label="Seu Estado"
@@ -49,13 +49,13 @@ export default function RegistratLocation(props) {
           <InputField
             label="Sua Cidade"
             type="text"
-            idendifier="adotante"
+            id="adotante"
             onChange={(event) => setCity(event) || setValue("City", event)}
           />
           <InputField
             label="Seu Endereço"
             type="text"
-            idendifier="adotante"
+            id="adotante"
             onChange={(event) =>
               setAddress(event) || setValue("Address", event)
             }
@@ -63,7 +63,7 @@ export default function RegistratLocation(props) {
           <InputField
             label="Seu Bairro"
             type="text"
-            idendifier="adotante"
+            id="adotante"
             onChange={(event) =>
               setDistrict(event) || setValue("District", event)
             }

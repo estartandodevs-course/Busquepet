@@ -8,7 +8,7 @@ export default function SucessScreen() {
   const history = useHistory("");
 
   function redirect() {
-    history.push("/cadastro-do-pet");
+    history.push("/petCadastro");
   }
   return (
     <>
