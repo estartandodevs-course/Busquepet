@@ -7,6 +7,8 @@ import {
   Login,
   RegisterDonor,
   RegisterAdopter,
+  UserProfile,
+  UserInfo,
 } from "screens";
 
 function Routes() {
@@ -18,8 +20,8 @@ function Routes() {
           {/* <Route exact path="/filtro" component={Filter} /> */}
           {/* <Route exact path="/petCard" component={CardPet} /> */}
           {/* <Route exact path="/contatoDoador" component={ContactDonor} /> */}
-          {/* <Route exact path="/perfil" component={Profile} /> */}
-          {/* <Route exact path="/perfilEdit" component={ProfileEdit} /> */}
+          <Route exact path="/perfil" component={UserProfile} />
+          <Route exact path="/perfilEdit" component={UserInfo} />
           {/* <Route exact path="/petPerfil/:id" component={PerfilPet} /> */}
           <Route exact path="/petCadastro" component={RegisterPet} />
           <Route exact path="/login" component={Login} />

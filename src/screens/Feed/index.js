@@ -9,9 +9,9 @@ export default function Feed() {
   const history = useHistory("");
   const [pets, setPets] = useState([]);
 
-  //   function ClickIcon() {
-  //     history.push("/perfil");
-  //   }
+  function ClickIcon() {
+    history.push("/perfil");
+  }
 
   //   function filterPetByType(type) {
   //     const petsResponse = getPets();
@@ -32,11 +32,7 @@ export default function Feed() {
   return (
     <>
       <header className="container-header">
-        <FeedHeader
-          title="BUSQUEPET"
-          image={iconPerfil}
-          onClick={console.log("a")}
-        />
+        <FeedHeader title="BUSQUEPET" image={iconPerfil} onClick={ClickIcon} />
       </header>
       <div className="container-filter">
         <div className="content-filter">

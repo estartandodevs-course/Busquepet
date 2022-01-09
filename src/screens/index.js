@@ -13,6 +13,8 @@ import Sucess from "./Sucess";
 import RegisterPet from "./Pet/RegisterPet";
 import RegisterDonor from "./Donor/RegisterDonor";
 import RegisterAdopter from "./Adopter/RegisterAdopter";
+import UserProfile from "./UserProfile";
+import UserInfo from "./UserInfo";
 
 export {
   AdopterData,
@@ -30,4 +32,6 @@ export {
   RegisterPet,
   RegisterDonor,
   RegisterAdopter,
+  UserProfile,
+  UserInfo,
 };

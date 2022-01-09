@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useHistory } from "react-router-dom";
-import Text from "../../components/Text";
+import { Text } from "components";
 import "./styles.scss";
 
 const ProfileButton = ({ id }) => {
   const { push } = useHistory();
 
   function goProfile() {
-    push("/perfil-edit");
+    push("/perfiledit");
   }
 
   function goBack() {
