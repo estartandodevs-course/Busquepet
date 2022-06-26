@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Seta from "@/assets/images/seta.svg";
 import { Text } from "@/components";
 import "./styles.scss";
 
 export default function Header({ title, subTitle }) {
+  const navigate = useNavigate();
   // const { goBack } = useHistory();
 
   // // function comeBack() {
@@ -13,7 +15,7 @@ export default function Header({ title, subTitle }) {
   return (
     <header className="header">
       <img
-        onClick={console.log("cu")}
+        onClick={() => navigate(-1)}
         className="arrow"
         src={Seta}
         alt="seta"

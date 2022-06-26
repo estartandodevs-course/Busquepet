@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { addPet } from "@/services/pets.service";
 import { PetData, PetData2, PetImage } from "@/screens";
 
 export default function RegisterPet() {
   const [form, setForm] = useState({ id: randomNumberId() });
   const [step, setStep] = useState(0);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function randomNumberId() {
     const randomNumber = Math.floor(Math.random() * 1000);
@@ -22,7 +22,7 @@ export default function RegisterPet() {
 
   function handleSubmit() {
     addPet(form);
-    history.push("/feed");
+    navigate("/feed");
   }
 
   return (

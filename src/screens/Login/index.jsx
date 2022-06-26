@@ -4,10 +4,9 @@ import Icon from "@/assets/images/Check.svg";
 import { InputField, Text, Button } from "@/components";
 import "./styles.scss";
 // import { login } from "../../services/auth.service";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-  const history = useHistory();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
 
@@ -20,9 +19,9 @@ export default function Login() {
   //       alert("Erro com email ou senha, tente novamente!");
   //     }
   //   }
-
+  const navigate = useNavigate();
   function redirect() {
-    history.push("/cadastro-tipo-de-pessoa");
+    navigate("/cadastro-tipo-de-pessoa");
   }
 
   return (

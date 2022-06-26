@@ -1,13 +1,13 @@
 import Icon from "@/assets/images/SetaProx.svg";
 import { Header, Button, RadioButton, Text } from "@/components";
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./styles.scss";
 
 export default function RegisterPerson() {
   const [person, setPerson] = useState("");
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function chooseScreen() {
     console.log(person);
@@ -17,7 +17,7 @@ export default function RegisterPerson() {
         person,
       },
     };
-    history.push(location);
+    navigate(location);
   }
 
   return (

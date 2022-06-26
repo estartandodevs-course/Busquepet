@@ -1,11 +1,11 @@
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ErrorModal from "@/assets/images/ErrorModal.svg";
 import Button from "components/Button/index";
 import closeButton from "@/assets/images/close-button.svg";
 import "styles.scss";
 
 const RegisterModal = ({ close, text }) => {
-  const { push } = useHistory();
+  const navigate = useNavigate();
 
   return (
     <div className="modal-container">
@@ -20,7 +20,7 @@ const RegisterModal = ({ close, text }) => {
         <Button
           className="whiteOrange"
           name="Fazer o Cadastro"
-          onClick={() => push("/cadastro-tipo-de-pessoa")}
+          onClick={() => navigate("/cadastro-tipo-de-pessoa")}
         />
       </div>
     </div>

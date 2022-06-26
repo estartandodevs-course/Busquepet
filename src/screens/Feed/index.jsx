@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import iconPerfil from "@/assets/images/accountCircle.svg";
 import { FeedHeader, CardComponent } from "@/components";
 import "./styles.scss";
 // import { getPets } from "services/pets.service";
 
 export default function Feed() {
-  const history = useHistory("");
+  const navigate = useNavigate();
   const [pets, setPets] = useState([]);
 
   function ClickIcon() {
-    history.push("/perfil");
+    navigate("/perfil");
   }
 
   //   function filterPetByType(type) {

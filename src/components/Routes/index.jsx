@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import {
   RegisterPet,
   Decision,
@@ -11,27 +11,25 @@ import {
   UserInfo,
 } from "@/screens";
 
-function Routes() {
+function RoutesList() {
   return (
     <BrowserRouter>
-      <Switch>
-        <>
-          <Route exact path="/feed" component={Feed} />
-          {/* <Route exact path="/filtro" component={Filter} /> */}
-          {/* <Route exact path="/petCard" component={CardPet} /> */}
-          {/* <Route exact path="/contatoDoador" component={ContactDonor} /> */}
-          <Route exact path="/perfil" component={UserProfile} />
-          <Route exact path="/perfilEdit" component={UserInfo} />
-          {/* <Route exact path="/petPerfil/:id" component={PerfilPet} /> */}
-          <Route exact path="/petCadastro" component={RegisterPet} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/cadastro-tipo-de-pessoa" component={Decision} />
-          <Route exact path="/registroAdotante" component={RegisterAdopter} />
-          <Route exact path="/registroDoador" component={RegisterDonor} />
-        </>
-      </Switch>
+      <Routes>
+        <Route path="/feed" element={<Feed />} />
+        {/* <Route  path="/filtro" element={Filter} /> */}
+        {/* <Route  path="/petCard" element={CardPet} /> */}
+        {/* <Route  path="/contatoDoador" element={ContactDonor} /> */}
+        <Route path="/perfil" element={<UserProfile />} />
+        <Route path="/perfilEdit" element={<UserInfo />} />
+        {/* <Route  path="/petPerfil/:id" element={PerfilPet} /> */}
+        <Route path="/petCadastro" element={<RegisterPet />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cadastro-tipo-de-pessoa" element={<Decision />} />
+        <Route path="/registroAdotante" element={<RegisterAdopter />} />
+        <Route path="/registroDoador" element={<RegisterDonor />} />
+      </Routes>
     </BrowserRouter>
   );
 }
 
-export default Routes;
+export default RoutesList;

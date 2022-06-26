@@ -1,4 +1,4 @@
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   HeaderAdoption,
   Profile,
@@ -12,10 +12,10 @@ import imageArrow from "@/assets/images/arrowPurple.svg";
 import "./styles.scss";
 
 function FlowProfile00() {
-  const history = useHistory("");
+  const navigate = useNavigate();
 
   function goRegister() {
-    history.push("/petCadastro");
+    navigate("/petCadastro");
   }
 
   return (

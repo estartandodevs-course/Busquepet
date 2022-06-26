@@ -1,11 +1,11 @@
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./styles.scss";
 
 const HeaderAdoption = ({ titleName, imageOne, imageTwo, id }) => {
-  const { goBack } = useHistory();
+  const navigate = useNavigate();
 
   function Back() {
-    goBack("/feed");
+    navigate(-1);
   }
 
   return (

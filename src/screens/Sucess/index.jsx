@@ -1,14 +1,14 @@
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Text, Button } from "@/components";
 import Icon from "@/assets/images/SetaProx.svg";
 import Logo from "@/assets/images/groundimg.png";
 import "./styles.scss";
 
 export default function SucessScreen() {
-  const history = useHistory("");
+  const navigate = useNavigate();
 
   function redirect() {
-    history.push("/petCadastro");
+    navigate("/petCadastro");
   }
   return (
     <>

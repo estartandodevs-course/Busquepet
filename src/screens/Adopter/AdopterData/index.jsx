@@ -3,11 +3,11 @@ import { Button, Text, InputField } from "../../../components";
 import Icon from "@/assets/images/SetaProx.svg";
 import "./styles.scss";
 import Seta from "@/assets/images/seta.svg";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function RegisterAdopterData(props) {
   const { setValue, onSubmit } = props;
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const [password, setPassword] = useState("");
   const [adopter, setAdopter] = useState("");
@@ -16,7 +16,7 @@ export default function RegisterAdopterData(props) {
   const [ageAdopter, setAgeAdopter] = useState("");
 
   function comeBack() {
-    history.goBack();
+    navigate(-1);
   }
 
   return (
