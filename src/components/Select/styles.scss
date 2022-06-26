@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+%font {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+}
+
+select {
+  @extend %font;
+  width: 300px;
+  height: 48px;
+  padding-left: 8px;
+  border-radius: 10px;
+  border: 1px solid #008080;
+  outline: none;
+  background: url("../../assets/images/arrowDown.svg") no-repeat right #fbfbfb;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position-x: 266.41px;
+
+  &:focus {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  option {
+    @extend %font;
+    width: 300px;
+    height: 48px;
+
+    &:hover {
+      background: red;
+    }
+
+    &[value=""] {
+      display: none;
+    }
+  }
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-family: Jost;
+  color: #008080;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 12px;
+  margin-left: 10px;
+
+  .asterisk {
+    color: #cb6fcb;
+    display: inline;
+    float: right;
+  }
+}
+
+.roxo {
+  @extend select;
+  border: 1px solid rgba(128, 0, 128, 1);
+}
+
+#labelRoxo {
+  font-family: Jost;
+  color: #800080;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 12px;
+  margin-left: 10px;
+
+  .asterisk {
+    color: #008080;
+    display: inline;
+    float: right;
+  }
+}
+
+.verde {
+  @extend select;
+  border: 1px solid #008080;
+}
+
+.labelVerde {
+  font-family: Jost;
+  color: #008080;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 12px;
+  margin-left: 10px;
+
+  .asterisk {
+    color: #cb6fcb;
+    display: inline;
+    float: right;
+  }
+}

@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.button-skip {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: auto;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.title-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+}
