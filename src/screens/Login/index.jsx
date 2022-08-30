@@ -3,22 +3,23 @@ import Logo from "@/assets/images/logo.svg";
 import Icon from "@/assets/images/Check.svg";
 import { InputField, Text, Button } from "@/components";
 import "./styles.scss";
-// import { login } from "../../services/auth.service";
+import { login } from "@/services/auth.service";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
 
-  //   async function handleLogin() {
-  //     const responseLogin = await login(user, password);
+  async function handleLogin() {
+    const responseLogin = await login(user, password);
 
-  //     if (responseLogin.success === true) {
-  //       history.push("/feed");
-  //     } else {
-  //       alert("Erro com email ou senha, tente novamente!");
-  //     }
-  //   }
+    if (responseLogin.success) {
+      navigate("/feed");
+    } else {
+      alert("Erro com email ou senha, tente novamente!");
+      console.log(responseLogin.data);
+    }
+  }
   const navigate = useNavigate();
   function redirect() {
     navigate("/cadastro-tipo-de-pessoa");
@@ -62,7 +63,7 @@ export default function Login() {
           name="Entrar"
           identifier="purple"
           icon={Icon}
-          onClick={console.log("deu certo")}
+          onClick={() => handleLogin()}
         />
       </footer>
     </>
