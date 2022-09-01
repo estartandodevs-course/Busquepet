@@ -18,9 +18,9 @@ export default function Feed() {
     setPets(result);
   }
 
-  resultPets();
-
-  console.log(pets);
+  useEffect(() => {
+    resultPets();
+  }, []);
 
   //   function filterPetByType(type) {
   //     const petsResponse = getPets();
@@ -28,9 +28,9 @@ export default function Feed() {
   //     setPets(petsFiltered);
   //   }
 
-  //   function redirectToPetProfile(id) {
-  //     history.push(`/perfil-do-pet/${id}`);
-  //   }
+  function redirectToPetProfile(id) {
+    navigate(`/perfil-do-pet/${id}`);
+  }
 
   //   useEffect(() => {
   //     const petsResponse = getPets();
@@ -50,16 +50,16 @@ export default function Feed() {
         </div>
       </div>
       <section className="container-main">
-        {/* {pets.map(({ imagePet, namePet, agePet, typePet, id }, index) => (
+        {pets.map(({ image, name, age, type, id }, index) => (
           <CardComponent
             key={index}
-            image={imagePet}
-            name={namePet}
-            age={agePet}
-            type={typePet}
+            image={image}
+            name={name}
+            age={age}
+            type={type}
             onClick={() => redirectToPetProfile(id)}
           />
-        ))} */}
+        ))}
       </section>
     </>
   );
