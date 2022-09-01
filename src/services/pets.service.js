@@ -1,23 +1,12 @@
-import { petsMock } from "../_mock/feed";
+import { collection, query, getDocs } from 'firebase/firestore/lite';
+import db from '@/config/firebase.config'
 
-export function getPets() {
-  const petsStorage = localStorage.getItem("pets");
-  if (petsStorage) {
-    return JSON.parse(petsStorage);
-  }
-  localStorage.setItem("pets", JSON.stringify(petsMock));
-  return petsMock;
+export async function getPets() {
+  const q = query(collection(db, 'pets'))
+  const querySnapshot = await getDocs(q)
+  return querySnapshot.docs.map(doc => doc.data())
 }
 
-export function getPetById(id) {
-  const pets = getPets();
-  const pet = pets.find((_pet) => _pet.id === id);
-  return pet;
-}
 
-export function addPet(pet) {
-  const petsStorage = JSON.parse(localStorage.getItem("pets")) || petsMock;
-  const petsListModified = [...petsStorage, pet];
-  localStorage.setItem("pets", JSON.stringify(petsListModified));
-  return petsListModified;
-}
+export default getPets
+

@@ -25,18 +25,14 @@ export default function CharacteristicsPet(props) {
             <RadioButton
               text="Cachorrinho"
               name="typePet"
-              id="cao"
-              onChange={(event) =>
-                setTypePet(event) || setValue("typePet", event)
-              }
+              id="dog"
+              onChange={(event) => setTypePet(event) || setValue("type", event)}
             />
             <RadioButton
               text="Gatinho"
               name="typePet"
-              id="gato"
-              onChange={(event) =>
-                setTypePet(event) || setValue("typePet", event)
-              }
+              id="cat"
+              onChange={(event) => setTypePet(event) || setValue("type", event)}
             />
           </div>
         </div>
@@ -49,7 +45,7 @@ export default function CharacteristicsPet(props) {
             <RadioButton
               text="Fêmea"
               name="gender"
-              id="femea"
+              id="female"
               onChange={(event) =>
                 setGender(event) || setValue("gender", event)
               }
@@ -57,7 +53,7 @@ export default function CharacteristicsPet(props) {
             <RadioButton
               text="Macho"
               name="gender"
-              id="macho"
+              id="male"
               onChange={(event) =>
                 setGender(event) || setValue("gender", event)
               }
@@ -72,20 +68,20 @@ export default function CharacteristicsPet(props) {
           <div className="form-boxes">
             <RadioButton
               text="Pequeno"
-              name="size"
-              id="pequeno"
+              name="small"
+              id="small"
               onChange={(event) => setSize(event) || setValue("size", event)}
             />
             <RadioButton
               text="Médio"
               name="size"
-              id="medio"
+              id="medium"
               onChange={(event) => setSize(event) || setValue("size", event)}
             />
             <RadioButton
               text="Grande"
               name="size"
-              id="grande"
+              id="big"
               onChange={(event) => setSize(event) || setValue("size", event)}
             />
           </div>
@@ -94,7 +90,7 @@ export default function CharacteristicsPet(props) {
           <Select
             typeMap="idade"
             label="Qual a idade do seu bichinho?"
-            onChange={(event) => setAgepet(event) || setValue("agePet", event)}
+            onChange={(event) => setAgepet(event) || setValue("age", event)}
           />
         </div>
       </section>

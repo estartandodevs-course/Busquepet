@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { addPet } from "@/services/pets.service";
 import { PetData, PetData2, PetImage } from "@/screens";
+import { collection, addDoc, getFirestore } from "firebase/firestore/lite";
 
 export default function RegisterPet() {
   const [form, setForm] = useState({ id: randomNumberId() });
@@ -20,8 +20,13 @@ export default function RegisterPet() {
     });
   }
 
-  function handleSubmit() {
-    addPet(form);
+  async function handleSubmit() {
+    const db = getFirestore();
+    const docRef = await addDoc(collection(db, "pets"), {
+      ...form,
+    });
+
+    console.log("Document written with ID: ", docRef.id);
     navigate("/feed");
   }
 

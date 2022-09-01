@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import iconPerfil from "@/assets/images/accountCircle.svg";
 import { FeedHeader, CardComponent } from "@/components";
 import "./styles.scss";
-// import { getPets } from "services/pets.service";
+import { getPets } from "@/services/pets.service";
 
 export default function Feed() {
   const navigate = useNavigate();
@@ -12,6 +12,15 @@ export default function Feed() {
   function ClickIcon() {
     navigate("/perfil");
   }
+
+  async function resultPets() {
+    const result = await getPets();
+    setPets(result);
+  }
+
+  resultPets();
+
+  console.log(pets);
 
   //   function filterPetByType(type) {
   //     const petsResponse = getPets();

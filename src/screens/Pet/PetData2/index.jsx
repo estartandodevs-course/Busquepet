@@ -17,6 +17,13 @@ export default function DataPet(props) {
   const [infovaccine, setInfovaccine] = useState("");
   const [descriptionPet, setDescriptionPet] = useState("");
 
+  function numberVaccine(event) {
+    if (event === "Tomou todas as vacinas!") return 3;
+    else if (event === "Tomou algumas vacinas!") return 2;
+    else if (event === "Não tomou todas!") return 1;
+    else if (event === "Não sei!") return 0;
+  }
+
   return (
     <>
       <div>
@@ -29,7 +36,7 @@ export default function DataPet(props) {
           type="text"
           label="Qual o nome do bichinho?"
           name="pet"
-          onChange={(event) => setNamePet(event) || setValue("namePet", event)}
+          onChange={(event) => setNamePet(event) || setValue("name", event)}
         />
         <span className="subtitle-info">
           Se não tiver nome, pode criar uma para ao cadastro
@@ -49,7 +56,8 @@ export default function DataPet(props) {
               name="infovaccine"
               id="Tomou todas as vacinas!"
               onChange={(event) =>
-                setInfovaccine(event) || setValue("infovaccine", event)
+                setInfovaccine(event) ||
+                setValue("vaccine", numberVaccine(event))
               }
             />
             <RadioButton
@@ -57,7 +65,8 @@ export default function DataPet(props) {
               name="infovaccine"
               id="Não tomou todas!"
               onChange={(event) =>
-                setInfovaccine(event) || setValue("infovaccine", event)
+                setInfovaccine(event) ||
+                setValue("vaccine", numberVaccine(event))
               }
             />
             <RadioButton
@@ -65,7 +74,8 @@ export default function DataPet(props) {
               name="infovaccine"
               id="Tomou algumas vacinas!"
               onChange={(event) =>
-                setInfovaccine(event) || setValue("infovaccine", event)
+                setInfovaccine(event) ||
+                setValue("vaccine", numberVaccine(event))
               }
             />
             <RadioButton
@@ -73,7 +83,8 @@ export default function DataPet(props) {
               name="infovaccine"
               id="Não sei!"
               onChange={(event) =>
-                setInfovaccine(event) || setValue("infovaccine", event)
+                setInfovaccine(event) ||
+                setValue("vaccine", numberVaccine(event))
               }
             />
           </div>
@@ -86,7 +97,7 @@ export default function DataPet(props) {
           label="Conta um pouco sobre o Animalzinho"
           name="description"
           onChange={(event) =>
-            setDescriptionPet(event) || setValue("description", event)
+            setDescriptionPet(event) || setValue("about", event)
           }
         />
         <span className="subtitle-info">

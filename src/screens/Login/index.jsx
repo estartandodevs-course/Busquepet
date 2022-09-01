@@ -2,9 +2,9 @@ import { useState } from "react";
 import Logo from "@/assets/images/logo.svg";
 import Icon from "@/assets/images/Check.svg";
 import { InputField, Text, Button } from "@/components";
-import "./styles.scss";
 import { login } from "@/services/auth.service";
 import { useNavigate } from "react-router-dom";
+import "./styles.scss";
 
 export default function Login() {
   const [user, setUser] = useState("");

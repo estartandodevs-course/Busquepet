@@ -1,7 +1,7 @@
+import { useState } from "react";
+import { Header, Text, InputField, Button } from "@/components";
 import Check from "@/assets/images/Check.svg";
 import Pontos from "@/assets/images/pontos.svg";
-import { Header, Text, InputField, Button } from "@/components";
-import { useState } from "react";
 import "./styles.scss";
 
 export default function ImagePet({ setValue, onSubmit }) {
@@ -16,7 +16,7 @@ export default function ImagePet({ setValue, onSubmit }) {
         </Text>
       </div>
       <InputField
-        onChange={(event) => setUrlImage(event) || setValue("imagePet", event)}
+        onChange={(event) => setUrlImage(event) || setValue("image", event)}
         id="doador"
         label="Insira a URL da foto do seu bichinho"
         type="text"
