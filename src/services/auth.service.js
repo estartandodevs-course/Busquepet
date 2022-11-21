@@ -1,12 +1,10 @@
-import firebase from "firebase/app";
-import "firebase/auth";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import db from '@/config/firebase.config'
 
 export async function login(email, password) {
   try {
-    const response = await firebase
-      .auth()
-      .signInWithEmailAndPassword(email, password);
-
+    const auth = getAuth()
+    const response = await signInWithEmailAndPassword(auth, email, password);
     return { success: true, data: response.user };
   } catch (error) {
     return { success: false, data: error };
